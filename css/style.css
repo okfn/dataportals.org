@@ -1,0 +1,12 @@
+@import url("pdeu.css");
+@import url("ckanjs.css");
+
+img#logo {
+  width: 64px;
+}
+
+.account {
+  display: none;
+}
+
+

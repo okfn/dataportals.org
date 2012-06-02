@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>DataDeck - Powered by CKAN</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="http://assets.okfn.org/p/ckan/img/ckan.ico" type="image/x-icon" /> 
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+
+  <link rel="stylesheet" href="css/boilerplate.css?v=2" />
+  <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print" />
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+  <link rel="stylesheet" href="vendor/ckanjs/vendor/jqueryui/1.8.4/css/ui-lightness/jqueryui-lightness.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="vendor/ckanjs/app/js/vendor/modernizr-1.7.min.js "></script>
+
+  <script src="vendor/ckanjs/vendor/jquery/1.6.2/jquery.js"></script>
+  <script src="vendor/ckanjs/vendor/json2.js"></script>
+  <script src="vendor/ckanjs/vendor/jquery.tmpl/beta1/jquery.tmpl.min.js"></script>
+  <script src="vendor/ckanjs/vendor/jqueryui/1.8.4/jquery-ui.min.js"></script>
+  <script src="vendor/ckanjs/vendor/underscore/1.1.6/underscore.js"></script>
+  <script src="vendor/ckanjs/vendor/backbone/0.5.1/backbone.js"></script>
+
+  <script src="vendor/ckanjs/vendor/showdown/showdown.js"></script>
+  <script src="vendor/ckanjs/vendor/jquery.jeditable/1.7.2/jquery.jeditable.min.js"></script>
+  <script src="vendor/ckanjs/vendor/jquery.fileupload/20110801/jquery.iframe-transport.js"></script>
+  <script src="vendor/ckanjs/vendor/jquery.fileupload/20110801/jquery.fileupload.js"></script>
+ 
+  <script src="vendor/ckanjs/lib/client.js"></script>
+  <script src="vendor/ckanjs/lib/model.js"></script>
+
+  <script src="vendor/ckanjs/lib/templates.js"></script>
+  <script src="vendor/ckanjs/lib/template/dataset-view.js"></script>
+  <script src="vendor/ckanjs/lib/template/dataset-form.js"></script>
+  <script src="vendor/ckanjs/lib/template/resource-form.js"></script>
+  <script src="vendor/ckanjs/lib/template/resource-view.js"></script>
+  <script src="vendor/ckanjs/lib/view.js"></script>
+  <script src="vendor/ckanjs/lib/view/dataset-listing.js"></script>
+  <script src="vendor/ckanjs/lib/view/resource-create.js"></script>
+  <script src="vendor/ckanjs/lib/template/resource-upload.js"></script>
+  <script src="vendor/ckanjs/lib/view/resource-upload.js"></script>
+
+  <script src="vendor/ckanjs/lib/ui.js"></script>
+
+  <!-- defines localConfig -->
+  <script src="configlocal.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      if(window.localConfig === undefined) {
+        window.localConfig = undefined;
+      }
+      CKAN.UI.initialize({
+        config: localConfig
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="header outer">
+      <header class="container">
+        <div class="menu account">
+          <span class="ckan-logged-in" style="display: none;">
+            <a href="${h.url_for(controller='user',action='me',id=None)}">${h.icon('user')} My account</a>
+            <a href="${h.url_for('/user/logout')}">Logout</a>
+          </span>
+          <span class="ckan-logged-out">
+            <a href="${h.url_for(controller='user',action='login', id=None)}">Login</a>
+            <a href="${h.url_for(controller='user',action='register', id=None)}">Register</a>
+          </span>
+        </div>
+        <a href="#">
+          <img src="http://assets.okfn.org/p/ckan/img/ckan_logo_box.png" alt="DataDeck Logo" title="DataDeck Logo" id="logo" />
+        </a>
+        <div id="site-name">
+          DataDeck <span style="color: red;">beta</span> &mdash; Get, Use, Share Data 
+        </div>
+        <div class="menu">
+          <span id="menusearch">
+            <form action="#search" method="get">
+              <input name="q" value="" class="search" placeholder="find datasets" />
+            </form>
+          </span>
+          <ul id="mainmenu">
+            <li class="first"><a href="#search">Search</a></li>
+            <li><a href="#add-dataset">Add a Dataset</a></li>
+            <li class="last">
+              <a href="#config" class="config-show">Configuration</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div class="class container flash-banner-box">
+      <div class="flash-banner ${m.category}">
+      </div>
+    </div>
+
+    <div id="main" class="container" role="main">
+      <h1 class="page-heading">Page Heading</h1>
+      <div id="minornavigation" class="span-24 last">
+      </div>
+
+      <div id="content" class="span-16 first">
+
+        <div id="config-page" class="page-view" style="display: none;">
+          <div id="config-form">
+            <form>
+              <label for="ckan-url">CKAN Url</label>
+              <input type="text" name="ckan-url" value="" placeholder="CKAN Url e.g. http://ckan.net" />
+              <br />
+              <label for="ckan-api-key">API Key</label>
+              <input type="text" name="ckan-api-key" value="" placeholder="API Key" />
+              <br />
+              <input type="submit" name="save" value="Save" />
+            </form>
+          </div>
+        </div>
+
+        <div id="dataset-add-page" class="page-view" style="display: none;">
+          <h2>Add a Dataset</h2>
+        </div>
+
+        <div id="dataset-edit-page" class="page-view" style="display: none;">
+          <h2>Edit Dataset</h2>
+        </div>
+
+        <div id="view-page" class="page-view" style="display: none;">
+          <h2>View Dataset</h2>
+        </div>
+
+        <div id="resource-view-page" class="page-view" style="display: none;">
+          <h2>View Resource</h2>
+        </div>
+
+        <div id="add-resource-page" class="page-view" style="display: none;">
+        </div>
+
+        <div id="search-page" class="page-view">
+          <form id="search-form">
+            <input type="search" name="q" placeholder="Search ..." class="search" />
+            <input type="submit" name="submit" value="Search" />
+          </form>
+
+          <div class="dialog">
+          </div>
+
+          <div class="results" style="display: none;">
+            <h3>Results</h3>
+            <p>
+            <strong><span class="count"></span></strong> results found.
+            </p>
+
+            <ul class="datasets">
+            </ul>
+          </div>
+        </div>
+
+      </div> <!-- / content -->
+
+      <div id="sidebar" class="span-7 last">
+        <ul class="widget-list">
+        </ul>
+      </div>
+
+    </div>
+    <br /><br />
+    <div id="push"></div>
+  </div>
+  <div class="footer outer">
+    <footer class="container">
+        <div class="xoxo span-6">
+          <h3 class="widget-title">About DataDeck</h3>
+          <div class="textwidget">
+            <ul>
+              <li>
+                <a href="http://wiki.ckan.net/DataDeck">Project Home</a>
+              </li>
+              <li>
+                <a href="http://okfn.org/contact/">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="xoxo span-6">
+          <h3 class="widget-title">More Info</h3>
+          <div class="textwidget">
+            <ul>
+              <li>
+                <a href="http://wiki.ckan.net/DataDeck">Project Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="xoxo span-6">
+          <h3 class="widget-title">&nbsp;</h3>
+          <div class="textwidget">
+            <ul>
+              <li>
+                <a href="http://thedatahub.org/">thedatahub.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="xoxo span-6 last">
+          <h3 class="widget-title">&nbsp;</h3>
+          <p id="credits">
+          &copy; 2011:
+        <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" />
+          <a href="http://www.okfn.org/">open knowledge foundation</a><br/><br/>
+        powered by the <a
+          href="http://ckan.org">ckan</a> data management platform.<br/>
+            <a href="http://www.opendefinition.org/okd/"><img alt="this content and data is open" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none ; margin-bottom: -4px;"/></a>
+      </p>
+        </div>
+    </footer>
+  </div> <!-- eo #container -->
+</body>
+</html>
+
+
+
+

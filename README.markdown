@@ -9,6 +9,11 @@ directly from its API.
 ## Instructions
 
 1. Clone this repo
+2. Run the following commands to pull in the CKAN Javascript library:
+
+        git submodule init
+        git submodule update
+
 2. Open index.html in your web browser
 3. Change config options such as:
 
