@@ -1,12 +1,135 @@
-@import url("pdeu.css");
-@import url("ckanjs.css");
-
-img#logo {
-  width: 64px;
+html, body {
+  background-color: #eee;
+}
+body {
+  padding-top: 40px;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 
-.account {
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.page-header {
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 20px 20px;
+  margin: 15px -20px -20px;
+  border-top: solid 1px #eee;
+}
+
+.navbar .nav > li > a {
+  padding-top: 12px;
+}
+
+.nav-logo img {
+  margin-top: -4px;
+  margin-right: -5px;
+}
+
+/********************************************************************
+  * Form
+  *******************************************************************/
+
+.dataset-search {
+  display: inline;
   display: none;
 }
 
+/********************************************************************
+  * Dataset Summary
+  *******************************************************************/
+
+.dataset.summary {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: dotted 1px #ccc;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.dataset.summary .logo {
+  width: 50px;
+  float: right;
+}
+
+.dataset.summary h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.dataset.summary h3 a {
+  color: #333;
+}
+
+.dataset.summary h3 a:hover {
+  text-decoration: none;
+}
+
+.dataset.summary .description {
+}
+
+.dataset.summary .source {
+  font-style: italic;
+}
+
+.dataset ul.keywords {
+  list-style-type: none;
+  margin: 0;
+}
+
+.dataset ul.keywords li {
+  display: inline;
+  padding: 1px 4px 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 10.998px;
+  font-weight: bold;
+  line-height: 14px;
+  color: white;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: #55A1CE;
+  margin-right: 3px;
+}
+
+
+/********************************************************************
+  * Dataset Show
+  *******************************************************************/
+
+.dataset.show .logo {
+  width: 100px;
+  float: right;
+}
+
+.dataset.show .source {
+  font-style: italic;
+}
+
+.dataset.show .actions {
+  margin-bottom: 10px;
+}
+
+.dataset.show .viewer .recline-slickgrid {
+  margin-top: 20px;
+}
+
+.dataset.show .viewer .recline-slickgrid {
+  height: 500px;
+}
 
