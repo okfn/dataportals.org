@@ -1,3 +1,0 @@
-[submodule "vendor/ckanjs"]
-	path = vendor/ckanjs
-	url = git://github.com/okfn/ckanjs.git
