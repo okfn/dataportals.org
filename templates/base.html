@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Data Catalogs</title>
+  <title>
+    {% block title %}Home{% endblock %}
+    -
+    Data Catalogs
+  </title>
   <meta name="description" content="">
   <meta name="author" content="Open Knowledge Foundation">
 
@@ -21,10 +25,10 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">Data Catalogs</a>
+      <a class="brand" href="/">Data Catalogs</a>
       <ul class="nav">
         <li class="divider-vertical"></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="/about">About</a></li>
         <li class="divider-vertical"></li>
       </ul>
       <ul class="nav pull-right">
