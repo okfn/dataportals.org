@@ -30,11 +30,12 @@ footer {
 
 .navbar .nav > li > a {
   padding-top: 12px;
+  font-weight: bold;
 }
 
-.nav-logo img {
-  margin-top: -4px;
-  margin-right: -5px;
+.navbar .brand img {
+  height: 30px;
+  margin-top: -3px;
 }
 
 /********************************************************************
