@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import '_snippets.html' as snippets %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>
+      Search Data Catalogs
+    </h1>
+  </div>
+  <div class="row">
+    <div class="results span6">
+      <h3>{{ total }} catalogs</h3>
+      {% for catalog in catalogs %}
+        {{ snippets.summary(catalog) }}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

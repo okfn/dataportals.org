@@ -20,12 +20,25 @@ var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('templates'));
 env.express(app);
 
 app.get('/', function(req, res) {
+  var catalogs = catalog.query();
+  var total = catalogs.length;
   res.render('home.html', {
+    catalogs: catalogs,
+    total: total
   });
 })
 
 app.get('/about', function(req, res) {
   res.render('about.html', {});
+});
+
+app.get('/search', function(req, res) {
+  var catalogs = catalog.query();
+  var total = catalogs.length;
+  res.render('search.html', {
+    catalogs: catalogs,
+    total: total
+  });
 });
 
 app.get('/catalog/:id', function(req, res) {
@@ -38,6 +51,17 @@ app.get('/catalog/:id', function(req, res) {
   });
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Listening on " + app.get('port'));
+var model = require('./model.js');
+// TODO: put this in a config
+var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';
+var catalog = new model.Catalog();
+
+catalog.loadUrl(url, function(err) {
+  if (err) {
+    console.error('Failed to load dataset info');
+  }
+  app.listen(app.get('port'), function() {
+    console.log("Listening on " + app.get('port'));
+  });
 });
+

@@ -10,6 +10,8 @@ Catalog.prototype.load = function(catalogs) {
   var that = this;
   for (idx in catalogs) {
     var dp = catalogs[idx];
+    dp.tags = dp.tags.split(',');
+    dp.group = dp.group.split(',');
     that._cache[dp.id] = dp;
   }
   that.total = catalogs.length;

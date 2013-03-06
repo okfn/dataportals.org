@@ -53,7 +53,7 @@ footer {
   * Dataset Summary
   *******************************************************************/
 
-.dataset.summary {
+.catalog.summary {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: dotted 1px #ccc;
@@ -61,40 +61,36 @@ footer {
   line-height: 20px;
 }
 
-.dataset.summary .logo {
+.catalog.summary .logo {
   width: 50px;
   float: right;
 }
 
-.dataset.summary h3 {
+.catalog.summary h3 {
   margin: 0;
   padding: 0;
   font-size: 20px;
   line-height: 1.5;
 }
 
-.dataset.summary h3 a {
+.catalog.summary h3 a {
   color: #333;
 }
 
-.dataset.summary h3 a:hover {
-  text-decoration: none;
-}
-
-.dataset.summary .description {
+.catalog.summary .description {
   margin-bottom: 5px;
 }
 
-.dataset.summary .place {
+.catalog.summary .place {
   font-style: italic;
 }
 
-.dataset ul.keywords {
+.catalog ul.keywords {
   list-style-type: none;
   margin: 0;
 }
 
-.dataset ul.keywords li {
+.catalog ul.keywords li {
   display: inline;
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
@@ -116,24 +112,24 @@ footer {
   * Dataset Show
   *******************************************************************/
 
-.dataset.show .logo {
+.catalog.show .logo {
   width: 100px;
   float: right;
 }
 
-.dataset.show .source {
+.catalog.show .source {
   font-style: italic;
 }
 
-.dataset.show .actions {
+.catalog.show .actions {
   margin-bottom: 10px;
 }
 
-.dataset.show .viewer .recline-slickgrid {
+.catalog.show .viewer .recline-slickgrid {
   margin-top: 20px;
 }
 
-.dataset.show .viewer .recline-slickgrid {
+.catalog.show .viewer .recline-slickgrid {
   height: 500px;
 }
 
