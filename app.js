@@ -51,6 +51,17 @@ app.get('/catalog/:id', function(req, res) {
   });
 });
 
+app.get('/group/:id', function(req, res) {
+  var id = req.params.id;
+  var catalogs = catalog.getGroup(id)
+  res.render('group.html', {
+    group: id,
+    catalogs: catalogs,
+    total: catalogs.length
+  });
+});
+
+
 var model = require('./model.js');
 // TODO: put this in a config
 var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';

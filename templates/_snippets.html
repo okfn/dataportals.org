@@ -11,8 +11,8 @@
       {% endfor %}
     </ul>
     <ul class="groups">
-      {% for kw in catalog.groups or [] %}
-      <li>{{kw}}</li>
+      {% for kw in catalog.group or [] %}
+      <li><a href="/group/{{kw}}">{{kw}}</a></li>
       {% endfor %}
     </ul>
   </div>

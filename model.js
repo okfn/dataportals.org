@@ -4,14 +4,26 @@ var recline = require('./public/vendor/backend.gdocs.js');
 
 var Catalog = function() {
   this._cache = {};
+  this._groups = {};
 };
 
 Catalog.prototype.load = function(catalogs) {
   var that = this;
   for (idx in catalogs) {
     var dp = catalogs[idx];
-    dp.tags = dp.tags.split(',');
-    dp.group = dp.group.split(',');
+    dp.tags = dp.tags.split(' ');
+    // strip
+    dp.group = dp.group.replace(/^\s+|\s+$/g, '');
+    dp.group = dp.group.split(' ');
+    dp.group.forEach(function(groupName) {
+      if (groupName in that._groups) {
+        var out = that._groups[groupName];
+        out.push(dp.id);
+        that._groups[groupName] = out;
+      } else {
+        that._groups[groupName] = [dp.id];
+      }
+    });
     that._cache[dp.id] = dp;
   }
   that.total = catalogs.length;
@@ -35,6 +47,13 @@ Catalog.prototype.loadUrl = function(url, cb) {
 
 Catalog.prototype.get = function(id) {
   return this._cache[id];
+}
+
+Catalog.prototype.getGroup = function(group) {
+  var that = this;
+  return this._groups[group].map(function(catalogId) {
+    return that.get(catalogId);
+  });
 }
 
 Catalog.prototype.query = function(q) {
