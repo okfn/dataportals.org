@@ -43,12 +43,14 @@ app.get('/search', function(req, res) {
 
 app.get('/catalog/:id', function(req, res) {
   var id = req.params.id;
-  var catalog = catalog.get(id)
-  if (!dataset) {
+  var thiscatalog = catalog.get(id)
+  if (!thiscatalog) {
     res.send(404, 'Not Found');
+  } else {
+    res.render('catalog.html', {
+      catalog: thiscatalog
+    });
   }
-  res.render('catalog.html', {
-  });
 });
 
 app.get('/group/:id', function(req, res) {

@@ -1,6 +1,6 @@
 var request = require('request');
 var recline = require('./public/vendor/backend.gdocs.js');
-// var marked = require('marked');
+var marked = require('marked');
 
 var Catalog = function() {
   this._cache = {};
@@ -11,10 +11,11 @@ Catalog.prototype.load = function(catalogs) {
   var that = this;
   for (idx in catalogs) {
     var dp = catalogs[idx];
-    dp.tags = dp.tags.split(' ');
-    // strip
+    dp.description_html = marked(dp.description);
+    dp.tags = dp.tags.replace(/^\s+|\s+$/g, '');
+    dp.tags = dp.tags ? dp.tags.split(' ') : [];
     dp.group = dp.group.replace(/^\s+|\s+$/g, '');
-    dp.group = dp.group.split(' ');
+    dp.group = dp.group ? dp.group.split(' ') : [];
     dp.group.forEach(function(groupName) {
       if (groupName in that._groups) {
         var out = that._groups[groupName];
