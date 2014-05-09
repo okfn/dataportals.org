@@ -63,6 +63,9 @@ app.get('/group/:id', function(req, res) {
   });
 });
 
+app.get('/api/data.json', function(req, res) {
+  res.json(catalog._cache);
+});
 
 var model = require('./model.js');
 // TODO: put this in a config
