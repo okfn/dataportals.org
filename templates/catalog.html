@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>
+        <img src="{{catalog.image or
+      'http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png'}}"
+      alt="{{catalog.title}}" class="logo" />
+
+        {{catalog.title}}
+    </h1>
+  </div>
+  <div class="row">
+        <div class="span6">
+            <h2>Description</h2>
+            {{ catalog.description }}
+        </div>
+
+        <div class="span6">
+            <dl>
+                <dt>
+                    URL:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.url }}">{{ catalog.url }}</a>
+                </dd>
+                <dt>
+                    Tags:
+                </dt>
+                <dd>
+                      {% for kw in catalog.tags or [] %}
+                        {% if kw %}
+                            <span class="label label-primary">{{kw}}</span>
+                        {% endif %}
+                      {% endfor %}
+                </dd>
+                <dt>
+                    Groups:
+                </dt>
+                <dd>
+                      {% for kw in catalog.group or [] %}
+                        {% if kw %}
+                          <span class="label label-warning"><a class="inverted" href="/group/{{kw}}">{{kw}}</a></span>
+                        {% endif %}
+                      {% endfor %}
+                </dd>
+            </dl>
+        </div>
+  </div>
+{% endblock %}
