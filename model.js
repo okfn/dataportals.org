@@ -56,6 +56,10 @@ Catalog.prototype.getGroup = function(group) {
   });
 }
 
+Catalog.prototype.getGroups = function() {
+  return this._groups;
+}
+
 Catalog.prototype.query = function(q) {
   var that = this;
   // TODO: actual search
