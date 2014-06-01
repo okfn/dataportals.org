@@ -67,6 +67,35 @@ app.get('/api/data.json', function(req, res) {
   res.json(catalog._cache);
 });
 
+app.get('/api/catalogs/:id', function(req, res) {
+  var id = req.params.id;
+  var c = catalog.get(id);
+  console.log(c)
+  if (!c) {
+    res.send(404, 'Not Found');
+  }
+  res.header("Content-Type", "application/json; charset=utf-8");
+  res.write(JSON.stringify(c));
+  res.end();
+});
+
+app.get('/api/catalogs', function(req, res) {
+  var catalogs = catalog.query();
+
+  res.header("Content-Type", "application/json; charset=utf-8");
+  res.write(JSON.stringify(catalogs));
+  res.end();
+});
+
+app.get('/api/groups', function(req, res) {
+  var groups = catalog.getGroups();
+
+  res.header("Content-Type", "application/json; charset=utf-8");
+  res.write(JSON.stringify(groups));
+  res.end();
+});
+
+
 var model = require('./model.js');
 // TODO: put this in a config
 var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';
