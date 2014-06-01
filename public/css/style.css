@@ -46,6 +46,10 @@ footer {
   * Form
   *******************************************************************/
 
+.recline-query-editor label {
+  display: none;
+}
+
 .recline-query-editor .text-query input {
   width: 400px;
 }

@@ -12,7 +12,25 @@
       <h3><a href="/search">{{total}} Data Catalogs listed &raquo;</a></h3>
     </div>
     <div class="span6">
-      <img src="https://raw.github.com/okfn/ckanext-datacatalogs/master/ckanext/datacatalogs/public/ckanext-datacatalogs/images/home.jpg" alt="A Comprehensive List of Open Data Catalogs from Around the World" style="margin-right: -100px;" />
+      <div class="query-editor-here"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+      <div class="overview-map"></div>
     </div>
   </div>
 {% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="/vendor/recline/vendor/underscore/1.4.4/underscore.js"></script>
+<script type="text/javascript" src="/vendor/recline/vendor/backbone/1.0.0/backbone.js"></script>
+<script type="text/javascript" src="/vendor/recline/vendor/mustache/0.5.0-dev/mustache.js"></script>
+<script type="text/javascript" src="/vendor/recline/vendor/leaflet/0.4.4/leaflet.js"></script>
+<script type="text/javascript" src="/vendor/recline/vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
+<script type="text/javascript" src="/vendor/recline/vendor/slickgrid/2.0.1/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="/vendor/recline/dist/recline.js"></script>
+
+<script src="/js/app.js"></script>
+{% endblock %}
+
