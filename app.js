@@ -8,7 +8,7 @@ var app = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 5000);
-  app.set('views', __dirname + '/templates');
+  app.set('views', __dirname + '/views');
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
@@ -16,7 +16,7 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
-var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('templates'));
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
 env.express(app);
 
 app.get('/', function(req, res) {
