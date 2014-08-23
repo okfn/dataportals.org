@@ -69,14 +69,14 @@ if (typeof module !== 'undefined' && module != null && typeof require !== 'undef
   // :return: tabular data object (hash with keys: field and data).
   // 
   // Issues: seems google docs return columns in rows in random order and not even sure whether consistent across rows.
-  my.parseData = function(gdocsSpreadsheet, options) {
+  my.parseData = function(gdocsWorksheet, options) {
     var options  = options || {};
     var colTypes = options.colTypes || {};
     var results = {
       fields : [],
       records: []
     };
-    var entries = gdocsSpreadsheet.feed.entry || [];
+    var entries = gdocsWorksheet.feed.entry || [];
     var key;
     var colName;
     // percentage values (e.g. 23.3%)
@@ -113,7 +113,7 @@ if (typeof module !== 'undefined' && module != null && typeof require !== 'undef
       return row;
     });
 
-    results.worksheetTitle = gdocsSpreadsheet.feed.title.$t;
+    results.worksheetTitle = gdocsWorksheet.feed.title.$t;
     return results;
   };
 
@@ -122,10 +122,12 @@ if (typeof module !== 'undefined' && module != null && typeof require !== 'undef
   // @param url: url to gdoc to the GDoc API (or just the key/id for the Google Doc)
   my.getGDocsApiUrls = function(url, worksheetIndex) {
     // https://docs.google.com/spreadsheet/ccc?key=XXXX#gid=YYY
-    var regex = /.*spreadsheet\/ccc?.*key=([^#?&+]+)[^#]*(#gid=([\d]+).*)?/,
+    var regex = /.*spreadsheet\/ccc\?.*key=([^#?&+]+)[^#]*(#gid=([\d]+).*)?/,
+      // new style is https://docs.google.com/a/okfn.org/spreadsheets/d/16DayFB.../edit#gid=910481729
+      regex2 = /.*spreadsheets\/d\/([^\/]+)\/edit(#gid=([\d]+).*)?/
       matches = url.match(regex),
-      key
-        ;
+      matches2 = url.match(regex2)
+      ;
     
     if (!!matches) {
         key = matches[1];
@@ -134,6 +136,20 @@ if (typeof module !== 'undefined' && module != null && typeof require !== 'undef
         if (isNaN(worksheet)) {
           worksheet = 1;
         }
+    }
+    else if (!!matches2) {
+      key = matches2[1];
+      // force worksheet index always to be 1 since it appears API worksheet
+      // index does not follow gid (is always just index of worksheet)
+      // e.g. see this worksheet https://docs.google.com/a/okfn.org/spreadsheets/d/1S8NhNf6KsrAzdaY_epSlyc2pHXRLV-z6Ty2jL9hM5A4/edit#gid=406828788
+      // gid are large numbers but for actual access use worksheet index 1 and 2 ...
+      // https://spreadsheets.google.com/feeds/list/1S8NhNf6KsrAzdaY_epSlyc2pHXRLV-z6Ty2jL9hM5A4/2/public/values?alt=json
+      // answer here is that clients will always have to explicitly set worksheet index if they want anything other than first sheet
+      // worksheet = parseInt(matches2[3]);
+      worksheet = 1;
+      if (isNaN(worksheet)) {
+        worksheet = 1;
+      }
     }
     else if (url.indexOf('spreadsheets.google.com/feeds') != -1) {
         // we assume that it's one of the feeds urls

@@ -97,8 +97,11 @@ app.get('/api/groups', function(req, res) {
 
 
 var model = require('./lib/model.js');
-// TODO: put this in a config
-var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';
+// TODO: move this to a config
+// old DB
+// var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';
+// new DB
+var url = 'https://docs.google.com/a/okfn.org/spreadsheets/d/16fM8o7CpgEDmz-QrS6wriU7_EXV-A4DfBqo1P_XWvVM/edit#gid=0';
 var catalog = new model.Catalog();
 
 catalog.loadUrl(url, function(err) {
