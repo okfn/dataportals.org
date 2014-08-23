@@ -96,7 +96,7 @@ app.get('/api/groups', function(req, res) {
 });
 
 
-var model = require('./model.js');
+var model = require('./lib/model.js');
 // TODO: put this in a config
 var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0Aon3JiuouxLUdE9POFhudGd6NFk0THpxR0NicFViRUE#gid=1';
 var catalog = new model.Catalog();
