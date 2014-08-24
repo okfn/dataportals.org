@@ -21,16 +21,13 @@ body {
   margin: -20px -20px 20px;
 }
 
-footer {
-  background-color: #f5f5f5;
-  padding: 20px 20px 20px;
-  margin: 15px -20px -20px;
-  border-top: solid 1px #eee;
-}
-
 .navbar .nav > li > a {
   padding-top: 12px;
   font-weight: bold;
+}
+
+.navbar .brand {
+  padding: 8px 20px 5px;
 }
 
 .navbar .brand img {
@@ -41,6 +38,35 @@ footer {
 .navbar .navbar-search {
   margin-top: 8px;
 }
+
+.navbar li.logo a {
+  padding: 5px 10px 0px;
+}
+
+.navbar li.logo img {
+  height: 30px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 20px 20px;
+  margin: 15px -20px -20px;
+  border-top: solid 1px #eee;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer ul li.logo img {
+  max-height: 100px;
+}
+
 
 /********************************************************************
   * Form
