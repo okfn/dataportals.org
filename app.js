@@ -41,6 +41,10 @@ app.get('/search', function(req, res) {
   });
 });
 
+app.get('/add', function(req, res) {
+  res.render('add.html');
+});
+
 app.get('/catalog/:id', function(req, res) {
   var id = req.params.id;
   var thiscatalog = catalog.get(id)
