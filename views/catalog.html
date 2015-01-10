@@ -21,12 +21,55 @@
         </div>
 
         <div class="span6">
-            <dl>
+            <dl class="dl-horizontal">
+                <dt>
+                    Publisher:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.publisher }}">{{ catalog.publisher }}</a>
+                </dd>
                 <dt>
                     URL:
                 </dt>
                 <dd>
                     <a href="{{ catalog.url }}">{{ catalog.url }}</a>
+                </dd>
+                <dt>
+                    Issued:
+                </dt>
+                <dd>
+                    {{ catalog.issued }} &nbsp;
+                </dd>
+                <dt>
+                    Status:
+                </dt>
+                <dd>
+                    {{ catalog.status }} &nbsp;
+                </dd>
+                <dt>
+                    Classification:
+                </dt>
+                <dd>
+                    {{ catalog.publisherclassification }} &nbsp;
+                </dd>
+                <dt>
+                    License:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.licenseurl }}">{{ catalog.license }} ({{ catalog.licenseid }})</a> &nbsp;
+                </dd>
+                <dt>
+                    Country/Language:
+                </dt>
+                <dd>
+                    <span class="label label-info">
+                        {{ catalog.country }}
+                    </span>
+                    /
+                    <span class="label label-info">
+                        {{ catalog.language }}
+                    </span>
+                    &nbsp;
                 </dd>
                 <dt>
                     Tags:
@@ -39,15 +82,30 @@
                       {% endfor %}
                 </dd>
                 <dt>
-                    Groups:
+                    Catalog software:
                 </dt>
                 <dd>
-                      {% for kw in catalog.group or [] %}
-                        {% if kw %}
-                          <span class="label label-warning"><a class="inverted" href="/group/{{kw}}">{{kw}}</a></span>
-                        {% endif %}
-                      {% endfor %}
+                    {{ catalog.generator }} &nbsp;
                 </dd>
+                <dt>
+                    API Type:
+                </dt>
+                <dd>
+                    {{ catalog.apitype }} &nbsp;
+                </dd>
+                <dt>
+                    API Endpoint:
+                </dt>
+                <dd>
+                    {{ catalog.apiendpoint }} &nbsp;
+                </dd>
+                <dt>
+                    Metadata download:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.fullmetadatadownload }}">{{ catalog.fullmetadatadownload }}</a> &nbsp;
+                </dd>
+                
             </dl>
         </div>
   </div>
