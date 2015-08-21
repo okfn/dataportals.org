@@ -1,13 +1,15 @@
-Code for running DataCatalogs.org.
+Code for running DataPortals.org.
 
-[Overview and plans for DataCatalogs.org as of Feb 2013](https://docs.google.com/a/okfn.org/document/d/1MP1eaxUPir9msLt4rRwYqdupE3-qeLZAqFXRiXuvwkA/edit)
+[The original plans for DataCatalogs.org - Feb 2013](https://docs.google.com/a/okfn.org/document/d/1MP1eaxUPir9msLt4rRwYqdupE3-qeLZAqFXRiXuvwkA/edit). 
+Other ideas may be listed as Issues in this repository.
+Conversations with the Open Knowledge community are held in the [discussion forum](https://discuss.okfn.org/c/open-knowledge-labs/dataportals).  
 
 
 ## Developer Instructions
 
 This app requires NodeJS (>= v0.8).
 
-1. Clone this repo: https://github.com/okfn/datacatalogs.org
+1. Clone this repo: https://github.com/okfn/dataportals.org
 2. Install the dependencies:
 
         npm install .
