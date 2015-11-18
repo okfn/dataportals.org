@@ -1,0 +1,123 @@
+{
+  "name": "dataportals",
+  "title": "Open Data Portals Database",
+  "homepage": "http://dataportals.org/",
+  "license": "ODC-PDDL-1.0",
+  "resources": [
+    {
+      "name": "portals",
+      "path": "portals.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "author",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "publisher",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "issued",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "publisher_classification",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tags",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "license_id",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "license_url",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "place",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "metadatacreated",
+            "type": "datetime",
+            "description": ""
+          },
+          {
+            "name": "generator",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "api_endpoint",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "api_type",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "full_metadata_download",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ]
+}

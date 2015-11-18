@@ -1,11 +1,8 @@
-Data for DataCatalogs.org. Primary Database is in a Google Spreadsheet (see
-site for details) but we have cached data here.
+Comprehensive list of Open Data Portals around the world. The list is
+maintained by Open Knowledge with the input of the open data community and
+experts. The data is used to power the online site at http://dataportals.org/.
 
-## Scripts
+## License
 
-See `scripts`
-
-## Data
-
-* `archive/ckan-export.json` - export from old CKAN-based datacatalogs.org on 2014-08-23
+Open Data Commons Public Domain Dedication and License.
 
