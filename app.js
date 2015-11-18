@@ -49,6 +49,10 @@ app.get('/add', function(req, res) {
 });
 
 app.get('/catalog/:id', function(req, res) {
+  res.redirect(301, '/portal/' + req.params.id);
+});
+
+app.get('/portal/:id', function(req, res) {
   var id = req.params.id;
   var thiscatalog = model.catalog.get(id)
   if (!thiscatalog) {
