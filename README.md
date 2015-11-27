@@ -4,6 +4,7 @@ Code for running DataPortals.org.
 Other ideas may be listed as Issues in this repository.
 Conversations with the Open Knowledge community are held in the [discussion forum](https://discuss.okfn.org/c/open-knowledge-labs/dataportals).  
 
+You can contribute additions or corrections to the data portal list by suggesting changes to the [data.csv](https://github.com/okfn/dataportals.org/blob/master/data/portals.csv) file. See the [datapackage.json](https://github.com/okfn/dataportals.org/blob/master/data/datapackage.json) for the meaning of each column.
 
 ## Developer Instructions
 
