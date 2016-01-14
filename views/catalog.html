@@ -40,25 +40,25 @@
                     Issued:
                 </dt>
                 <dd>
-                    {{ catalog.issued }}
+                    {{ catalog.issued }}&thinsp;
                 </dd>
                 <dt>
                     Status:
                 </dt>
                 <dd>
-                    {{ catalog.status }}
+                    {{ catalog.status }}&thinsp;
                 </dd>
                 <dt>
                     Classification:
                 </dt>
                 <dd>
-                    {{ catalog.publisherclassification }}
+                    {{ catalog.publisherclassification }}&thinsp;
                 </dd>
                 <dt>
                     License:
                 </dt>
                 <dd>
-                    <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>
+                    <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
                 </dd>
                 <dt>
                     Country/Language:
@@ -71,7 +71,7 @@
                     <span class="label label-info">
                         {{ catalog.language }}
                     </span>
-                    &nbsp;
+                    &thinsp;
                 </dd>
                 <dt>
                     Tags:
@@ -81,31 +81,31 @@
                         {% if kw %}
                             <span class="label label-primary">{{kw}}</span>
                         {% endif %}
-                      {% endfor %}
+                      {% endfor %}&thinsp;
                 </dd>
                 <dt>
                     Portal software:
                 </dt>
                 <dd>
-                    {{ catalog.generator }}
+                    {{ catalog.generator }}&thinsp;
                 </dd>
                 <dt>
                     API Type:
                 </dt>
                 <dd>
-                    {{ catalog.apitype }}
+                    {{ catalog.api_type }}&thinsp;
                 </dd>
                 <dt>
                     API Endpoint:
                 </dt>
                 <dd>
-                    {{ catalog.apiendpoint }}
+                    {{ catalog.api_endpoint }}&thinsp;
                 </dd>
                 <dt>
                     Metadata download:
                 </dt>
                 <dd>
-                    <a href="{{ catalog.fullmetadatadownload }}">{{ catalog.fullmetadatadownload }}</a>
+                    <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
                 </dd>
                 
             </dl>
