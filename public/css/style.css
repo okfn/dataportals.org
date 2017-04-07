@@ -27,7 +27,7 @@ body {
 }
 
 .navbar .brand {
-  padding: 8px 20px 5px;
+  padding: 12px 20px 5px;
 }
 
 .navbar .brand img {
@@ -205,4 +205,3 @@ footer ul li.logo img {
 a.inverted {
   color: #fff;
 }
-
