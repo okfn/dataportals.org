@@ -1,0 +1,24 @@
+{% macro summary(catalog) -%}
+  <div class="catalog summary">
+    <img src="{{catalog.image or
+      'http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png'}}"
+      alt="{{catalog.title}}" class="logo" />
+    <h3><a href="/catalog/{{catalog.id}}">{{catalog.title}}</a></h3>
+    <div class="description">{{catalog.description_html}}</div>
+    <ul class="keywords">
+      {% for kw in catalog.tags or [] %}
+        {% if kw %}
+          <li>{{kw}}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul class="groups">
+      {% for kw in catalog.group or [] %}
+        {% if kw %}
+          <li><a href="/group/{{kw}}">{{kw}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{%- endmacro %}
+

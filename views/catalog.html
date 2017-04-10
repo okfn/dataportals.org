@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="page-header">
+    <h1>
+      {{catalog.title}}
+    </h1>
+  </div>
+  <div class="row">
+        <div class="span6">
+            <h2>Description</h2>
+            {{ catalog.description }}
+        </div>
+
+        <div class="span6">
+            <dl class="dl-horizontal">
+                <dt>
+                    Area covered:
+                </dt>
+                <dd>
+                    {{ catalog.place }}
+                </dd>
+                <dt>
+                    Publisher:
+                </dt>
+                <dd>
+                    {{ catalog.publisher }}</a>
+                </dd>
+                <dt>
+                    URL:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.url }}">{{ catalog.url }}</a>
+                </dd>
+                <dt>
+                    Issued:
+                </dt>
+                <dd>
+                    {{ catalog.issued }}&thinsp;
+                </dd>
+                <dt>
+                    Status:
+                </dt>
+                <dd>
+                    {{ catalog.status }}&thinsp;
+                </dd>
+                <dt>
+                    Classification:
+                </dt>
+                <dd>
+                    {{ catalog.publisherclassification }}&thinsp;
+                </dd>
+                <dt>
+                    License:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
+                </dd>
+                <dt>
+                    Country/Language:
+                </dt>
+                <dd>
+                    <span class="label label-info">
+                        {{ catalog.country }}
+                    </span>
+                    /
+                    <span class="label label-info">
+                        {{ catalog.language }}
+                    </span>
+                    &thinsp;
+                </dd>
+                <dt>
+                    Tags:
+                </dt>
+                <dd>
+                      {% for kw in catalog.tags or [] %}
+                        {% if kw %}
+                            <span class="label label-primary">{{kw}}</span>
+                        {% endif %}
+                      {% endfor %}&thinsp;
+                </dd>
+                <dt>
+                    Portal software:
+                </dt>
+                <dd>
+                    {{ catalog.generator }}&thinsp;
+                </dd>
+                <dt>
+                    API Type:
+                </dt>
+                <dd>
+                    {{ catalog.api_type }}&thinsp;
+                </dd>
+                <dt>
+                    API Endpoint:
+                </dt>
+                <dd>
+                    {{ catalog.api_endpoint }}&thinsp;
+                </dd>
+                <dt>
+                    Metadata download:
+                </dt>
+                <dd>
+                    <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
+                </dd>
+                
+            </dl>
+        </div>
+  </div>
+{% endblock %}

@@ -21,6 +21,32 @@ body {
   margin: -20px -20px 20px;
 }
 
+.navbar .nav > li > a {
+  padding-top: 12px;
+  font-weight: bold;
+}
+
+.navbar .brand {
+  padding: 12px 20px 5px;
+}
+
+.navbar .brand img {
+  height: 30px;
+  margin-top: -3px;
+}
+
+.navbar .navbar-search {
+  margin-top: 8px;
+}
+
+.navbar li.logo a {
+  padding: 5px 10px 0px;
+}
+
+.navbar li.logo img {
+  height: 30px;
+}
+
 footer {
   background-color: #f5f5f5;
   padding: 20px 20px 20px;
@@ -28,18 +54,35 @@ footer {
   border-top: solid 1px #eee;
 }
 
-.navbar .nav > li > a {
-  padding-top: 12px;
+footer ul {
+  list-style-type: none;
 }
 
-.nav-logo img {
-  margin-top: -4px;
-  margin-right: -5px;
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer ul li.logo img {
+  max-height: 100px;
+}
+
+
+/********************************************************************
+  * Form
+  *******************************************************************/
+
+.home-map .heading {
+  margin-top: -6px;
 }
 
 /********************************************************************
   * Form
   *******************************************************************/
+
+.recline-query-editor label {
+  display: none;
+}
 
 .recline-query-editor .text-query input {
   width: 400px;
@@ -53,7 +96,7 @@ footer {
   * Dataset Summary
   *******************************************************************/
 
-.dataset.summary {
+.catalog.summary {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: dotted 1px #ccc;
@@ -61,40 +104,36 @@ footer {
   line-height: 20px;
 }
 
-.dataset.summary .logo {
+.catalog.summary .logo {
   width: 50px;
   float: right;
 }
 
-.dataset.summary h3 {
+.catalog.summary h3 {
   margin: 0;
   padding: 0;
   font-size: 20px;
   line-height: 1.5;
 }
 
-.dataset.summary h3 a {
+.catalog.summary h3 a {
   color: #333;
 }
 
-.dataset.summary h3 a:hover {
-  text-decoration: none;
-}
-
-.dataset.summary .description {
+.catalog.summary .description {
   margin-bottom: 5px;
 }
 
-.dataset.summary .place {
+.catalog.summary .place {
   font-style: italic;
 }
 
-.dataset ul.keywords {
+.catalog ul.keywords {
   list-style-type: none;
   margin: 0;
 }
 
-.dataset ul.keywords li {
+.catalog ul.keywords li {
   display: inline;
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
@@ -111,29 +150,58 @@ footer {
   margin-right: 3px;
 }
 
+.catalog ul.groups {
+  list-style-type: none;
+  margin: 0;
+}
+
+.catalog ul.groups li {
+  display: inline;
+  padding: 1px 4px 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 10.998px;
+  font-weight: bold;
+  line-height: 14px;
+  color: white;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: #DFB100;
+  margin-right: 3px;
+}
+
+.catalog ul.groups li a {
+  color: white;
+}
 
 /********************************************************************
   * Dataset Show
   *******************************************************************/
 
-.dataset.show .logo {
+.catalog.show .logo {
   width: 100px;
   float: right;
 }
 
-.dataset.show .source {
+.catalog.show .source {
   font-style: italic;
 }
 
-.dataset.show .actions {
+.catalog.show .actions {
   margin-bottom: 10px;
 }
 
-.dataset.show .viewer .recline-slickgrid {
+.catalog.show .viewer .recline-slickgrid {
   margin-top: 20px;
 }
 
-.dataset.show .viewer .recline-slickgrid {
+.catalog.show .viewer .recline-slickgrid {
   height: 500px;
 }
 
+
+a.inverted {
+  color: #fff;
+}
