@@ -1,22 +1,22 @@
 {% extends "base.html" %}
 
-{% block title %}
-
-{% endblock %}
+{% block title %}{{catalog.title}}{% endblock %}
 
 {% block content %}
   <div class="page-header">
     <h1>
       {{catalog.title}}
     </h1>
+    <p><a href="/search">&larr; Return to results</a></p>
   </div>
   <div class="row">
-        <div class="span6">
-            <h2>Description</h2>
-            {{ catalog.description }}
+        <div class="col-md-4">
+            <h2 style="margin-top: 0">Description</h2>
+            <p>{{ catalog.description }}</p>
+            <br>
         </div>
 
-        <div class="span6">
+        <div class="col-md-8">
             <dl class="dl-horizontal">
                 <dt>
                     Area covered:
@@ -33,7 +33,7 @@
                 <dt>
                     URL:
                 </dt>
-                <dd>
+                <dd class="break-url">
                     <a href="{{ catalog.url }}">{{ catalog.url }}</a>
                 </dd>
                 <dt>
@@ -57,7 +57,7 @@
                 <dt>
                     License:
                 </dt>
-                <dd>
+                <dd class="break-url">
                     <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
                 </dd>
                 <dt>
@@ -67,7 +67,7 @@
                     <span class="label label-info">
                         {{ catalog.country }}
                     </span>
-                    /
+                    &nbsp;/
                     <span class="label label-info">
                         {{ catalog.language }}
                     </span>
@@ -98,16 +98,16 @@
                 <dt>
                     API Endpoint:
                 </dt>
-                <dd>
+                <dd class="break-url">
                     {{ catalog.api_endpoint }}&thinsp;
                 </dd>
                 <dt>
                     Metadata download:
                 </dt>
-                <dd>
+                <dd class="break-url">
                     <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
                 </dd>
-                
+
             </dl>
         </div>
   </div>

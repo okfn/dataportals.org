@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/about', function(req, res) {
-  res.render('about.html', {});
+  res.render('about.html');
 });
 
 app.get('/search', function(req, res) {
@@ -46,6 +46,10 @@ app.get('/search', function(req, res) {
 
 app.get('/add', function(req, res) {
   res.render('add.html');
+});
+
+app.get('/contribute', function(req, res) {
+  res.render('contribute.html');
 });
 
 app.get('/catalog/:id', function(req, res) {
@@ -116,4 +120,3 @@ model.catalog.loadUrl(config.databaseUrl, function(err) {
     console.log("Listening on " + app.get('port'));
   });
 });
-
