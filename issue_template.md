@@ -9,8 +9,8 @@ Otherwise, follow the directions below.
 
 `* Required`
 
-# Key Information
-
+# Key Data Portal Information
+---
 ## Title *
 <!-- Full title of the portal, e.g. "Data.Gov.UK - Official UK Government Portal" -->
 
