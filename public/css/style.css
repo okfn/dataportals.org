@@ -101,6 +101,12 @@ section ol li, section ul li {
   * Form
   *******************************************************************/
 
+.recline-query-editor {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
 .recline-query-editor label {
   display: none;
 }
