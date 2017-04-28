@@ -1,8 +1,7 @@
 html, body {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  background-color: ;
-  background: url(../img/hip-square.png) #eee;
+  background: url(../img/hip-square.png);
 }
 body {
   padding-top: 36px;
