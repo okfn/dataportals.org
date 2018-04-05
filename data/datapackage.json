@@ -2,7 +2,11 @@
   "name": "dataportals",
   "title": "Open Data Portals Database",
   "homepage": "http://dataportals.org/",
-  "license": "ODC-PDDL-1.0",
+  "licenses": [{
+    "name": "ODC-PDDL-1.0",
+    "path": "http://opendatacommons.org/licenses/pddl/",
+    "title": "Open Data Commons Public Domain Dedication and License v1.0"
+  }],
   "resources": [
     {
       "name": "portals",
@@ -38,12 +42,12 @@
           },
           {
             "name": "issued",
-            "type": "number",
+            "type": "string",
             "description": "The date the portal was first made available, if known"
           },
           {
             "name": "publisher_classification",
-            "type": "number",
+            "type": "string",
             "description": "The organizational category that the publisher falls under"
           },
           {
@@ -63,7 +67,7 @@
           },
           {
             "name": "license_url",
-            "type": "number",
+            "type": "string",
             "description": "A link to the portal license if available"
           },
           {
@@ -94,26 +98,27 @@
           {
             "name": "metadatacreated",
             "type": "datetime",
+            "format": "any",
             "description": "The date this metadata was created"
           },
           {
             "name": "generator",
-            "type": "number",
+            "type": "string",
             "description": "The platform the portal is based on, if known"
           },
           {
             "name": "api_endpoint",
-            "type": "number",
+            "type": "string",
             "description": "The URL of the api endpoint for the portal"
           },
           {
             "name": "api_type",
-            "type": "number",
+            "type": "string",
             "description": "The type of API the portal is providing"
           },
           {
             "name": "full_metadata_download",
-            "type": "number",
+            "type": "string",
             "description": "The URL for downloading the portal metadata"
           }
         ]
