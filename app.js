@@ -1,4 +1,9 @@
 var express = require('express')
+  , bodyParser = require('body-parser')
+  , methodOverride = require('method-override')
+  , morgan = require('morgan')
+  // , serveFavicon = require('serve-favicon')
+  , serveStatic = require('serve-static')
   , path = require('path')
   , fs = require('fs')
   , nunjucks = require('nunjucks')
@@ -9,15 +14,26 @@ var express = require('express')
 
 var app = express();
 
-app.configure(function(){
+// app.configure(function(){
+//   app.set('port', process.env.PORT || 5000);
+//   app.set('views', __dirname + '/views');
+//   app.use(express.favicon());
+//   app.use(express.logger('dev'));
+//   app.use(express.bodyParser());
+//   app.use(express.methodOverride());
+//   app.use(express.static(path.join(__dirname, 'public')));
+// });
+
+var env = process.env.NODE_ENV || 'development';
+if ('development' == env) {
   app.set('port', process.env.PORT || 5000);
   app.set('views', __dirname + '/views');
-  app.use(express.favicon());
-  app.use(express.logger('dev'));
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(express.static(path.join(__dirname, 'public')));
-});
+  app.use(bodyParser.json());
+  app.use(methodOverride());
+  app.use(morgan('dev'));
+  // app.use(serveFavicon());
+  app.use(serveStatic(path.join(__dirname, 'public')));
+}
 
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
 env.express(app);
@@ -60,7 +76,7 @@ app.get('/portal/:id', function(req, res) {
   var id = req.params.id;
   var thiscatalog = model.catalog.get(id)
   if (!thiscatalog) {
-    res.send(404, 'Not Found');
+    res.status(404).send('Not Found');
   } else {
     res.render('catalog.html', {
       catalog: thiscatalog
@@ -80,6 +96,7 @@ app.get('/group/:id', function(req, res) {
 
 app.get('/api/data.json', function(req, res) {
   res.json(model.catalog._cache);
+  // res.status(status).json(model.catalog._cache);
 });
 
 app.get('/api/catalogs/:id', function(req, res) {
@@ -87,7 +104,7 @@ app.get('/api/catalogs/:id', function(req, res) {
   var c = model.catalog.get(id);
   console.log(c)
   if (!c) {
-    res.send(404, 'Not Found');
+    res.status(404).send('Not Found');
   }
   res.header("Content-Type", "application/json; charset=utf-8");
   res.write(JSON.stringify(c));

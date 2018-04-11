@@ -102,7 +102,7 @@ my.Views.Dataset = Backbone.View.extend({
   },
 
   _loadViewer: function() {
-    var $viewer = this.$el.find('.viewer'); 
+    var $viewer = this.$el.find('.viewer');
     var file = this.model.get('files')[0];
     var reclineInfo = $.extend(true, {}, file);
     $viewer.html('<img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" />');
@@ -130,7 +130,7 @@ my.Views.DatasetList = Backbone.View.extend({
       <img src="{{image}}" alt="{{title}}" class="logo" /> \
       {{/image}} \
       <h3><a href="#dataset/{{name}}">{{title}}</a></h3> \
-      <div class="description">{{description}}</div> \
+      <div class="description">{{description | dump }}</div> \
       <div class="source">Source: {{source}}</div> \
       <ul class="keywords"> \
         {{#keywords}} \
