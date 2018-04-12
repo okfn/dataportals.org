@@ -15,22 +15,15 @@ var express = require('express')
 var app = express();
 
 app.set('port', process.env.PORT || 5000);
-//   app.set('views', __dirname + '/views');
-//   app.use(express.favicon());
-//   app.use(express.logger('dev'));
-//   app.use(express.bodyParser());
-//   app.use(express.methodOverride());
-//   app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', __dirname + '/views');
+app.use(bodyParser.json());
+app.use(methodOverride());
+app.use(serveStatic(path.join(__dirname, 'public')));
 
 var env = process.env.NODE_ENV || 'development';
 if ('development' == env) {
-  app.set('port', process.env.PORT || 5000);
-  app.set('views', __dirname + '/views');
-  app.use(bodyParser.json());
-  app.use(methodOverride());
   app.use(morgan('dev'));
   // app.use(serveFavicon());
-  app.use(serveStatic(path.join(__dirname, 'public')));
 }
 
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
