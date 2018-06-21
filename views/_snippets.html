@@ -4,7 +4,7 @@
       'http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png'}}"
       alt="{{catalog.title}}" class="logo" />
     <h3><a href="/catalog/{{catalog.id}}">{{catalog.title}}</a></h3>
-    <div class="description">{{catalog.description_html}}</div>
+    <div class="description">{{catalog.description_html|safe}}</div>
     <ul class="keywords">
       {% for kw in catalog.tags or [] %}
         {% if kw %}
