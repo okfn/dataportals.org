@@ -27,7 +27,7 @@ function createOverviewMap(dataset) {
   });
   view.infobox = function(record) {
     var html = '';
-    html += '<a href="/catalog/' + record.attributes['id'] + '">' + record.attributes['title'] + '</a>';
+    html += '<a href="/portal/' + record.attributes['id'] + '">' + record.attributes['title'] + '</a>';
     html += '<p>' + record.attributes['description_html'] + '</p>';
     html += '<p><strong>URL:</strong> <a href="'+ record.attributes['url'] + '">' + record.attributes['url'] + '</a></p>';
     return html;
