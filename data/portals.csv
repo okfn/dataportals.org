@@ -901,4 +901,8 @@ nepal-map-data,"NepalMap.Org - Data about Nepal at your fingertips",https://nepa
 dados-abertos-camara-dos-deputados,Dados abertos da Câmara dos Deputados,https://dadosabertos.camara.leg.br/,Câmara dos Deputados (Chamber of Deputies – Brazil),Câmara dos Deputados (Chamber of Deputies – Brazil),,Government,"Open data portal for the Brazilian Chamber of Deputies.
 
 Has datasets such as representatives, parties and alliances, votings, bills, etc. Available as RESTful APIs described using the OpenAPI specification.","brazil, parliament",custom,https://dadosabertos.camara.leg.br/faq/faq-home.html#r3,Brazil,,BR,pt,active,2018-08-30T14:52:43Z,,,,
+<<<<<<< HEAD
 >>>>>>> add Brazilian Chamber of Deputies
+=======
+fortaleza-dados-abertos,Fortaleza Dados Abertos,http://dados.fortaleza.ce.gov.br/,"Município de Fortaleza (State of Ceará, Brazil)","Município de Fortaleza (State of Ceará, Brazil)",,Government,"Open data portal of the municipality of Fortaleza, in the state of Ceará.","brazil,city",unspecified,,"Fortaleza, Ceará, Brazil","-3.7304512, -38.5217989",BR,pt,active,2018-08-30T14:52:43Z,,,,
+>>>>>>> add city of Fortaleza
