@@ -938,4 +938,9 @@ download-de-bases-transparencia,Download de Bases – TRANSPARÊNCIA,http://www.
 dados-pb,Dados PB,http://dados.pb.gov.br,,,,Government,"Open Data portal of the state of PB, in Brazil","local-government,br-PB",,,"PB, Brazil",,BR,pt,active,2018-09-12T10:58:52Z,,,,
 portal-da-transparencia-dados-abertos,Portal da Transparência – Dados Abertos,http://transparencia.campinas.sp.gov.br/,,,,Government,"Open Data portal of the city of Campinas, SP, in Brazil","city,local-government,br-SP,Campinas",,,"Campinas, SP, Brazil",,BR,pt,active,2018-09-12T10:58:52Z,,,,
 dados-abertos-tcemg,Dados Abertos – TCEMG,https://dadosabertos.tce.mg.gov.br/,,,,Government,,"local-government,br-MG",,,"MG, Brazil",,BR,pt,active,2018-09-12T10:58:52Z,,,,
+<<<<<<< HEAD
 >>>>>>> add portals from http://dados.gov.br/pagina/outras-iniciativas
+=======
+dados-abertos-portal-da-transparencia-de-pernambuco,Dados Abertos – Portal da Transparência de Pernambuco,http://web.transparencia.pe.gov.br/dados-abertos/,,,,Government,"Open Data portal of the state of PE, in Brazil","local-government,br-PE,CKAN",,,"PE, Brazil",,BR,pt,active,2019-06-03T15:40:44Z,CKAN,http://web.transparencia.pe.gov.br/api/3,CKAN API,
+dados-abertos-tribunal-de-contas-do-estado-de-pernambuco,Dados Abertos – Tribunal de Contas do Estado de Pernambuco,https://www.tce.pe.gov.br/internet/index.php/dados-abertos,,,,Government,,"local-government,br-PE",,,"PE, Brazil",,BR,pt,active,2019-06-03T15:40:44Z,,,,
+>>>>>>> add open data portals from the state of Pernambuco, Brazil
