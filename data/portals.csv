@@ -148,18 +148,18 @@ city-of-west-hollywood,City of West Hollywood Open Data,https://data.weho.org/,C
 cityscale-com-ua---know-a-better-place-,CityScale.com.ua - Know a better place.,http://www.cityscale.com.ua/,Alex,,01/03/2013,Institutional,  It's an information portal that represents data about life conditions(but not only) in Ukraine in most suitable for citizens and specialists manner.,,Other (Open),,Ukraine,"48.3029736,26.6951146",UA,ru,active,,,,,
 citywindsor_ca,"Windsor, Ontario",http://www.citywindsor.ca/003713.asp,City of Windsor,City of Windsor,,,You may send [feedback](http://www.citywindsor.ca/003739.asp). Adapted the [Vancouver license](http://www.citywindsor.ca/DataCatalogue/PDF/OpenDataTermsofUse.pdf).,ctic canada,,,"Windsor, Ontario","42.3032758,-83.0285111",CA,en,active,2011-06-27T18:13:07.736Z,,,,
 civicapps_org,Civic Apps for Greater Portland,http://www.civicapps.org/datasets,,,,,"CivicApps Data Catalog, Portland (USA)",ctic unitedstates,,,"Portland, Oregon","45.5202471,-122.6741949",US,en,active,2011-06-27T18:13:10.236Z,,,,
-ckan_ireland,CKAN Ireland,http://ie.ckan.net/,,,,,A community-maintained data catalogue for Ireland.,ckan ctic ireland publicdata-eu ,,,Ireland,"52.865196,-7.9794599",IE,en,active,2011-06-27T18:12:43.064Z,,,,
+ckan_ireland,CKAN Ireland,http://ie.ckan.net/,,,,,A community-maintained data catalogue for Ireland.,ckan ctic ireland publicdata-eu ,,,Ireland,"52.865196,-7.9794599",IE,en,inactive,2011-06-27T18:12:43.064Z,,,,
 ckan-brazil,CKAN Brazil,http://br.ckan.net/,Open Knowledge Foundation,Open Knowledge Foundation,,,"Community driven open data portal for Brazil.
 
 Runs on the [CKAN software](http://ckan.org/).
 
-Coordinated by Augusto Herrmann.",ckan,odc-odbl,,Brazil,"-8.4666145,-51.3333976",BR,pt,active,2011-07-04T12:26:15.518Z,,,,
+Coordinated by Augusto Herrmann.",ckan,odc-odbl,,Brazil,"-8.4666145,-51.3333976",BR,pt,inactive,2011-07-04T12:26:15.518Z,,,,
 ckan-italia,CKAN Italia,http://it.ckan.net/,OKF Italia,OKF Italia,,,"Open community catalogue for open data in Italy.
 
 Runs on CKAN instance. Hosted by OKF Italia with Stefano Costa and Federico Morando.
 
-Contact: see <http://it.okfn.org/about/>.",ckan publicdata-eu italy,odc-odbl,,Italy,"42.6384261,12.674297",IT,it,active,2011-10-14T10:12:03.043Z,,,,
-ckan-serbia,CKAN - Serbia,http://rs.ckan.net/,Mihajlo Pupin Institute team,Mihajlo Pupin Institute team,,,Serbian Government data. CKAN instance set-up as part of the LOD2 WP9 project by the Mihajlo Pupin Institute Team.,level.national ckan publicdata-eu,odc-odbl,,Serbia,"44.1534121,20.55144",RS,sr,active,2012-01-18T16:39:30.621Z,,,,
+Contact: see <http://it.okfn.org/about/>.",ckan publicdata-eu italy,odc-odbl,,Italy,"42.6384261,12.674297",IT,it,inactive,2011-10-14T10:12:03.043Z,,,,
+ckan-serbia,CKAN - Serbia,http://rs.ckan.net/,Mihajlo Pupin Institute team,Mihajlo Pupin Institute team,,,Serbian Government data. CKAN instance set-up as part of the LOD2 WP9 project by the Mihajlo Pupin Institute Team.,level.national ckan publicdata-eu,odc-odbl,,Serbia,"44.1534121,20.55144",RS,sr,inactive,2012-01-18T16:39:30.621Z,,,,
 codeando_mexico,Codeando Mexico,http://datos.codeandomexico.org/,Codeando Mexico,Codeando Mexico,,,"Open data platform for the new era of civic innovation in Mexico, driven by civil society.",mexico ckan,,,Mexico,"22.5000485,-100.0000375",MX,es,active,2013-06-21T08:10:26.488Z,,,,
 colorado,Colorado,http://www.colorado.gov/data/,State of Colorado,State of Colorado,,,"State of Colorado (official) Open Data Catalog
 
@@ -187,7 +187,7 @@ cub-bordeaux,LaCUB OpenData Bordeaux,http://data.lacub.fr/,Communauté Urbaine d
 The Cub has a lot of data of interest to a wide audience, in the areas of transportation, travel, water, sanitation, housing, environment, etc.
 
 The Cub has decided to provide free public data available to citizens, associations, businesses, researchers, so they can reuse them to create innovative digital services (mobile applications, information systems, web portals , etc.).",level.local eu-official france,,,"Bordeaux, France","44.841225,-0.5800364",FR,fr,active,2012-06-21T07:35:10.731Z,,,,
-cz-ckan-net,CKAN Czech Republic,http://cz.ckan.net/,,,,,Czech CKAN powered data catalogue.,public_sector veřejná_správa ckan publicdata-eu,odc-odbl,,Czech Republic,"49.8167003,15.4749544",CZ,cs en,active,2011-07-17T10:35:04.351Z,,,,
+cz-ckan-net,CKAN Czech Republic,http://cz.ckan.net/,,,,,Czech CKAN powered data catalogue.,public_sector veřejná_správa ckan publicdata-eu,odc-odbl,,Czech Republic,"49.8167003,15.4749544",CZ,cs en,inactive,2011-07-17T10:35:04.351Z,,,,
 dades-obertes-arenys-de-munt,Dades Obertes Arenys de Munt,http://arenysdemunt.smartgovs.info/,,Ajuntament d'Arenys de Munt,18/06/2015,Government,It is a CKAN platform deployed by Smartgovs company,,Open Data Commons - Attribution Share-alike (Open Database License),,"Arenys de Munt, SP","41.6102971,2.5398319",SP,ct,active,,,,,
 dados-al-gov-br,Alagoas em Dados e Informações - Official Open Data Portal from Alagoas State Government,http://dados.al.gov.br,Thiago José Tavares Ávila,Planning and Development Office of Alagoas State Government,20/03/2012,Government,"Alagoas em Dados e Informações is a socioeconomic data and information platform from Alagoas State Government. Offers amount of data like geospatial information (satellite images, vectors, place points), economic and social statistic data, publications about Alagoas economy. It can be acessed by an API and still available at http://dados.al.gov.br",brazil,cc-by-sa,http://opendefinition.org/licenses/cc-by-sa/,"Alagoas, Brazil","-9.658443,-36.6897704",BR,pt,active,,,,CKAN,
 dados-gov-br,dados.gov.br,http://dados.gov.br/,Brazilian Government,Brazilian Government,,,"Official Brazilian government data portal.
@@ -321,7 +321,7 @@ datakilder-no,datakilder.no,http://datakilder.no,Citizen-run data catalog,Citize
 
 Also runs as no.ckan.net
 
-Site maintainers: Olav Øvrebø / OKF",offdata offentlig-sektors-data ckan,notspecified,,Norway,"60.5000209,9.0999715",NO,nb nn,active,2011-06-30T16:55:44.725Z,,,,
+Site maintainers: Olav Øvrebø / OKF",offdata offentlig-sektors-data ckan,notspecified,,Norway,"60.5000209,9.0999715",NO,nb nn,inactive,2011-06-30T16:55:44.725Z,,,,
 datalocale,Datalocale Aquitaine,http://datalocale.fr,Conseil général de la Gironde - Conseil régional d'Aquitaine,Conseil général de la Gironde - Conseil régional d'Aquitaine,,,"Portail mutualisé de données locales offrant des services de mises à disposition de ressources, de référencement et d'hébergement de données publiques sur le territoire du Sud-Ouest de la France",aquitaine geodata gironde government metadata,odc-odbl,,Aquitaine,"44.3571841,-0.5391713",FR,fr,active,2011-07-18T22:52:16.641Z,,,,
 datasf_org,DataSF,http://datasf.org,,,,,DataSF is a clearinghouse of datasets available from the City and County of San Francisco,ctic unitedstates,,,San Francisco County,"37.748931,-122.440354",US,en,active,2011-06-27T18:12:55.49Z,,,,
 datashanghai,datashanghai,http://www.datashanghai.gov.cn,Feng Gao,,01/12/2012,Government,"Launched in 2012 and Revamped in later 2014. The site now is responsive. The portal contains more than 500+ datasets mainly about locations (e.g.hospitals, schools) now.",shanghai china regional local,Unknown,,"Shanghai, China","31.2243489,121.4767528",CN,cn,active,,,,,
@@ -560,7 +560,7 @@ Maintainers: Friedrich Lindenberg, Daniel Dietrich
 
 Alternative address: <http://de.ckan.net/>
 
-Contact: see <http://okfn.de/about/kontakt/>.",community deutschland germany okfn ckan publicdata-eu,notspecified,,Germany,"51.0834196,10.4234469",DE,de,active,2011-10-03T16:53:33.714Z,,,,
+Contact: see <http://okfn.de/about/kontakt/>.",community deutschland germany okfn ckan publicdata-eu,notspecified,,Germany,"51.0834196,10.4234469",DE,de,inactive,2011-10-03T16:53:33.714Z,,,,
 offenes-jena,Offenes Jena,http://www.offenes-jena.de,Achim Friedland,Achim Friedland,21/02/2015,Community,Freie Daten für freie Bürger in Jena,jena local,Open Data Commons - Attribution Share-alike (Open Database License),,"Jena, Germany","50.922513,11.5859738",DE,de,active,,,,,
 ogd_4d833820b50c7,Missouri,http://www.mo.gov/data/,State of Missouri,State of Missouri,,,Missouri Data Catalog,ctic unitedstates,,,"Missouri, United States","38.7604815,-92.5617875",US,en,active,2011-06-27T18:14:07.045Z,,,,
 ogd_4d873ebf17e89,Florida,http://www.floridahasarighttoknow.com/,,,,,Florida Has a Right to Know: State of Florida Open government initiative,ctic unitedstates,,,"Florida, United States","27.7567667,-81.4639835",US,en,active,2011-06-27T18:13:35.306Z,,,,
@@ -646,7 +646,7 @@ opendata-ugr,Bienvenido a OpenData UGR,http://opendata.ugr.es/,University of Gra
 opendatabc-data-catalogue,OpenDataBC Data Catalogue,http://www.opendatabc.ca/?app=odcat2,OpenDataBC,OpenDataBC,,,OpenDataBC presents a crowd-sourced list of datasets made available by various levels of government within the province of British Columbia,,,,British Columbia,"55,-125",CA,en,active,2011-07-06T06:26:49.819Z,,,,
 opendatamanchester,Open Data Manchester (UK),http://www.manchester.gov.uk/info/500215/open_data,,,,,Manchester (UK) Open Data Catalog,ckan ctic level.local eu-official,,,Manchester,"53.4791466,-2.2447445",GB,en,active,2011-06-27T18:14:58.133Z,,,,
 opendatani_info,OpenDataNI,https://www.opendatani.gov.uk,Department of Finance and Personnel of Northern Ireland,Department of Finance and Personnel of Northern Ireland,,,"OpenDataNI is Northern Ireland’s Public Sector Open Data web portal, for publication of data produced by Northern Ireland government departments, agencies and non-departmental public bodies (NDPBs), in line with the 'Open Data Strategy for Northern Ireland 2015-18'. The portal provides access to these datasets in an open and machine-readable format, making previously unavailable data, available for re-use.",ckan northernireland level.regional uk eu-official unitedkingdom,OGL-UK-3.0,https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/,"Northern Ireland, UK","54.65692315,-6.563468346",GB,en,active,2011-06-27T18:14:41.583Z,CKAN,https://www.opendatani.gov.uk/api/,CKAN-API,https://www.opendatani.gov.uk/api/3/action/current_package_list_with_resources
-opendataphilly,OpenDataPhilly,http://www.opendataphilly.org/,OpenDataPhilly,OpenDataPhilly,,,"Data on the Philadelphia region.
+opendataphilly,OpenDataPhilly,https://www.opendataphilly.org/,OpenDataPhilly,OpenDataPhilly,,,"Data on the Philadelphia region.
 
 OpenDataPhilly is a catalog developed by Azavea, a Philadelphia geospatial firm, in collaboration with the City of Philadelphia Office of Information Technology, WHYY, Technically Philly, NPower, the William Penn Foundation and other partners.",ctic level.local unitedstates,,,"Philadelphia County, Pennsylvania","40.0114538,-75.1326504",US,en,active,2011-06-27T18:15:21.373Z,,,,
 opendataterritorioenna-it,Open Data Territorio Enna - Geo open data della Provincia di Enna,http://www.opendataterritorioenna.it,Giuseppe Claudio Vitale,Provincia Regionale di Enna,29/04/2013,Institutional,E' un portale di dati spaziali e territoriali,enna italy regional,Other (Open),http://www.dati.gov.it/iodl/2.0/,"Enna, Italia","37.567401,14.279574",IT,it,active,,,,,
@@ -772,7 +772,7 @@ texas,Texas,http://www.texas.gov/en/Connect/Pages/open-data.aspx,State of Texas,
 texas-transparency,Texas Transparency,http://www.texastransparency.org/opendata/index.php,Texas Comptroller of Public Accounts,Texas Comptroller of Public Accounts,,,"The Open Data Center is a new service offered as part of the Comptroller's transparency initiative. It is designed to provide direct access to machine-readable, platform-independent raw datasets, as well as other important data tools created by Texas CPA.
 New datasets and data tools will continue to be added as this section expands. Your feedback is welcome and encouraged. Let us know how you have used this data and what other types of data and data formats you would like to see.",finance unitedstates,notspecified,,Texas,"31.8160381,-99.5120986",US,en,active,2012-05-20T13:58:35.124Z,,,,
 thailand_opendata,Thailand OpenData,http://data.pm.go.th/,Thai Prime Minister's Office,Thai Prime Minister's Office,,,Catalog of the public data of Thailand,asia ctic lang.th,cc-by,,Thailand,"14.8971921,100.83273",TH,th,active,2011-06-27T18:16:37.481Z,,,,
-the-data-hub,the Data Hub,http://thedatahub.org/,Open Knowledge Foundation,Open Knowledge Foundation,,,"An openly editable registry for open data (and a few closed ones).
+the-data-hub,the Data Hub,http://datahub.io/,Open Knowledge Foundation,Open Knowledge Foundation,,,"An openly editable registry for open data (and a few closed ones).
 
 CKAN makes it easy to find, share and reuse open content and data, especially in ways that are machine automatable.
 
