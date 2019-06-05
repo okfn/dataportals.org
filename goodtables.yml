@@ -1,0 +1,25 @@
+files:
+  - source: data/portals.csv
+    format: csv
+    encoding: utf-8
+    delimiter: ','
+
+datapackages:
+  - 'data/datapackage.json'
+
+settings:
+  # based on the default in the documentation
+  # https://docs.goodtables.io/configuration/goodtables_yml.html
+  checks:
+    # You can pass check types
+    - structure
+    - schema
+    # ...or individual checks
+    - no-headers
+    - blank-headers
+  error_limit: 1
+  table_limit: 1
+  row_limit: 5000
+  infer_schema: False
+  infer_fields: False
+  order_fields: True
