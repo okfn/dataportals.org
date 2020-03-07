@@ -16,7 +16,7 @@
     "underscore": "1.8.x",
     "request": "2.85.x",
     "marked": "0.3.x",
-    "csv-parse": "2.2.x"
+    "csv-parse": "4.4.x"
   },
   "engines": {
     "node": "9.11.x"
