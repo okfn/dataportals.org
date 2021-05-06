@@ -13,7 +13,7 @@
     "serve-favicon": "2.5.x",
     "serve-static": "1.13.x",
     "nunjucks": "3.1.x",
-    "underscore": "1.8.x",
+    "underscore": "1.12.x",
     "request": "2.85.x",
     "marked": "0.3.x",
     "csv-parse": "4.4.x"
