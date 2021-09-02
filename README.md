@@ -31,6 +31,3 @@ This app requires NodeJS (>= v0.8).
 ## Deployment
 
 We deploy by default to Heroku.
-
-Follow these instructions (with obvious modifications):
-https://github.com/okfn/datasets.okfnlabs.org#deployment-to-heroku
