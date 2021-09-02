@@ -16,14 +16,25 @@ for the meaning of each column.
 
 This app requires NodeJS (>= v0.8).
 
-1. Clone this repo: https://github.com/okfn/dataportals.org
+1. Clone this repo:
+
+    ```bash
+    git clone --recursive git@github.com:okfn/dataportals.org.git
+    ```
+    You need to use `--recursive` because this repository uses Recline as a
+    [git submodule](https://github.blog/2016-02-01-working-with-submodules/#joining-a-project-using-submodules).
+
 2. Install the dependencies:
 
+    ```bash
         npm install .
+    ```
 
 3. Try it out locally:
 
+    ```bash
         node app.js
+    ```
 
    Then point your browser at http://localhost:5000/
 
