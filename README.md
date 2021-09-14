@@ -41,4 +41,4 @@ This app requires NodeJS (>= v0.8).
 
 ## Deployment
 
-We deploy by default to Heroku.
+We deploy by default to Heroku. The app is currently configured to deploy on each push to master.
