@@ -9,6 +9,7 @@
   }],
   "resources": [
     {
+      "profile": "tabular-data-resource",
       "name": "portals",
       "path": "portals.csv",
       "format": "csv",
@@ -17,108 +18,137 @@
         "fields": [
           {
             "name": "name",
+            "title": "name",
             "type": "string",
             "description": "a lower case hyphenated name of the portal"
           },
           {
             "name": "title",
+            "title": "title",
             "type": "string",
             "description": "A human readable name of the portal"
           },
           {
             "name": "url",
+            "title": "url",
             "type": "string",
+            "format": "uri",
             "description": "The URL of the open data portal"
           },
           {
             "name": "author",
+            "title": "author",
             "type": "string",
             "description": "The organization/person primarily responsible for creating the data in the portal"
           },
           {
             "name": "publisher",
+            "title": "publisher",
             "type": "string",
             "description": "The organization/person primarily responsible for publishing the data in the portal"
           },
           {
             "name": "issued",
+            "title": "date issued",
             "type": "string",
             "description": "The date the portal was first made available, if known"
           },
           {
             "name": "publisher_classification",
+            "title": "publisher category",
             "type": "string",
             "description": "The organizational category that the publisher falls under"
           },
           {
             "name": "description",
+            "title": "description",
             "type": "string",
             "description": "A brief description of the data contained within the portal"
           },
           {
             "name": "tags",
+            "title": "tags",
             "type": "string",
             "description": "List of tags that will aid users in searching for this portal"
           },
           {
             "name": "license_id",
+            "title": "license id",
             "type": "string",
-            "description": "A short code which respresents the type of license for the portal"
+            "description": "A short code which represents the type of license for the portal"
           },
           {
             "name": "license_url",
+            "title": "license url",
             "type": "string",
+            "format": "uri",
             "description": "A link to the portal license if available"
           },
           {
             "name": "place",
+            "title": "place",
             "type": "string",
             "description": "The name of the author/publisher's geographic location"
           },
           {
             "name": "location",
+            "title": "geolocation",
             "type": "string",
             "description": "The latitude,longitude in decimal degrees of the author/publisher's geographic location"
           },
           {
             "name": "country",
+            "title": "country",
             "type": "string",
             "description": "The country name of the author/publisher's geographic location"
           },
           {
             "name": "language",
+            "title": "language",
             "type": "string",
             "description": "The primary language used at the portal"
           },
           {
             "name": "status",
+            "title": "status",
             "type": "string",
+            "constraints" :
+              {
+                "pattern": "active|inactive|static"
+              },
             "description": "This indicates whether the portal is currently available (active) or offline (inactive)"
           },
           {
             "name": "metadatacreated",
+            "title": "metadata created at",
             "type": "datetime",
             "format": "any",
             "description": "The date this metadata was created"
           },
           {
             "name": "generator",
+            "title": "platform",
             "type": "string",
             "description": "The platform the portal is based on, if known"
           },
           {
             "name": "api_endpoint",
+            "title": "API endpoint",
             "type": "string",
+            "format": "uri",
             "description": "The URL of the api endpoint for the portal"
           },
           {
             "name": "api_type",
+            "title": "type of API",
             "type": "string",
-            "description": "The type of API the portal is providing"
+            "description": "The type of API the portal is providing or interface it conforms to, e.g. CKAN API."
           },
           {
             "name": "full_metadata_download",
+            "title": "full metadata download url",
             "type": "string",
+            "format": "uri",
             "description": "The URL for downloading the portal metadata"
           }
         ]
