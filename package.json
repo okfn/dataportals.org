@@ -15,7 +15,7 @@
     "nunjucks": "3.1.x",
     "underscore": "1.8.x",
     "request": "2.85.x",
-    "marked": "0.3.x",
+    "marked": "4.0.x",
     "csv-parse": "4.4.x"
   },
   "engines": {
