@@ -1,3 +1,4 @@
 main:
   tasks:
-    - path: data/datapackage.json
+    - source: data/datapackage.json
+      type: package
