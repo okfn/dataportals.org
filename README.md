@@ -1,5 +1,7 @@
 Code for running DataPortals.org.
 
+[![Data](https://github.com/okfn/dataportals.org/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/report?user=okfn&repo=dataportals.org&flow=portals)
+
 [The original plans for DataCatalogs.org - Feb 2013](https://docs.google.com/a/okfn.org/document/d/1MP1eaxUPir9msLt4rRwYqdupE3-qeLZAqFXRiXuvwkA/edit).
 Other ideas may be listed as Issues in this repository.
 Conversations with the Open Knowledge community are held in the
