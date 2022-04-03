@@ -10,7 +10,7 @@ import urllib
 import json
 import unicodecsv as csv
 
-url = 'http://datacatalogs.org/api/search/package?all_fields=1&limit=400'
+url = 'https://datacatalogs.org/api/search/package?all_fields=1&limit=400'
 ckan_fp = 'archive/ckan-export.json'
 existing_fp = 'catalogs.csv'
 new_fp = 'new.csv'
