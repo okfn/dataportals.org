@@ -2,7 +2,7 @@
 
 Comprehensive list of Open Data Portals around the world. The list is
 maintained by Open Knowledge with the input of the open data community and
-experts. The data is used to power the online site at http://dataportals.org/.
+experts. The data is used to power the online site at https://dataportals.org/.
 
 ## License
 

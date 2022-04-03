@@ -105,7 +105,7 @@ my.Views.Dataset = Backbone.View.extend({
     var $viewer = this.$el.find('.viewer');
     var file = this.model.get('files')[0];
     var reclineInfo = $.extend(true, {}, file);
-    $viewer.html('<img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" />');
+    $viewer.html('<img src="https://assets.okfn.org/images/icons/ajaxload-circle.gif" />');
     var github = new Github({});
     var repo = github.getRepo('datasets', this.model.get('name'));
     repo.read('master', file.path, function(err, data) {

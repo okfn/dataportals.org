@@ -1,7 +1,7 @@
 {% macro summary(catalog) -%}
   <div class="catalog summary">
     <img src="{{catalog.image or
-      'http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png'}}"
+      'https://assets.okfn.org/p/opendatahandbook/img/data-wrench.png'}}"
       alt="{{catalog.title}}" class="logo" />
     <h3><a href="/portal/{{catalog.id}}">{{catalog.title}}</a></h3>
     <div class="description">{{catalog.description_html|safe}}</div>
