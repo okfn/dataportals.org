@@ -85,6 +85,12 @@
             "description": "A link to the portal license if available"
           },
           {
+            "name": "license_notes",
+            "title": "license notes",
+            "type": "string",
+            "description": "Notes or explanations about the portal license"
+          },
+          {
             "name": "place",
             "title": "place",
             "type": "string",
