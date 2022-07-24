@@ -27,8 +27,14 @@ Otherwise, follow the directions below.
 ## Place *
 <!-- Short text describing the place that the portal is relate to (i.e. is supposed to cover). Should be sufficient to look it up on a map. For example, "London, UK" or "Vancouver, Canada". If no specific location just put "International" -->
 
+## Geo location
+<!-- If you would like the portal to show on the map, please provide latitude and longitude geographical coordinates, which can be related to the portal. -->
+
 ## Country
 <!-- Country the portal covers. 2-digit ISO-code if possible. Note we allow regional answers if that is appropriate (e.g. EU) -->
+
+## Language
+<!-- The language or languages the portal is available in. Please use 2 letter ISO 639-1 codes if you can. See the list here: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes -->
 
 ## License *
 <!-- Default license for the data in the data portal. You will be able to provide more information in the next question. Note "license" is used loosely to cover the general terms of use under which data is made available. -->
@@ -37,12 +43,20 @@ Otherwise, follow the directions below.
 <!-- Provide here any additional details related to your previous answer. For example, the URL to the license on the site, or excerpts from the relevant terms of use. -->
 
 ## Type *
-<!-- Is the portal operated by (and for) government (including IGOs such as World Bank or EC), research (academia), (other) institutional, or community? -->
+<!-- What type of organization is responsible for the portal?
+
+Government: local, regional or national government organizations.
+International: international organizations, e.g. UN, World Bank, EC, etc.
+Community: portals operated by a community around data, e.g. data re-users that re-publish improved data from single or multiple primary sources, etc.
+Research: universities, research institutions, or other in academia.
+Private sector: private companies and enterprises.
+Third sector: NGOs and non-profit institutions.
+Institutional: other organizations. -->
 
 ## Launched
 <!-- Date the portal was launched if known. If you are not sure of month and day just choose Jan 1st. Further info (for example a blog post URL about the launch) can go in the the description.
 
-Date format: mm/dd/yyyy
+Please provide a date in ISO format: yyyy-mm-dd
 -->
 
 ## Portal Software
@@ -63,9 +77,6 @@ Date format: mm/dd/yyyy
 # Your Information
 ## Your Name
 <!-- So we know who is submitting this and can credit you as appropriate. -->
-
-## Your Email
-<!-- We won't share this with anyone else but it enables us to follow up if needed -->
 
 ## Your Link
 <!-- A link we could use if we need to credit you -->
