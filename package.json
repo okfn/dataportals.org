@@ -12,7 +12,7 @@
     "morgan": "1.9.x",
     "serve-favicon": "2.5.x",
     "serve-static": "1.13.x",
-    "nunjucks": "3.1.x",
+    "nunjucks": "3.2.x",
     "underscore": "1.12.x",
     "request": "2.85.x",
     "marked": "0.3.x",
