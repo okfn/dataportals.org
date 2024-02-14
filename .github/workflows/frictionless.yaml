@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - issue-323
   pull_request:
     branches:
       - master
@@ -15,4 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Validate data
-        uses: frictionlessdata/repository@v1
+        uses: frictionlessdata/frictionless-ci@v2
+        with:
+          inquiry: data/data-validation.yaml
