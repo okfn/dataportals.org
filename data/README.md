@@ -1,4 +1,4 @@
-[![Portals](https://github.com/okfn/dataportals.org/actions/workflows/portals.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=okfn&repo=dataportals.org&flow=portals)
+[![Portals](https://github.com/okfn/dataportals.org/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=okfn&repo=dataportals.org&flow=portals)
 
 Comprehensive list of Open Data Portals around the world. The list is
 maintained by Open Knowledge with the input of the open data community and
