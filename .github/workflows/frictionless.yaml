@@ -18,4 +18,4 @@ jobs:
       - name: Validate data
         uses: frictionlessdata/frictionless-ci@v2
         with:
-          inquiry: data/data-validation.yaml
+          packages: data/datapackage.json
