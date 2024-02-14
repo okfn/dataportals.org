@@ -1,4 +1,0 @@
-main:
-  tasks:
-    - source: data/datapackage.json
-      type: package

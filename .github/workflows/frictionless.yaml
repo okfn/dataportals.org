@@ -15,4 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Validate data
-        uses: frictionlessdata/repository@v1
+        uses: frictionlessdata/frictionless-ci@v2
+        with:
+          packages: data/datapackage.json
