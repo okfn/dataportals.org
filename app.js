@@ -1,4 +1,5 @@
 var express = require('express')
+  , errorhandler = require('errorhandler')
   , bodyParser = require('body-parser')
   , methodOverride = require('method-override')
   , morgan = require('morgan')
@@ -28,6 +29,22 @@ if ('development' == env) {
 
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
 env.express(app);
+
+// development only
+if ('development' === process.env.NODE_ENV) {
+  app.use(errorhandler());
+}
+else { // production only
+  // handle https redirect
+  function ensureSecure(req, res, next){
+      if(req.secure){
+      // OK, continue
+      return next();
+      };
+      res.redirect('https://' + req.hostname + req.url);
+  }
+  app.all('*', ensureSecure);
+}
 
 app.get('/', function(req, res) {
   var catalogs = model.catalog.query();

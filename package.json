@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "4.17.x",
     "body-parser": "1.18.x",
+    "errorhandler": "~1.5.1",
     "method-override": "2.3.x",
     "morgan": "1.9.x",
     "serve-favicon": "2.5.x",
