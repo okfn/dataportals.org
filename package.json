@@ -6,7 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "4.17.x",
+    "express": "4.19.x",
     "body-parser": "1.18.x",
     "errorhandler": "~1.5.1",
     "method-override": "2.3.x",
