@@ -102,6 +102,6 @@ Please provide a date in ISO format: yyyy-mm-dd
 
 A. The terms of use - https://okfn.org/terms-of-use/
 
-B. To place your contribution in the public domain (specifically you "license" any rights you may have under the CCZero - http://creativecommons.org/publicdomain/zero/1.0/ and/or the Open Data Commons Public Domain Dedication and License - http://opendatacommons.org/licenses/pddl/1.0/).
+B. To place your contribution in the public domain (specifically you "license" any rights you may have under the CCZero - https://creativecommons.org/publicdomain/zero/1.0/ and/or the Open Data Commons Public Domain Dedication and License - https://opendatacommons.org/licenses/pddl/1.0/).
 
-This latter enables us, in turn, to make available the resulting database openly available as per the Open Definition - http://opendefinition.org/od/.
+This latter enables us, in turn, to make available the resulting database openly available as per the Open Definition - https://opendefinition.org/od/.

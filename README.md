@@ -1,6 +1,6 @@
 A community-driven catalog of Open Data Portals around the world.
 
-[![Data](https://github.com/okfn/dataportals.org/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/report?user=okfn&repo=dataportals.org&flow=portals)
+[![Portals](https://github.com/okfn/dataportals.org/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=okfn&repo=dataportals.org&flow=portals)
 
 This repository contains the [data](data/README.md) as well as the code
 for the DataPortals.org website.
