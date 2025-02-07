@@ -1,41 +1,30 @@
-jQuery(document).ready(function($) {
-  var url = '/api/data.json';
-  $.getJSON(url, function(data) {
-    var records = [];
-    for (key in data) {
-      var rec = data[key];
-      records.push(rec);
-    }
-    var dataset = new recline.Model.Dataset({
-      records: records
-    });
-    dataset.fetch();
-    dataset.query({size: dataset.recordCount});
-    createOverviewMap(dataset);
+jQuery(document).ready(function ($) {
+  var url = "/api/data.json";
+  $.getJSON(url, function (data) {
+    createOverviewMap(data);
   });
 });
 
 function createOverviewMap(dataset) {
-  $el = $('.overview-map');
-  var view = new recline.View.Map({
-    el: $el,
-    model: dataset,
-    state: {
-      cluster: true,
-      autoZoom: false
-    }
+  var map = new maplibregl.Map({
+    container: "overview-map", // container id
+    style: "https://demotiles.maplibre.org/style.json", // style URL
+    center: [0, 0], // starting position [lng, lat]
+    zoom: 1, // starting zoom
   });
-  view.infobox = function(record) {
-    var html = '';
-    html += '<a href="/portal/' + record.attributes['id'] + '">' + record.attributes['title'] + '</a>';
-    html += '<p>' + record.attributes['description_html'] + '</p>';
-    html += '<p><strong>URL:</strong> <a href="'+ record.attributes['url'] + '">' + record.attributes['url'] + '</a></p>';
-    return html;
-  }
-  view.render();
 
-  var queryEditor = new recline.View.QueryEditor({
-    model: dataset.queryState
+  Object.values(dataset).forEach((portal) => {
+    const loc = portal.location;
+    if (!loc) {
+      return;
+    }
+
+    const coordinates = loc.split(",");
+    const lat = parseFloat(coordinates[0]);
+    const lng = parseFloat(coordinates[1]);
+
+    const marker = new maplibregl.Marker();
+    marker.setLngLat([lng, lat]);
+    marker.addTo(map);
   });
-  $('.query-editor-here').append(queryEditor.el);
 }

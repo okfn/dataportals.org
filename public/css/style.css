@@ -233,6 +233,10 @@ a.inverted {
   color: #fff;
 }
 
+#overview-map {
+  height: 500px;
+}
+
 
 /********************************************************************
   * Media Queries
