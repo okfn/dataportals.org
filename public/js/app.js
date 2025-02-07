@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 function createOverviewMap(dataset) {
   var map = new maplibregl.Map({
     container: "overview-map", // container id
-    style: "https://demotiles.maplibre.org/style.json", // style URL
+    style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json", // style URL
     center: [0, 0], // starting position [lng, lat]
     zoom: 1, // starting zoom
   });
