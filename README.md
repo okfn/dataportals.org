@@ -46,42 +46,16 @@ This app requires NodeJS (>= v9.11).
 2. Install the dependencies:
 
     ```bash
-        npm install .
+    npm install .
     ```
-
-    Alternatively, you can use Docker to run the application. In that
-    case, build the container instead:
-
-    ```bash
-    docker build --rm -t dataportals .
-    ```
-
-    If you are building a development environment, please use:
-
-    ```bash
-    docker build --rm -t dataportals . --build-arg NODE_ENV=development
-    ```
-
-    so that you can get debugging information.
 
 3. Try it out locally:
 
     ```bash
-        node app.js
+    npm start
     ```
 
-    Or, if you're using Docker, start the container instead:
-
-    ```bash
-    docker run --rm --name dataportals -p 5000:5000 -it dataportals node app.js
-    ```
-
-   Then point your browser at http://localhost:5000/
-
-   > Note: ctrl+c does not stop the application. You'll have to open another
-   > terminal, run `docker ps` to find out the container id. Then use
-   > `docker stop [container_id]`, replacing what's inside the brackets
-   > with the proper container id.
+Then point your browser at http://localhost:8080/
 
 #### Deployment
 
