@@ -2,14 +2,13 @@
   "name": "dataportals",
   "version": "0.1.1",
   "main": "app.js",
-  "type": "module",
   "scripts": {
     "start": "eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "body-parser": "1.18.x",
-    "csv-parse": "4.4.x",
+    "csv-parse": "^5.6.0",
     "errorhandler": "~1.5.1",
     "express": "4.17.x",
     "marked": "0.3.x",
