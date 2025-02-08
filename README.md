@@ -50,10 +50,10 @@ This app requires NodeJS (>= v9.11).
 3. Try it out locally:
 
     ```bash
-    node app.js
+    npm start
     ```
 
-Then point your browser at http://localhost:5000/.
+Then point your browser at http://localhost:8080/.
 
 #### Deployment
 
