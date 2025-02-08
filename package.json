@@ -3,20 +3,22 @@
   "version": "0.1.1",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "eleventy --serve"
   },
   "dependencies": {
-    "express": "4.17.x",
+    "@11ty/eleventy": "^3.0.0",
     "body-parser": "1.18.x",
+    "csv-parse": "4.4.x",
     "errorhandler": "~1.5.1",
+    "express": "4.17.x",
+    "marked": "0.3.x",
     "method-override": "2.3.x",
     "morgan": "1.9.x",
+    "nunjucks": "3.2.x",
+    "request": "2.88.x",
     "serve-favicon": "2.5.x",
     "serve-static": "1.13.x",
-    "nunjucks": "3.2.x",
-    "underscore": "1.12.x",
-    "marked": "0.3.x",
-    "csv-parse": "4.4.x"
+    "underscore": "1.12.x"
   },
   "repository": {
     "type": "git",
