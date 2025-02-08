@@ -2,6 +2,7 @@
   "name": "dataportals",
   "version": "0.1.1",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "eleventy --serve"
   },
