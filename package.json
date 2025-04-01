@@ -19,9 +19,6 @@
     "marked": "0.3.x",
     "csv-parse": "4.4.x"
   },
-  "engines": {
-    "node": "9.11.x"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/okfn/dataportals.org.git"

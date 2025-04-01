@@ -38,7 +38,7 @@ This app requires NodeJS (>= v9.11).
 1. Clone this repo:
 
     ```bash
-    git clone --recursive git@github.com:okfn/dataportals.org.git
+    git clone --recursive https://github.com/okfn/dataportals.org.git
     ```
     You need to use `--recursive` because this repository uses Recline as a
     [git submodule](https://github.blog/2016-02-01-working-with-submodules/#joining-a-project-using-submodules).
@@ -46,7 +46,7 @@ This app requires NodeJS (>= v9.11).
 2. Install the dependencies:
 
     ```bash
-        npm install .
+    npm install .
     ```
 
     Alternatively, you can use Docker to run the application. In that
@@ -67,7 +67,7 @@ This app requires NodeJS (>= v9.11).
 3. Try it out locally:
 
     ```bash
-        node app.js
+    node app.js
     ```
 
     Or, if you're using Docker, start the container instead:
