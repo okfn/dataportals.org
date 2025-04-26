@@ -1,4 +1,0 @@
-[submodule "public/vendor/recline"]
-  path = public/vendor/recline
-  url = https://github.com/okfn/recline.git
-  branch = recline
