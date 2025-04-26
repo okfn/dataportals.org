@@ -27,11 +27,11 @@ if ('development' == env) {
   // app.use(serveFavicon());
 }
 
-var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
-env.express(app);
+var nunjucksEnv = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
+nunjucksEnv.express(app);
 
 // development only
-if ('development' === process.env.NODE_ENV) {
+if (env === 'development') {
   app.use(errorhandler());
 }
 else { // production only

@@ -98,28 +98,6 @@ section ol li, section ul li {
 }
 
 /********************************************************************
-  * Form
-  *******************************************************************/
-
-.recline-query-editor {
-  margin-right: 0;
-  padding-right: 0;
-  border-right: none;
-}
-
-.recline-query-editor label {
-  display: none;
-}
-
-.recline-query-editor .text-query input {
-  max-width: 100%;
-}
-
-.recline-query-editor button {
-  display: none;
-}
-
-/********************************************************************
   * Dataset Summary
   *******************************************************************/
 
@@ -218,14 +196,6 @@ section ol li, section ul li {
 
 .catalog.show .actions {
   margin-bottom: 10px;
-}
-
-.catalog.show .viewer .recline-slickgrid {
-  margin-top: 20px;
-}
-
-.catalog.show .viewer .recline-slickgrid {
-  height: 500px;
 }
 
 
