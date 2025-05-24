@@ -6,11 +6,8 @@ var express = require('express')
   // , serveFavicon = require('serve-favicon')
   , serveStatic = require('serve-static')
   , path = require('path')
-  , fs = require('fs')
   , nunjucks = require('nunjucks')
-  , config = require('./lib/config.js')
   , model = require('./lib/model.js')
-  , routes = require('./routes/index.js')
   ;
 
 var app = express();
@@ -117,9 +114,7 @@ app.get('/api/catalogs', function(req, res) {
   res.end();
 });
 
-app.get('/admin/reload', routes.reload);
-
-model.catalog.loadUrl(config.databaseUrl, function(err) {
+model.catalog.loadFromFile("data/portals.csv", function(err) {
   if (err) {
     console.error('Failed to load dataset info');
   }
