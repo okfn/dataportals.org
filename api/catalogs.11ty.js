@@ -3,12 +3,12 @@ const model = require("../lib/model.js");
 class PortalsData {
   data() {
     return {
-      permalink: "/api/data.json",
+      permalink: "/api/catalogs.json",
     };
   }
 
   render(data) {
-    return JSON.stringify(model.catalog._cache);
+    return JSON.stringify(model.catalog.query());
   }
 }
 
