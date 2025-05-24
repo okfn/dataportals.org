@@ -12,13 +12,6 @@
         {% endif %}
       {% endfor %}
     </ul>
-    <ul class="groups">
-      {% for kw in catalog.group or [] %}
-        {% if kw %}
-          <li><a href="/group/{{kw}}">{{kw}}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
   </div>
 {%- endmacro %}
 

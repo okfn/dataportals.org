@@ -92,16 +92,6 @@ app.get('/portal/:id', function(req, res) {
   }
 });
 
-app.get('/group/:id', function(req, res) {
-  var id = req.params.id;
-  var catalogs = model.catalog.getGroup(id)
-  res.render('group.html', {
-    group: id,
-    catalogs: catalogs,
-    total: catalogs.length
-  });
-});
-
 app.get('/api/data.json', function(req, res) {
   res.json(model.catalog._cache);
   // res.status(status).json(model.catalog._cache);
@@ -124,14 +114,6 @@ app.get('/api/catalogs', function(req, res) {
 
   res.header("Content-Type", "application/json; charset=utf-8");
   res.write(JSON.stringify(catalogs));
-  res.end();
-});
-
-app.get('/api/groups', function(req, res) {
-  var groups = model.catalog.getGroups();
-
-  res.header("Content-Type", "application/json; charset=utf-8");
-  res.write(JSON.stringify(groups));
   res.end();
 });
 
