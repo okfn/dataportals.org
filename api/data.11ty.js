@@ -1,6 +1,6 @@
 const model = require("../lib/model.js");
 
-class PortalsData {
+class Data {
   data() {
     return {
       permalink: "/api/data.json",
@@ -12,4 +12,4 @@ class PortalsData {
   }
 }
 
-module.exports = PortalsData;
+module.exports = Data;
