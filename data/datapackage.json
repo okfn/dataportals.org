@@ -20,7 +20,10 @@
             "name": "name",
             "title": "name",
             "type": "string",
-            "description": "a lower case hyphenated name of the portal"
+            "constraints": {
+              "pattern": "^[a-zа-я0-9\\-_]+$"
+            },
+            "description": "a lower case hyphenated/underscored name of the portal"
           },
           {
             "name": "title",
