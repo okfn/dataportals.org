@@ -2,7 +2,8 @@
   "name": "dataportals",
   "version": "0.1.1",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
