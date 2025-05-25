@@ -14,7 +14,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Validate data
-        uses: frictionlessdata/frictionless-ci@v2
+      # unable to use frictionless-ci
+      # https://github.com/frictionlessdata/frictionless-ci/issues/57
+      - uses: actions/setup-python@v5
         with:
-          packages: data/datapackage.json
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install "frictionless==5.*"
+      - name: Validate data
+        run: frictionless validate data/datapackage.json
