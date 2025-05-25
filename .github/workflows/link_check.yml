@@ -1,0 +1,27 @@
+name: Check Portal URLs
+
+on:
+  schedule:
+    - cron: 0 6 * * 1
+  pull_request:
+    paths:
+      - .github/workflows/link_check.yml
+      - data/portals.csv
+      - lib/check_urls.js
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check URLs in portals.csv
+        run: node lib/check_urls.js
