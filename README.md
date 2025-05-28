@@ -15,7 +15,7 @@ Other ideas may be listed as Issues in this repository.
 You can discuss with the community any ideas on how to improve the
 project or otherwise share your thoughts. Conversations with the Open
 Knowledge community are held in the
-[discussion forum](https://discuss.okfn.org/c/open-knowledge-labs/dataportals). 
+[discussion forum](https://discuss.okfn.org/c/open-knowledge-labs/dataportals).
 
 ### Contributing to the catalogue
 
@@ -38,10 +38,8 @@ This app requires NodeJS (>= v9.11).
 1. Clone this repo:
 
     ```bash
-    git clone --recursive https://github.com/okfn/dataportals.org.git
+    git clone https://github.com/okfn/dataportals.org.git
     ```
-    You need to use `--recursive` because this repository uses Recline as a
-    [git submodule](https://github.blog/2016-02-01-working-with-submodules/#joining-a-project-using-submodules).
 
 2. Install the dependencies:
 
