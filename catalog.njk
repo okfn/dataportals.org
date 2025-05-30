@@ -1,4 +1,14 @@
-{% extends "base.html" %}
+---
+# https://www.11ty.dev/docs/pagination/#paginate-a-global-or-local-data-file
+pagination:
+  data: catalogs
+  size: 1
+  alias: catalog
+# https://www.11ty.dev/docs/pagination/#remapping-with-permalinks
+permalink: "/portal/{{ catalog.id }}/"
+---
+
+{% extends "base.njk" %}
 
 {% block title %}{{catalog.title}}{% endblock %}
 
