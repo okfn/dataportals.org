@@ -3,7 +3,7 @@ A community-driven catalog of Open Data Portals around the world.
 [![Portals](https://github.com/okfn/dataportals.org/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=okfn&repo=dataportals.org&flow=portals)
 
 This repository contains the [data](data/README.md) as well as the code
-for the DataPortals.org website.
+for the DataPortals.org website. **Note: The site architecture and hosting are changing, so [the site](https://dataportals.org) doesn't match what's in the repository.**
 
 ## History
 
@@ -50,10 +50,10 @@ This app requires NodeJS (>= v9.11).
 3. Try it out locally:
 
     ```bash
-    node app.js
+    npm start
     ```
 
-Then point your browser at http://localhost:5000/.
+Then point your browser at http://localhost:8080/.
 
 #### Deployment
 
