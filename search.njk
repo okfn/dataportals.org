@@ -1,8 +1,6 @@
 {% extends "base.njk" %}
 {% import '_snippets.njk' as snippets %}
-
 {% block title %}Search{% endblock %}
-
 {% block content %}
   <div class="page-header">
     <h1>
@@ -11,8 +9,8 @@
   </div>
   <div class="row">
     <div class="results col-md-12">
-      <h3>{{ total }} portals</h3>
-      <hr>
+      <h3>{{ catalogs.length }} portals</h3>
+      <hr/>
       {% for catalog in catalogs %}
         {{ snippets.summary(catalog) }}
       {% endfor %}
