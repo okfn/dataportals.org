@@ -23,7 +23,8 @@
             "title": "name",
             "type": "string",
             "constraints": {
-              "pattern": "^[a-zа-я0-9\\-_]+$"
+              "pattern": "^[a-zа-я0-9\\-_]+$",
+              "unique": true
             },
             "description": "a lower case hyphenated/underscored name of the portal"
           },
