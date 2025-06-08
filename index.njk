@@ -1,14 +1,19 @@
 {% extends "base.njk" %}
-
+{% block title %}Home{% endblock %}
 {% block content %}
   <div class="page-header mb-4">
     <h1 class="display-4">
-      Data Portals <small class="text-muted fs-6">A Comprehensive List of <a href="https://opendefinition.org/">Open Data</a> Portals from Around the World</small>
+      Data Portals
+      <small class="text-muted fs-6">A Comprehensive List of
+        <a href="https://opendefinition.org/">Open Data</a>
+        Portals from Around the World</small>
     </h1>
   </div>
   <div class="row home-map">
     <div class="col-12">
-      <h3 class="heading"><a href="/search">{{total}} Data Portals listed &raquo;</a></h3>
+      <h3 class="heading">
+        <a href="/search">{{ catalogs.length }} Data Portals listed &raquo;</a>
+      </h3>
       <div class="query-editor-here"></div>
     </div>
   </div>
@@ -18,11 +23,8 @@
     </div>
   </div>
 {% endblock %}
-
 {% block scripts %}
-<script src="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.js"></script>
-
-<script src="/js/app.js"></script>
-
-<link href="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.js"></script>
+  <script src="/js/app.js"></script>
+  <link href="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.css" rel="stylesheet"/>
 {% endblock %}
