@@ -1,5 +1,6 @@
 {
   "name": "dataportals",
+  "type": "module",
   "private": "true",
   "scripts": {
     "start": "eleventy --serve",

@@ -1,3 +1,3 @@
-module.exports = async function (eleventyConfig) {
+export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ public: "/" });
-};
+}

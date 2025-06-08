@@ -1,6 +1,6 @@
-const model = require("../lib/model.js");
+import { catalog } from "../lib/model.js";
 
-class Catalogs {
+export default class Catalogs {
   data() {
     return {
       permalink: "/api/catalogs.json",
@@ -8,8 +8,6 @@ class Catalogs {
   }
 
   render(data) {
-    return JSON.stringify(model.catalog.query());
+    return JSON.stringify(catalog.query());
   }
 }
-
-module.exports = Catalogs;
