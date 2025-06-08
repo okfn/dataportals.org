@@ -7,4 +7,3 @@ experts. The data is used to power the online site at https://dataportals.org/.
 ## License
 
 Open Data Commons Public Domain Dedication and License.
-

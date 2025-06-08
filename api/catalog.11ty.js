@@ -1,18 +1,16 @@
-const model = require("../lib/model.js");
+import { catalog } from "../lib/model.js";
 
-class Catalog {
+export default class Catalog {
   data() {
     // https://www.11ty.dev/docs/pagination/
     return {
       pagination: {
         data: "portals",
         size: 1,
-        alias: "portal"
+        alias: "portal",
       },
-      portals: model.catalog.query(),
-      permalink: function(data) {
-        return `/api/catalogs/${data.portal.id}.json`;
-      }
+      portals: catalog.query(),
+      permalink: (data) => `/api/catalogs/${data.portal.id}.json`,
     };
   }
 
@@ -20,5 +18,3 @@ class Catalog {
     return JSON.stringify(data.portal);
   }
 }
-
-module.exports = Catalog;

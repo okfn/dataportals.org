@@ -27,94 +27,94 @@ permalink: "/portal/{{ catalog.id }}/"
         </div>
 
         <div class="col-md-8">
-            <dl class="dl-horizontal">
-                <dt>
+            <dl class="row">
+                <dt class="col-sm-3">
                     Area covered:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.place }}
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Publisher:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.publisher }}</a>
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     URL:
                 </dt>
-                <dd class="break-url">
+                <dd class="col-sm-9 break-url">
                     <a href="{{ catalog.url }}">{{ catalog.url }}</a>
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Issued:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.issued }}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Status:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.status }}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Classification:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.publisherclassification }}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     License:
                 </dt>
-                <dd class="break-url">
+                <dd class="col-sm-9 break-url">
                     <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Country/Language:
                 </dt>
-                <dd>
-                    <span class="label label-info">
+                <dd class="col-sm-9">
+                    <span class="badge bg-info">
                         {{ catalog.country }}
                     </span>
                     &nbsp;/
-                    <span class="label label-info">
+                    <span class="badge bg-info">
                         {{ catalog.language }}
                     </span>
                     &thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Tags:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                       {% for kw in catalog.tags or [] %}
                         {% if kw %}
-                            <span class="label label-primary">{{kw}}</span>
+                            <span class="badge bg-primary">{{kw}}</span>
                         {% endif %}
                       {% endfor %}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Portal software:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.generator }}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     API Type:
                 </dt>
-                <dd>
+                <dd class="col-sm-9">
                     {{ catalog.api_type }}&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     API Endpoint:
                 </dt>
-                <dd class="break-url">
+                <dd class="col-sm-9 break-url">
                     <a href="{{ catalog.api_endpoint }}">{{ catalog.api_endpoint }}</a>&thinsp;
                 </dd>
-                <dt>
+                <dt class="col-sm-3">
                     Metadata download:
                 </dt>
-                <dd class="break-url">
+                <dd class="col-sm-9 break-url">
                     <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
                 </dd>
 

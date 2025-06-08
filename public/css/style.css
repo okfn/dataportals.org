@@ -1,13 +1,17 @@
-html, body {
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+html,
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   background: url(../img/hip-square.png);
 }
 body {
-  padding-top: 36px;
+  padding-top: 56px; /* Adjusted for Bootstrap 5 navbar height */
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 1rem;
 }
 
@@ -22,14 +26,15 @@ h5 {
   font-weight: bold;
 }
 
-.navbar-default .navbar-brand {
+.navbar-brand {
   font-weight: 600;
   font-size: 1.2rem;
   letter-spacing: 1px;
   color: #337ab7;
 }
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+.navbar-brand:focus,
+.navbar-brand:hover {
   color: #23527c;
 }
 
@@ -46,7 +51,7 @@ h5 {
 }
 
 ul {
-  -webkit-padding-start: 0;
+  padding-left: 0;
 }
 
 ul#curators li {
@@ -54,7 +59,7 @@ ul#curators li {
 }
 
 dd {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .break-url {
@@ -86,14 +91,16 @@ section {
   margin-bottom: 2rem;
 }
 
-section ol, section ul {
+section ol,
+section ul {
   background: #d4ecfa;
   line-height: 1.5rem;
   padding: 1rem 0;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
 
-section ol li, section ul li {
+section ol li,
+section ul li {
   margin-left: 2rem;
 }
 
@@ -141,12 +148,10 @@ section ol li, section ul li {
 .catalog ul.keywords li {
   display: inline;
   padding: 1px 4px 2px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  line-height: .8rem;
+  line-height: 0.8rem;
   color: white;
   vertical-align: baseline;
   white-space: nowrap;
@@ -172,7 +177,6 @@ section ol li, section ul li {
   margin-bottom: 10px;
 }
 
-
 a.inverted {
   color: #fff;
 }
@@ -181,21 +185,44 @@ a.inverted {
   height: 500px;
 }
 
-
 /********************************************************************
   * Media Queries
   *******************************************************************/
 
-  @media screen and (max-width: 768px) {
-    .h1, h1 { font-size: 30px; }
-    .h2, h2 { font-size: 26px; }
-    .h3, h3 { font-size: 22px; }
-    .h4, h4 { font-size: 18px; }
+@media screen and (max-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 30px;
   }
+  .h2,
+  h2 {
+    font-size: 26px;
+  }
+  .h3,
+  h3 {
+    font-size: 22px;
+  }
+  .h4,
+  h4 {
+    font-size: 18px;
+  }
+}
 
-  @media screen and (max-width: 480px) {
-    .h1, h1 { font-size: 24px; }
-    .h2, h2 { font-size: 20px; }
-    .h3, h3 { font-size: 18px; }
-    .h4, h4 { font-size: 18px; }
+@media screen and (max-width: 480px) {
+  .h1,
+  h1 {
+    font-size: 24px;
   }
+  .h2,
+  h2 {
+    font-size: 20px;
+  }
+  .h3,
+  h3 {
+    font-size: 18px;
+  }
+  .h4,
+  h4 {
+    font-size: 18px;
+  }
+}

@@ -1,3 +1,3 @@
-const model = require("../lib/model.js");
+import { catalog } from "../lib/model.js";
 
-module.exports = model.catalog.query();
+export default catalog.query();

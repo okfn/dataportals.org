@@ -1,6 +1,6 @@
-const model = require("../lib/model.js");
+import { catalog } from "../lib/model.js";
 
-class Data {
+export default class Data {
   data() {
     return {
       permalink: "/api/data.json",
@@ -8,8 +8,6 @@ class Data {
   }
 
   render(data) {
-    return JSON.stringify(model.catalog._cache);
+    return JSON.stringify(Array.from(catalog._cache.values()));
   }
 }
-
-module.exports = Data;
