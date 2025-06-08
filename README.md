@@ -37,21 +37,21 @@ This app requires NodeJS (>= v9.11).
 
 1. Clone this repo:
 
-    ```bash
-    git clone https://github.com/okfn/dataportals.org.git
-    ```
+   ```bash
+   git clone https://github.com/okfn/dataportals.org.git
+   ```
 
 2. Install the dependencies:
 
-    ```bash
-    npm install .
-    ```
+   ```bash
+   npm install .
+   ```
 
 3. Try it out locally:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 Then point your browser at http://localhost:8080/.
 

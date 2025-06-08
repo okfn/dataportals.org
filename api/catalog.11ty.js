@@ -7,10 +7,10 @@ export default class Catalog {
       pagination: {
         data: "portals",
         size: 1,
-        alias: "portal"
+        alias: "portal",
       },
       portals: catalog.query(),
-      permalink: (data) => `/api/catalogs/${data.portal.id}.json`
+      permalink: (data) => `/api/catalogs/${data.portal.id}.json`,
     };
   }
 

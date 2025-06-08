@@ -2,11 +2,13 @@
   "name": "dataportals",
   "title": "Open Data Portals Database",
   "homepage": "https://dataportals.org/",
-  "licenses": [{
-    "name": "ODC-PDDL-1.0",
-    "path": "https://opendatacommons.org/licenses/pddl/",
-    "title": "Open Data Commons Public Domain Dedication and License v1.0"
-  }],
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "https://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
   "resources": [
     {
       "profile": "tabular-data-resource",
@@ -121,10 +123,9 @@
             "name": "status",
             "title": "status",
             "type": "string",
-            "constraints" :
-              {
-                "pattern": "active|inactive|static"
-              },
+            "constraints": {
+              "pattern": "active|inactive|static"
+            },
             "description": "This indicates whether the portal is currently available (active) or offline (inactive)"
           },
           {

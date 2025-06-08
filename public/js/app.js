@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   const url = "/api/data.json";
   fetch(url)
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       createOverviewMap(data);
     })
-    .catch(error => {
-      console.error('Error fetching data:', error);
+    .catch((error) => {
+      console.error("Error fetching data:", error);
     });
 });
 
@@ -132,7 +132,7 @@ function createOverviewMap(dataset) {
           ${description_html}
           <p>
             <strong>URL:</strong> <a href="${url}">${url}</a>
-          </p>`
+          </p>`,
         )
         .addTo(map);
     });
