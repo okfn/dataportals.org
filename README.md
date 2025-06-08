@@ -26,9 +26,9 @@ first to see if your suggestion or change is already listed there to
 avoid duplicates.
 
 If you can, submitting a pull request to changet the
-[data.csv](https://github.com/okfn/dataportals.org/blob/master/data/portals.csv)
+[data.csv](https://github.com/okfn/dataportals.org/blob/main/data/portals.csv)
 file would be even better. See the
-[datapackage.json](https://github.com/okfn/dataportals.org/blob/master/data/datapackage.json)
+[datapackage.json](https://github.com/okfn/dataportals.org/blob/main/data/datapackage.json)
 file to find out the structure of the csv and the meaning of each column.
 
 ### Developing the website
@@ -57,4 +57,4 @@ Then point your browser at http://localhost:8080/.
 
 #### Deployment
 
-We deploy to [Netlify](https://netlify.com/) on each push to `master`. See the preview site at https://dataportals.netlify.app/.
+We deploy to [Netlify](https://netlify.com/) on each push to `main`. See the preview site at https://dataportals.netlify.app/.

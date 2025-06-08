@@ -1,7 +1,7 @@
 <!--
 Power users can fork and pull the DataPortals.org CSV data file directly:
 
-https://github.com/okfn/dataportals.org/blob/master/data/portals.csv
+https://github.com/okfn/dataportals.org/blob/main/data/portals.csv
 
 Otherwise, follow the directions below.
 -->
