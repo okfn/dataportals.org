@@ -1,8 +1,13 @@
-jQuery(document).ready(function ($) {
+document.addEventListener('DOMContentLoaded', function() {
   const url = "/api/data.json";
-  $.getJSON(url, function (data) {
-    createOverviewMap(data);
-  });
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      createOverviewMap(data);
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
 });
 
 function createOverviewMap(dataset) {
