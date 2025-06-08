@@ -57,4 +57,4 @@ Then point your browser at http://localhost:8080/.
 
 #### Deployment
 
-We deploy by default to Heroku. The app is currently configured to deploy on each push to master.
+We deploy to [Netlify](https://netlify.com/) on each push to `master`. See the preview site at https://dataportals.netlify.app/.
