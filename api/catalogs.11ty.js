@@ -6,6 +6,9 @@ export default class Catalogs {
   }
 
   render(data) {
-    return JSON.stringify(data.catalogs);
+    const sortedData = data.catalogs.toSorted((a, b) =>
+      a.name.localeCompare(b.name)
+    );
+    return JSON.stringify(sortedData);
   }
 }
