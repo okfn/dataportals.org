@@ -1,5 +1,3 @@
-import { catalog } from "../lib/model.js";
-
 export default class Data {
   data() {
     return {
@@ -8,6 +6,10 @@ export default class Data {
   }
 
   render(data) {
-    return JSON.stringify(Array.from(catalog._cache.values()));
+    const catalogsByName = {};
+    for (const catalog of data.catalogs) {
+      catalogsByName[catalog.name] = catalog;
+    }
+    return JSON.stringify(catalogsByName);
   }
 }

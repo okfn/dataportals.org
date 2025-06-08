@@ -1,5 +1,3 @@
-import { catalog } from "../lib/model.js";
-
 export default class Catalogs {
   data() {
     return {
@@ -8,6 +6,6 @@ export default class Catalogs {
   }
 
   render(data) {
-    return JSON.stringify(catalog.query());
+    return JSON.stringify(data.catalogs);
   }
 }
