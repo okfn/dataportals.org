@@ -136,6 +136,11 @@ section ul li {
   margin-bottom: 5px;
 }
 
+/* only show the first paragraph */
+.catalog.summary .description p:not(:first-child) {
+  display: none;
+}
+
 .catalog.summary .place {
   font-style: italic;
 }
