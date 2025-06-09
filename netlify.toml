@@ -1,9 +1,15 @@
 [build]
-  command = "npm run build"
-  publish = "_site"
+command = "npm run build"
+publish = "_site"
 
 # https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+
 [[redirects]]
-  from = "/catalog/:id"
-  to = "/portal/:id"
-  status = 302
+from = "/catalog/:id"
+to = "/portal/:id"
+status = 302
+
+[[redirects]]
+from = "/add/"
+to = "/contribute/#add-an-individual-portal"
+status = 302
