@@ -2,67 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta property="og:title" content="DataPortals.org - A Comprehensive List of Open Data Portals from Around the World" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dataportals.org/" />
-    <meta property="og:image" content="https://dataportals.org/img/dataportals.jpg" />
-    <meta name="description" content="DataPortals.org is the most comprehensive list of open data portals in the world. It is curated by a group of leading open data experts from around the world - including representatives from local, regional and national governments, international organisations such as the World Bank, and numerous NGOs.">
+    <meta property="og:title" content="DataPortals.org - A Comprehensive List of Open Data Portals from Around the World"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dataportals.org/"/>
+    <meta property="og:image" content="https://dataportals.org/img/dataportals.jpg"/>
+    <meta
+      name="description"
+      content="DataPortals.org is the most comprehensive list of open data portals in the world. It is curated by a group of
+        leading open data experts from around the world - including representatives from local, regional and national
+        governments, international organisations such as the World Bank, and numerous NGOs.">
     <meta name="author" content="Open Knowledge">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>{% block title %}{% endblock %} - Data Portals</title>
-
+    <title>
+      {% block title %}{% endblock %}
+      - Data Portals</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/style.css" />
-
+    <link rel="stylesheet" href="/css/style.css"/>
     <script defer data-domain="datacatalogs.org" src="https://plausible.io/js/plausible.js"></script>
   </head>
-
   <body>
-
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/">DataPortals.org</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/search">Browse</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contribute">Contribute</a></li>
-            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/search">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contribute">Contribute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <div class="container">
-      <div class="content">
-        {% block content %}{% endblock %}
-
+      <div class="content"> {% block content %}{% endblock %}
         <footer class="row">
-          <p>This service is run by <a href="https://okfn.org">Open Knowledge Foundation</a> | <a href="https://github.com/okfn/dataportals.org">Source Code</a> | <a href="https://raw.githubusercontent.com/okfn/dataportals.org/main/data/portals.csv">Download Data (CSV)</a> | <a href="/api/data.json">Download Data (JSON)</a> | <a href="https://opendatacommons.org/licenses/pddl/1.0">Data License (Public Domain)</a> | <a href="https://okfn.org/privacy-policy/">Privacy Policy</a></p>
+          <p>This service is run by
+            <a href="https://okfn.org">Open Knowledge Foundation</a>
+            |
+            <a href="https://github.com/okfn/dataportals.org">Source Code</a>
+            |
+            <a href="https://raw.githubusercontent.com/okfn/dataportals.org/main/data/portals.csv">Download Data (CSV)</a>
+            |
+            <a href="/api/data.json">Download Data (JSON)</a>
+            |
+            <a href="https://opendatacommons.org/licenses/pddl/1.0">Data License (Public Domain)</a>
+            |
+            <a href="https://okfn.org/privacy-policy/">Privacy Policy</a>
+          </p>
           <p>
             <a href="https://opendefinition.org/okd/" title="Open Data">
-              <img src="https://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="" border="" />
+              <img src="https://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="" border=""/>
             </a>
             <a href="https://opendefinition.org/ossd/" title="Open Online Software Service">
-              <img src="https://assets.okfn.org/images/ok_buttons/os_80x15_orange_grey.png" alt="" border="" />
+              <img src="https://assets.okfn.org/images/ok_buttons/os_80x15_orange_grey.png" alt="" border=""/>
             </a>
           </p>
-          <br>
-          <p><a href="https://lod2.eu/" title="This project is supported by the EC funded LOD2 project"><img src="https://farm6.static.flickr.com/5249/5222467008_4e1a54ff89_t.jpg" alt="" /></a></p><br>
-          <p><a href="https://okfn.org/" title="An Open Knowledge Foundation project"><img src="/img/landscape-grey-rgb.svg" alt="" style="max-width: 200px" /></a></p>
+          <br/>
+          <p>
+            <a href="https://lod2.eu/" title="This project is supported by the EC funded LOD2 project"><img src="https://farm6.static.flickr.com/5249/5222467008_4e1a54ff89_t.jpg" alt=""/> </a>
+          </p><br>
+          <p>
+            <a href="https://okfn.org/" title="An Open Knowledge Foundation project"><img src="/img/landscape-grey-rgb.svg" alt="" style="max-width: 200px"/> </a>
+          </p>
         </footer>
-      </div><!-- /content -->
-    </div><!-- /container -->
-
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /container -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     {% block scripts %}{% endblock %}
   </body>
