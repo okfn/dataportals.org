@@ -116,11 +116,6 @@ section ul li {
   line-height: 1.5;
 }
 
-.catalog.summary .logo {
-  width: 50px;
-  float: right;
-}
-
 .catalog.summary h3 {
   margin: 0;
   padding: 0;
@@ -168,11 +163,6 @@ section ul li {
 /********************************************************************
   * Dataset Show
   *******************************************************************/
-
-.catalog.show .logo {
-  width: 100px;
-  float: right;
-}
 
 .catalog.show .source {
   font-style: italic;
