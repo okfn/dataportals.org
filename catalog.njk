@@ -5,27 +5,28 @@ pagination:
   size: 1
   alias: catalog
 # https://www.11ty.dev/docs/pagination/#remapping-with-permalinks
-permalink: "/portal/{{ catalog.id }}/"
+permalink: "/portal/{{ catalog.name }}/"
 ---
 
 {% extends "base.njk" %}
-
-{% block title %}{{catalog.title}}{% endblock %}
-
+{% block title %}
+    {{ catalog.title }}
+{% endblock %}
 {% block content %}
-  <div class="page-header">
-    <h1>
-      {{catalog.title}}
-    </h1>
-    <p><a href="/search">&larr; Return to results</a></p>
-  </div>
-  <div class="row">
+    <div class="page-header">
+        <h1>
+            {{ catalog.title }}
+        </h1>
+        <p>
+            <a href="/search">&larr; Return to results</a>
+        </p>
+    </div>
+    <div class="row">
         <div class="col-md-4">
             <h2 style="margin-top: 0">Description</h2>
             <p>{{ catalog.description_html|safe }}</p>
-            <br>
+            <br/>
         </div>
-
         <div class="col-md-8">
             <dl class="row">
                 <dt class="col-sm-3">
@@ -39,86 +40,84 @@ permalink: "/portal/{{ catalog.id }}/"
                 </dt>
                 <dd class="col-sm-9">
                     {{ catalog.publisher }}</a>
-                </dd>
-                <dt class="col-sm-3">
-                    URL:
-                </dt>
-                <dd class="col-sm-9 break-url">
-                    <a href="{{ catalog.url }}">{{ catalog.url }}</a>
-                </dd>
-                <dt class="col-sm-3">
-                    Issued:
-                </dt>
-                <dd class="col-sm-9">
-                    {{ catalog.issued }}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Status:
-                </dt>
-                <dd class="col-sm-9">
-                    {{ catalog.status }}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Classification:
-                </dt>
-                <dd class="col-sm-9">
-                    {{ catalog.publisherclassification }}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    License:
-                </dt>
-                <dd class="col-sm-9 break-url">
-                    <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Country/Language:
-                </dt>
-                <dd class="col-sm-9">
-                    <span class="badge bg-info">
-                        {{ catalog.country }}
-                    </span>
-                    &nbsp;/
-                    <span class="badge bg-info">
-                        {{ catalog.language }}
-                    </span>
-                    &thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Tags:
-                </dt>
-                <dd class="col-sm-9">
-                      {% for kw in catalog.tags or [] %}
-                        {% if kw %}
-                            <span class="badge bg-primary">{{kw}}</span>
-                        {% endif %}
-                      {% endfor %}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Portal software:
-                </dt>
-                <dd class="col-sm-9">
-                    {{ catalog.generator }}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    API Type:
-                </dt>
-                <dd class="col-sm-9">
-                    {{ catalog.api_type }}&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    API Endpoint:
-                </dt>
-                <dd class="col-sm-9 break-url">
-                    <a href="{{ catalog.api_endpoint }}">{{ catalog.api_endpoint }}</a>&thinsp;
-                </dd>
-                <dt class="col-sm-3">
-                    Metadata download:
-                </dt>
-                <dd class="col-sm-9 break-url">
-                    <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
-                </dd>
-
-            </dl>
-        </div>
-  </div>
-{% endblock %}
+            </dd>
+            <dt class="col-sm-3">
+                URL:
+            </dt>
+            <dd class="col-sm-9 break-url">
+                <a href="{{ catalog.url }}">{{ catalog.url }}</a>
+            </dd>
+            <dt class="col-sm-3">
+                Issued:
+            </dt>
+            <dd class="col-sm-9">
+                {{ catalog.issued }}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Status:
+            </dt>
+            <dd class="col-sm-9">
+                {{ catalog.status }}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Classification:
+            </dt>
+            <dd class="col-sm-9">
+                {{ catalog.publisherclassification }}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                License:
+            </dt>
+            <dd class="col-sm-9 break-url">
+                <a href="{{ catalog.licenseurl }}">{{ catalog.licenseid }}</a>&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Country/Language:
+            </dt>
+            <dd class="col-sm-9">
+                <span class="badge bg-info">
+                    {{ catalog.country }}
+                </span>
+                &nbsp;/
+                <span class="badge bg-info">
+                    {{ catalog.language }}
+                </span>
+                &thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Tags:
+            </dt>
+            <dd class="col-sm-9">
+                {% for kw in catalog.tags or [] %}
+                    {% if kw %}
+                        <span class="badge bg-primary">{{ kw }}</span>
+                    {% endif %}
+                {% endfor %}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Portal software:
+            </dt>
+            <dd class="col-sm-9">
+                {{ catalog.generator }}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                API Type:
+            </dt>
+            <dd class="col-sm-9">
+                {{ catalog.api_type }}&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                API Endpoint:
+            </dt>
+            <dd class="col-sm-9 break-url">
+                <a href="{{ catalog.api_endpoint }}">{{ catalog.api_endpoint }}</a>&thinsp;
+            </dd>
+            <dt class="col-sm-3">
+                Metadata download:
+            </dt>
+            <dd class="col-sm-9 break-url">
+                <a href="{{ catalog.full_metadata_download }}">{{ catalog.full_metadata_download }}</a>&thinsp;
+            </dd>
+        </dl>
+    </div>
+</div>{% endblock %}
