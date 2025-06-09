@@ -141,14 +141,11 @@ body:
       label: API Type
       description: Does the portal have any kind of API (structured metadata about the data that can be downloaded)? If multiple options apply, please choose the most extensive/advanced API.
       options:
-        - None
         - Basic
         - REST API
         - GraphQL
         - SPARQL
         - Other
-    validations:
-      required: true
 
   - type: input
     id: api_endpoint
