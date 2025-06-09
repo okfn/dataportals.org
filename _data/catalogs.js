@@ -11,7 +11,6 @@ const formatData = (portals) => {
   const md = markdownit();
 
   for (const dp of portals) {
-    dp.id = dp.name;
     dp.description_html = md.render(dp.description);
     dp.tags = dp.tags || "";
     dp.tags = dp.tags ? dp.tags.split(" ") : [];
