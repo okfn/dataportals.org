@@ -2,9 +2,9 @@ name: Check Portal URLs
 
 on:
   workflow_dispatch:
-  schedule:
-    # weekly
-    - cron: 0 6 * * 1
+  # schedule:
+  #   # weekly
+  #   - cron: 0 6 * * 1
   pull_request:
     paths:
       - .github/workflows/link_check.yml
