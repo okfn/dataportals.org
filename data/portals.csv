@@ -170,7 +170,7 @@ comune-roma,City of Rome Open Data,https://dati.comune.roma.it/,Roma Capitale,Ro
 conneticut-transparency,Conneticut Transparency Website,https://transparency.ct.gov/html/main.asp,The Office of Fiscal Analysis (OFA),The Office of Fiscal Analysis (OFA),,,"This site was created in accordance with Public Act 10-155, An Act Requiring the Establishment of a Searchable Database for State Expenditures. This Public Act requires the Office of Fiscal Analysis to establish and maintain a website for the purpose of posting state agency expenditures, including contracts and grants.
 
 The Office of Fiscal Analysis (OFA) is a nonpartisan office that supports the Connecticut General Assembly. To read more about us, please visit our website at <https://www.cga.ct.gov/ofa/>.",finance level.regional,notspecified,,,"Conneticut, USA","42.624486,-82.964592",US,English,active,2012-06-06T15:07:30.59Z,,,,
-cook-county-government,Open Data Portal for Cook County Government,https://data.cookcountyil.gov/,Local Authority,Local Authority,,," * Courts
+cook-county-government,Open Data Portal for Cook County Government,https://datacatalog.cookcountyil.gov/,Local Authority,Local Authority,,," * Courts
  * Economic Development
  * Finance and Accounting
  * Forest Preserves, Parks & Recreation
@@ -178,6 +178,7 @@ cook-county-government,Open Data Portal for Cook County Government,https://data.
  * Healthcare
  * Public Safety
  * Property & Taxation ",level.local us unitedstates,notspecified,,,"Cook County, USA","41.8197385,-87.756525",US,English,active,2011-12-09T12:08:43.623Z,,,,
+cook-central,Cook Central,https://hub-cookcountyil.opendata.arcgis.com/,Cook County Government,Cook County Government,,,"Centralizing Maps, Apps, and Data for Cook County, IL",level.local us unitedstates,notspecified,,,"Cook County, USA","41.8197385,-87.756525",US,English,active,,,,,
 cordoba,Open Data Córdoba,https://www.opendatacordoba.com,City of Cordoba,City of Cordoba,,,City of Cordoba Open Data catalog,city ctic level.local spain eu-official,,,,"Cordoba, Spain","37.8844099,-4.7794976",ES,es,active,2011-06-27T18:14:49.78Z,,,,
 criik,criik,https://www.criik.com/,Ciudadano Inteligente www.ciudadanointeligente.org,Ciudadano Inteligente www.ciudadanointeligente.org,,,,,,,,South America,"-20.9999998,-61.0000002",mx uy cl,es,active,2012-01-20T16:42:05.33Z,,,,
 csiro-data-access-portal,CSIRO Data Access Portal,https://data.csiro.au/,Commonwealth Scientific and Industrial Research Organisation (CSIRO),Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,Data from Australia's national science agency the Commonwealth Scientific and Industrial Research Organisation (CSIRO).,science australia,other-nc,,,Australia,"-24.7761086,134.755",AU,en,active,2013-05-02T06:08:08.619Z,,,,
@@ -454,7 +455,7 @@ An Internet portal, created in May 2014 with the purpose to promote the use of o
 
 iGEO can be considered as a complement of the Portuguese Spatial Data Infrastruture (SNIG). URL: https://snig.dgterritorio.pt/portal/",,Other (Open),https://www.igeo.pt/DadosAbertos/Listagem.aspx,,"Lisbon, Portugal","38.7437396,-9.2302439",PT,pt,active,,,,,
 incheon-metropolitan-city,인천광역시 데이터공유센터,https://open.incheon.go.kr/,Incheon Metropolitan City,Incheon Metropolitan City,,Government,인천광역시 데이터공유센터,city southkorea,,,,Incheon,"37.4833, 126.6333",KR,ko,active,,,,,
-india,Data Portal India,https://data.gov.in/,Government of India,Government of India,,,Official data portal for the Government of India.,,,,,India,"22.3511148,78.6677428",IN,en,active,2012-09-03T13:18:23.85Z,,,,
+india,Open Government Data (OGD) Platform India,https://www.data.gov.in/,Government of India,Government of India,,,Official data portal for the Government of India.,,,,,India,"22.3511148,78.6677428",IN,en,active,2012-09-03T13:18:23.85Z,,,,
 indonesia-data-portal,Indonesia Data Portal,https://data.go.id,Peb,Open Government Indonesia,05/09/2014,Government,"Repository for data from ministries, local governments, public service companies, or other parties having Indonesia-related data.",,Creative Commons - Attribution,,,Indonesia,"-4.352196,122.265401",ID,id,active,,,,,
 jakarta-province-gov,Jakarta Province Gov. Integrated Data Portal - Portal Data Terpadu Pemprov DKI Jakarta,https://data.jakarta.go.id,Peb,Pemprov DKI Jakarta,30/06/2015,Government,Data from departments under provincial government of Jakarta,,Creative Commons - Attribution,,,"Jakarta, Indonesia","-6.2293867,106.6894309",ID,id,active,,,,,
 jeju-special-self-governing-province,제주특별자치도 공공데이터 포털,https://data.jeju.go.kr/,Jeju Special Self-Governing Province,Jeju Special Self-Governing Province,,Government,제주특별자치도 공공데이터 포털,province southkorea,,,,Jeju,"33.3667, 126.5333",KR,ko,active,,,,,
