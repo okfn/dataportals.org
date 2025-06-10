@@ -24,7 +24,8 @@
             "type": "string",
             "constraints": {
               "pattern": "^[a-zа-я0-9\\-_]+$",
-              "unique": true
+              "unique": true,
+              "required": true
             },
             "description": "a lower case hyphenated/underscored name of the portal"
           },
@@ -32,6 +33,9 @@
             "name": "title",
             "title": "title",
             "type": "string",
+            "constraints": {
+              "required": true
+            },
             "description": "A human readable name of the portal"
           },
           {
@@ -39,6 +43,9 @@
             "title": "url",
             "type": "string",
             "format": "uri",
+            "constraints": {
+              "required": true
+            },
             "description": "The URL of the open data portal"
           },
           {

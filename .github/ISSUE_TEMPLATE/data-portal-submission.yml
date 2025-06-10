@@ -45,8 +45,6 @@ body:
     attributes:
       label: Description
       description: Description and any additional notes about the portal, for example special licensing conditions, comments on the contents, or anything that doesn't fit in the questions below but is relevant
-    validations:
-      required: true
 
   - type: markdown
     attributes:
@@ -88,8 +86,6 @@ body:
       label: License
       description: Default license for the data in the data portal. You will be able to provide more information in the next question. Note "license" is used loosely to cover the general terms of use under which data is made available.
       placeholder: e.g., CC0, Open Government License
-    validations:
-      required: true
 
   - type: textarea
     id: license_details

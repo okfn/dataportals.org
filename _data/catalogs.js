@@ -12,7 +12,6 @@ const formatData = (portals) => {
 
   for (const dp of portals) {
     dp.description_html = md.render(dp.description);
-    dp.tags = dp.tags || "";
     dp.tags = dp.tags ? dp.tags.split(" ") : [];
   }
 
