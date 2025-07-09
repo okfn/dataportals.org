@@ -7,7 +7,8 @@
   "private": "true",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "update-licenses": "node update-licenses.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
