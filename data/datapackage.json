@@ -63,7 +63,7 @@
           {
             "name": "issued",
             "title": "date issued",
-            "type": "string",
+            "type": "date",
             "description": "The date the portal was first made available, if known"
           },
           {
@@ -140,7 +140,6 @@
             "name": "metadatacreated",
             "title": "metadata created at",
             "type": "datetime",
-            "format": "any",
             "description": "The date this metadata was created"
           },
           {
