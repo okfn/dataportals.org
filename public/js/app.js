@@ -27,6 +27,9 @@ const createOverviewMap = (dataset) => {
   });
 };
 
+const includePortalOnMap = (portal) =>
+  portal.status === "active" && !!portal.location;
+
 const portalToGeoJSON = (portal) => {
   const coordinates = portal.location.split(",");
   const lat = parseFloat(coordinates[0]);
@@ -43,7 +46,7 @@ const portalToGeoJSON = (portal) => {
 };
 
 const createGeoJSONFeatures = (dataset) => {
-  const portals = Object.values(dataset).filter((portal) => portal.location);
+  const portals = Object.values(dataset).filter(includePortalOnMap);
   return portals.map(portalToGeoJSON);
 };
 
