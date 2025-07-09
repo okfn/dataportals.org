@@ -27,22 +27,27 @@ const createOverviewMap = (dataset) => {
   });
 };
 
-const createGeoJSONFeatures = (dataset) => {
-  const portals = Object.values(dataset).filter((portal) => portal.location);
-  return portals.map((portal) => {
-    const coordinates = portal.location.split(",");
-    const lat = parseFloat(coordinates[0]);
-    const lng = parseFloat(coordinates[1]);
+const includePortalOnMap = (portal) =>
+  portal.status === "active" && !!portal.location;
 
-    return {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lng, lat],
-      },
-      properties: portal,
-    };
-  });
+const portalToGeoJSON = (portal) => {
+  const coordinates = portal.location.split(",");
+  const lat = parseFloat(coordinates[0]);
+  const lng = parseFloat(coordinates[1]);
+
+  return {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [lng, lat],
+    },
+    properties: portal,
+  };
+};
+
+const createGeoJSONFeatures = (dataset) => {
+  const portals = Object.values(dataset).filter(includePortalOnMap);
+  return portals.map(portalToGeoJSON);
 };
 
 const addMapLayers = (map, features) => {
@@ -146,7 +151,7 @@ const setupPointClickHandler = (map) => {
   map.on("click", "unclustered-point", (e) => {
     const feature = e.features[0];
     const coordinates = feature.geometry.coordinates.slice();
-    const { id, title, description_html, url } = feature.properties;
+    const { name, title, description_html, url } = feature.properties;
 
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -159,7 +164,7 @@ const setupPointClickHandler = (map) => {
       .setLngLat(coordinates)
       .setHTML(
         `<p>
-          <a href="portal/${id}">${title}</a>
+          <a href="portal/${name}">${title}</a>
         </p>
         ${description_html}
         <p>
