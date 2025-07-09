@@ -132,8 +132,7 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "description": "The country name of the author/publisher's geographic location",
-            "rdfType": "http://schema.org/Country"
+            "description": "The country name of the author/publisher's geographic location"
           },
           {
             "name": "language",
