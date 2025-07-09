@@ -146,7 +146,7 @@ const setupPointClickHandler = (map) => {
   map.on("click", "unclustered-point", (e) => {
     const feature = e.features[0];
     const coordinates = feature.geometry.coordinates.slice();
-    const { id, title, description_html, url } = feature.properties;
+    const { name, title, description_html, url } = feature.properties;
 
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -159,7 +159,7 @@ const setupPointClickHandler = (map) => {
       .setLngLat(coordinates)
       .setHTML(
         `<p>
-          <a href="portal/${id}">${title}</a>
+          <a href="portal/${name}">${title}</a>
         </p>
         ${description_html}
         <p>
