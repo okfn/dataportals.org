@@ -27,22 +27,24 @@ const createOverviewMap = (dataset) => {
   });
 };
 
+const portalToGeoJSON = (portal) => {
+  const coordinates = portal.location.split(",");
+  const lat = parseFloat(coordinates[0]);
+  const lng = parseFloat(coordinates[1]);
+
+  return {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [lng, lat],
+    },
+    properties: portal,
+  };
+};
+
 const createGeoJSONFeatures = (dataset) => {
   const portals = Object.values(dataset).filter((portal) => portal.location);
-  return portals.map((portal) => {
-    const coordinates = portal.location.split(",");
-    const lat = parseFloat(coordinates[0]);
-    const lng = parseFloat(coordinates[1]);
-
-    return {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lng, lat],
-      },
-      properties: portal,
-    };
-  });
+  return portals.map(portalToGeoJSON);
 };
 
 const addMapLayers = (map, features) => {
