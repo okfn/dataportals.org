@@ -70,7 +70,20 @@
             "name": "publisher_classification",
             "title": "publisher category",
             "type": "string",
-            "description": "The organizational category that the publisher falls under"
+            "description": "The organizational category that the publisher falls under",
+            "constraints": {
+              "enum": [
+                "Commercial",
+                "Community",
+                "Government",
+                "Institutional",
+                "International",
+                "NGO",
+                "Private sector",
+                "Research",
+                "Third sector"
+              ]
+            }
           },
           {
             "name": "description",
@@ -119,7 +132,8 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "description": "The country name of the author/publisher's geographic location"
+            "description": "The country name of the author/publisher's geographic location",
+            "rdfType": "http://schema.org/Country"
           },
           {
             "name": "language",
