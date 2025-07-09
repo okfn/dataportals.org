@@ -17,6 +17,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
+        "primaryKey": "name",
         "fields": [
           {
             "name": "name",
