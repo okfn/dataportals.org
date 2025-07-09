@@ -132,7 +132,7 @@
             "title": "status",
             "type": "string",
             "constraints": {
-              "pattern": "active|inactive|static"
+              "enum": ["active", "inactive", "static"]
             },
             "description": "This indicates whether the portal is currently available (active) or offline (inactive)"
           },
