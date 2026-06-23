@@ -10,13 +10,19 @@
     "build": "eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "csv-parse": "^5.6.0",
-    "markdown-it": "^14.1.1",
-    "undici": "^7.24.0"
+    "@11ty/eleventy": "^3.1.6",
+    "csv-parse": "^7.0.0",
+    "markdown-it": "^14.2.0",
+    "undici": "^8.5.0"
+  },
+  "overrides": {
+    "gray-matter": "npm:@11ty/gray-matter"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/okfn/dataportals.org.git"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
   }
 }
