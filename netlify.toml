@@ -33,5 +33,277 @@ status = 301
 
 [[redirects]]
 from = "/portal/thailand_opendata/"
-to = "/portal/data-go-th---official-thai-government-portal/"
+to = "/portal/data-go-th/"
+status = 301
+
+# trimmed IDs: no taglines, at most 40 characters
+
+[[redirects]]
+from = "/portal/australian-institute-of-health-and-welfare-aihw/"
+to = "/portal/aihw/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/australian-institute-of-health-and-welfare-aihw.json"
+to = "/api/catalogs/aihw.json"
+status = 301
+
+[[redirects]]
+from = "/portal/beijing-commission-of-economy-and-information-technology/"
+to = "/portal/beijing/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/beijing-commission-of-economy-and-information-technology.json"
+to = "/api/catalogs/beijing.json"
+status = 301
+
+[[redirects]]
+from = "/portal/california-health-and-human-services-open-data-portal/"
+to = "/portal/california-hhs/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/california-health-and-human-services-open-data-portal.json"
+to = "/api/catalogs/california-hhs.json"
+status = 301
+
+[[redirects]]
+from = "/portal/cityscale-com-ua---know-a-better-place-/"
+to = "/portal/cityscale-com-ua/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/cityscale-com-ua---know-a-better-place-.json"
+to = "/api/catalogs/cityscale-com-ua.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dat-ar---unofficial-argentinas-open-data-catalogue/"
+to = "/portal/dat-ar/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dat-ar---unofficial-argentinas-open-data-catalogue.json"
+to = "/api/catalogs/dat-ar.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-go-th---official-thai-government-portal/"
+to = "/portal/data-go-th/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-go-th---official-thai-government-portal.json"
+to = "/api/catalogs/data-go-th.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ph---open-data-philippines/"
+to = "/portal/data-gov-ph/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ph---open-data-philippines.json"
+to = "/api/catalogs/data-gov-ph.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-taina---official-tainan-city-government-portal/"
+to = "/portal/data-taina/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-taina---official-tainan-city-government-portal.json"
+to = "/api/catalogs/data-taina.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala/"
+to = "/portal/datos-transparencia-gob-gt/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala.json"
+to = "/api/catalogs/datos-transparencia-gob-gt.json"
+status = 301
+
+[[redirects]]
+from = "/portal/e-data-gov-ua---the-official-portal-of-public-finance-in-ukraine/"
+to = "/portal/e-data-gov-ua/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/e-data-gov-ua---the-official-portal-of-public-finance-in-ukraine.json"
+to = "/api/catalogs/e-data-gov-ua.json"
+status = 301
+
+[[redirects]]
+from = "/portal/earthworks---stanford-university-libraries-geospatial-data-discovery-application/"
+to = "/portal/earthworks/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/earthworks---stanford-university-libraries-geospatial-data-discovery-application.json"
+to = "/api/catalogs/earthworks.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal-oficial-ayuntamiento-de-rivas-vaciamadrid/"
+to = "/portal/rivas-vaciamadrid/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal-oficial-ayuntamiento-de-rivas-vaciamadrid.json"
+to = "/api/catalogs/rivas-vaciamadrid.json"
+status = 301
+
+[[redirects]]
+from = "/portal/medical-free-libre-and-open-source-software/"
+to = "/portal/medfloss/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/medical-free-libre-and-open-source-software.json"
+to = "/api/catalogs/medfloss.json"
+status = 301
+
+[[redirects]]
+from = "/portal/metropolitan-government-of-nashville-and-davison-county/"
+to = "/portal/nashville/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/metropolitan-government-of-nashville-and-davison-county.json"
+to = "/api/catalogs/nashville.json"
+status = 301
+
+[[redirects]]
+from = "/portal/odi-queensland---open-data-finder/"
+to = "/portal/odi-queensland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/odi-queensland---open-data-finder.json"
+to = "/api/catalogs/odi-queensland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B7%D0%B0-%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8-%D0%BD%D0%B0-%D1%80%D0%B5%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F/"
+to = "/portal/bulgaria/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB-%D0%B7%D0%B0-%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8-%D0%BD%D0%B0-%D1%80%D0%B5%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F.json"
+to = "/api/catalogs/bulgaria.json"
+status = 301
+
+[[redirects]]
+from = "/portal/montana-state-library-geographic-information-clearinghouse/"
+to = "/portal/montana-state-library/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/montana-state-library-geographic-information-clearinghouse.json"
+to = "/api/catalogs/montana-state-library.json"
+status = 301
+
+[[redirects]]
+from = "/portal/montana-fish-wildlife-and-parks-gis-resources/"
+to = "/portal/montana-fish-wildlife-parks/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/montana-fish-wildlife-and-parks-gis-resources.json"
+to = "/api/catalogs/montana-fish-wildlife-parks.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-geograficos-abertos-da-cidade-do-rio-de-janeiro/"
+to = "/portal/dados-geograficos-rio/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-geograficos-abertos-da-cidade-do-rio-de-janeiro.json"
+to = "/api/catalogs/dados-geograficos-rio.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-abertos-legislativos-senado-federal/"
+to = "/portal/dados-legislativos-senado/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-abertos-legislativos-senado-federal.json"
+to = "/api/catalogs/dados-legislativos-senado.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal-de-dados-abertos-da-cidade-de-sao-paulo/"
+to = "/portal/dados-sao-paulo/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal-de-dados-abertos-da-cidade-de-sao-paulo.json"
+to = "/api/catalogs/dados-sao-paulo.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal-dos-dados-abertos-da-alesp-alspgovbr/"
+to = "/portal/dados-abertos-alesp/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal-dos-dados-abertos-da-alesp-alspgovbr.json"
+to = "/api/catalogs/dados-abertos-alesp.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal-da-transparencia-e-mobilidade-urbana-de-natal/"
+to = "/portal/dados-natal/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal-da-transparencia-e-mobilidade-urbana-de-natal.json"
+to = "/api/catalogs/dados-natal.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-abertos-portal-da-transparencia-de-pernambuco/"
+to = "/portal/transparencia-pe/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-abertos-portal-da-transparencia-de-pernambuco.json"
+to = "/api/catalogs/transparencia-pe.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-abertos-tribunal-de-contas-do-estado-de-pernambuco/"
+to = "/portal/dados-abertos-tce-pe/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-abertos-tribunal-de-contas-do-estado-de-pernambuco.json"
+to = "/api/catalogs/dados-abertos-tce-pe.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-abertos-prefeitura-de-belo-horizonte/"
+to = "/portal/dados-belo-horizonte/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-abertos-prefeitura-de-belo-horizonte.json"
+to = "/api/catalogs/dados-belo-horizonte.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal-de-dados-abertos-da-camara-legislativa-do-distrito-federal/"
+to = "/portal/dados-abertos-cldf/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal-de-dados-abertos-da-camara-legislativa-do-distrito-federal.json"
+to = "/api/catalogs/dados-abertos-cldf.json"
 status = 301
