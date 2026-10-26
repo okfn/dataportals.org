@@ -16,6 +16,6 @@ status = 302
 
 # duplicate entry, removed
 [[redirects]]
-from = "/portal/chicago/"
-to = "/portal/city-of-chicago-data-portal/"
+from = "/portal/city-of-chicago-data-portal/"
+to = "/portal/chicago/"
 status = 301
