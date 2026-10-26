@@ -124,7 +124,7 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, or a region such as Global or Europe. Must be a code in countries.csv."
+            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, from countries.csv. Blank for portals covering more than one country; their scope is in place."
           },
           {
             "name": "language",
@@ -191,8 +191,8 @@
     },
     {
       "name": "countries",
-      "title": "Countries and regions",
-      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their official English names, plus Kosovo (XK, which ISO hasn't assigned) and the regions used for multi-country portals.",
+      "title": "Countries",
+      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their official English names, plus Kosovo (XK, which ISO hasn't assigned).",
       "type": "table",
       "path": "countries.csv",
       "format": "csv",
@@ -210,7 +210,7 @@
             "name": "code",
             "type": "string",
             "constraints": { "required": true },
-            "description": "ISO 3166-1 alpha-2 code, or a region name"
+            "description": "ISO 3166-1 alpha-2 code"
           },
           {
             "name": "name",
