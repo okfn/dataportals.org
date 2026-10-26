@@ -60,7 +60,12 @@ Some portals only fail from a script (403 to bots, timeouts from the US, incompl
 ## 4. Edit the data
 
 - **Found a successor:** change only the `url` field.
-- **No successor, or successor already listed:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker. Only do this after working through every step in section 2: in the first pass of this cleanup, 15 of 74 portals marked inactive had in fact just moved.
+- **Positive evidence the portal is gone:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker. Be conservative here. A dead domain shows the old URL is offline, not that the portal is gone: in the first pass of this cleanup, 18 of 74 portals marked inactive had in fact moved. Only mark a portal inactive after working through every step in section 2, and only with one of these:
+  - an official shutdown or replacement notice (e.g. data.ox.ac.uk's end-of-life page)
+  - a successor that already has its own row (e.g. the Finnish beta catalog, now avoindata.fi)
+  - a standalone project whose own domain has lapsed, confirmed by checking the registered domain itself, not just the portal's hostname (e.g. `opendatabc.ca`)
+  - a deployment labeled as a test
+- **Neither:** leave the row unchanged, including when only a subdomain of an organization that still exists is dead (`data.openpolice.ru`), or when a likely successor can't be verified. The checker will keep reporting it, and the summary should list it for a maintainer to decide.
 - Edit rows in place with a targeted text replacement rather than rewriting the file through a CSV writer, which would requote every row and bury the change in the diff. Afterward, parse the old and new files and confirm that only the intended fields changed.
 - Don't edit titles or descriptions to match a new name unless the user asks.
 
@@ -72,4 +77,4 @@ uvx --from 'frictionless==5.*' frictionless validate data/datapackage.json
 
 ## 5. Commit
 
-Make one commit for URL updates and one for status changes. In each commit body, give counts, a few examples, which old URLs failed and how, and any new URLs that `check_urls.js` will still warn on, with the reason. In the pull request or final message, list every portal that was marked inactive, so a maintainer can push back on any of them.
+Make one commit for URL updates and one for status changes. In each commit body, give counts, a few examples, which old URLs failed and how, and any new URLs that `check_urls.js` will still warn on, with the reason. In the pull request or final message, list every portal that was marked inactive along with its evidence, so a maintainer can push back on any of them. Also list the broken portals that were left unchanged, with what was tried.
