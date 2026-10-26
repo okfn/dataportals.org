@@ -75,10 +75,12 @@ permalink: "/portal/{{ catalog.name }}/"
                 Country/Language:
             </dt>
             <dd class="col-sm-9">
+                {% if catalog.country %}
                 <span class="badge bg-info">
                     {{ catalog.country }}
                 </span>
                 &nbsp;/
+                {% endif %}
                 <span class="badge bg-info">
                     {{ catalog.language }}
                 </span>

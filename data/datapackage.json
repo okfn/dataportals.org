@@ -124,10 +124,7 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "constraints": {
-              "pattern": "([A-Z]{2}( [A-Z]{2})*|Global|Europe|EU|International)?"
-            },
-            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, a space-separated list of codes for several countries, or a region (Global, Europe, EU, or International)"
+            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, from countries.csv. Blank for portals covering more than one country; their scope is in place."
           },
           {
             "name": "language",
@@ -183,7 +180,46 @@
             "description": "The URL for downloading the portal metadata"
           }
         ],
-        "primaryKey": ["name"]
+        "primaryKey": ["name"],
+        "foreignKeys": [
+          {
+            "fields": ["country"],
+            "reference": { "resource": "countries", "fields": ["Code"] }
+          }
+        ]
+      }
+    },
+    {
+      "name": "countries",
+      "title": "Countries",
+      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their English names, copied from datasets/country-list, plus Kosovo (XK, which ISO hasn't assigned). The Update Country List workflow refreshes it monthly; don't edit it by hand.",
+      "type": "table",
+      "path": "countries.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "sources": [
+        {
+          "title": "datasets/country-list",
+          "path": "https://github.com/datasets/country-list"
+        }
+      ],
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "Name",
+            "type": "string",
+            "constraints": { "required": true },
+            "description": "English short name"
+          },
+          {
+            "name": "Code",
+            "type": "string",
+            "constraints": { "required": true },
+            "description": "ISO 3166-1 alpha-2 code"
+          }
+        ],
+        "primaryKey": ["Code"]
       }
     }
   ]
