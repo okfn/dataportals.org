@@ -13,3 +13,9 @@ status = 302
 from = "/add/"
 to = "/contribute/#add-an-individual-portal"
 status = 302
+
+# duplicate entry, removed
+[[redirects]]
+from = "/portal/city-of-chicago-data-portal/"
+to = "/portal/chicago/"
+status = 301
