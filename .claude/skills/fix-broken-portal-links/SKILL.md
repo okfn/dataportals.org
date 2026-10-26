@@ -20,19 +20,31 @@ description: Research and fix broken portal URLs in data/portals.csv by finding 
 
 1. Look up each URL's row in `data/portals.csv` (`name`, `title`, `publisher`, `place`). Parse the file with a CSV parser, since some descriptions span several lines.
 
+Before treating an ENOTFOUND as a dead domain, confirm it with a resolver outside the local machine, like Google's DNS over HTTPS (`https://dns.google/resolve?name=<host>&type=A`, where `Status` 3 is NXDOMAIN and 2 is SERVFAIL). Local setups like Cloudflare WARP intercept queries to other resolvers such as `dig @8.8.8.8`, so those don't count as a second opinion.
+
 Leave warnings (403, 429, 5xx, TLS errors, timeouts) alone unless the user asks. They are usually bot protection, a misconfigured certificate chain, or a site that is slow from the US, and those sites often work in a browser. Never mark a portal inactive based on a warning.
 
 ## 2. Find the current URL
 
-For each broken portal:
+The goal is the portal the publisher itself points people to now, not the first page that loads. Work through these in order for each broken portal:
 
-1. Load the site's homepage (`https://<host>/`). For a 404, the portal has often just moved within the same site.
-1. Search the web for the portal's title or publisher plus "open data", in the portal's language, e.g. "Comune di Palermo dati aperti" or "대전광역시 공공데이터". Check government press releases and the national portal's listing (e.g. datos.gob.es, data.gouv.fr, donneesquebec.ca) for the current address.
-1. Common successors:
-   - A city's own ArcGIS Hub (`*.hub.arcgis.com`, `*.opendata.arcgis.com`) or Opendatasoft (`data.<city>.fr`) site
-   - A rename, like a regional "transparency portal" replacing a data portal (Hamburg and Bremen)
-   - A national or regional portal absorbing the local one. That usually means marking it inactive (see below), not repointing it.
-1. The Wayback Machine (`https://web.archive.org/web/2024*/<url>`) can show a "we've moved" notice on the last snapshot. It rate-limits quickly (429 after a handful of requests), so use it only for portals that searching didn't solve, and space the requests out.
+1. **The publisher's own site.** Load the homepage of the old host and of the publisher's main domain (e.g. `https://www.tarragona.cat/` for `opendata.tarragona.cat`), and look for links whose text or URL mentions open data in the local language ("datos abiertos", "dati aperti", "offene Daten", "공공데이터", etc.). What the organization links to is the best answer. That's how Chile's `consejotransparencia.cl/datosabiertos/`, Palo Alto's `data.paloalto.gov`, and Windsor's Hub portal turned up.
+1. **Sibling hostnames.** Try the old host with and without `www.`, and `data.`, `opendata.`, `open.`, and `bigdata.` on the publisher's domain. Watch for domain moves, like a city switching to `.gov` (`data.paloalto.gov`). Some domains (like `salford.gov.uk`) answer for any hostname, so a resolving name only counts if its page title names the publisher.
+1. **Web search,** in the portal's language, for the title or publisher plus "open data", e.g. "Comune di Palermo dati aperti" or "대전광역시 공공데이터". If the first search comes up empty, try at least one more with different wording before giving up. Check press releases and national portal listings (e.g. datos.gob.es, data.gouv.fr, donneesquebec.ca). Search results go stale: a portal they describe as live may no longer resolve (Rome's and CLDF's did not), so verify every lead.
+1. **The Wayback Machine** (`https://web.archive.org/web/2024*/<url>`) can show a "we've moved" notice on the last snapshot. It rate-limits quickly (429 after a handful of requests), so use it only for portals the steps above didn't solve, and space the requests out.
+
+Common successors:
+
+- A city's own ArcGIS Hub (`*.hub.arcgis.com`, `*.opendata.arcgis.com`) or Opendatasoft (`data.<city>.fr`) site
+- A rename, like a "transparency portal" (Hamburg, Bremen) or "big data portal" (Gwangju, Daejeon) replacing the data portal
+- A successor program, like NC OpenBook becoming NC OpenBudget
+- A national or regional portal absorbing the local one. That usually means marking it inactive (see below), not repointing it.
+
+When several URLs fit, prefer:
+
+- the organization's own portal over a shared regional one (Niagara Region's `open.niagararegion.ca` over `niagaraopendata.ca`)
+- the organization's own domain over the platform URL it redirects to (`data.fredericton.ca` over `data-fredericton.opendata.arcgis.com`), since it survives platform changes
+- the portal's front page over a deep link into its catalog
 
 ## 3. Verify the candidate
 
@@ -48,7 +60,7 @@ Some portals only fail from a script (403 to bots, timeouts from the US, incompl
 ## 4. Edit the data
 
 - **Found a successor:** change only the `url` field.
-- **No successor, or successor already listed:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker.
+- **No successor, or successor already listed:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker. Only do this after working through every step in section 2: in the first pass of this cleanup, 15 of 74 portals marked inactive had in fact just moved.
 - Edit rows in place with a targeted text replacement rather than rewriting the file through a CSV writer, which would requote every row and bury the change in the diff. Afterward, parse the old and new files and confirm that only the intended fields changed.
 - Don't edit titles or descriptions to match a new name unless the user asks.
 
