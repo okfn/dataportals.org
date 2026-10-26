@@ -184,7 +184,7 @@
         "foreignKeys": [
           {
             "fields": ["country"],
-            "reference": { "resource": "countries", "fields": ["code"] }
+            "reference": { "resource": "countries", "fields": ["Code"] }
           }
         ]
       }
@@ -192,34 +192,34 @@
     {
       "name": "countries",
       "title": "Countries",
-      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their official English names, plus Kosovo (XK, which ISO hasn't assigned).",
+      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their English names, copied from datasets/country-list, plus Kosovo (XK, which ISO hasn't assigned). The Update Country List workflow refreshes it monthly; don't edit it by hand.",
       "type": "table",
       "path": "countries.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "sources": [
         {
-          "title": "datasets/country-codes",
-          "path": "https://github.com/datasets/country-codes"
+          "title": "datasets/country-list",
+          "path": "https://github.com/datasets/country-list"
         }
       ],
       "schema": {
         "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
         "fields": [
           {
-            "name": "code",
+            "name": "Name",
+            "type": "string",
+            "constraints": { "required": true },
+            "description": "English short name"
+          },
+          {
+            "name": "Code",
             "type": "string",
             "constraints": { "required": true },
             "description": "ISO 3166-1 alpha-2 code"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "constraints": { "required": true },
-            "description": "Official English name (official_name_en in the source)"
           }
         ],
-        "primaryKey": ["code"]
+        "primaryKey": ["Code"]
       }
     }
   ]
