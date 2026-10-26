@@ -22,18 +22,13 @@ status = 301
 
 # replaced by a successor that's also listed, merged
 [[redirects]]
-from = "/portal/finland/"
-to = "/portal/national-open-data-portal-finland/"
-status = 301
-
-[[redirects]]
 from = "/portal/digitaliser_dk/"
-to = "/portal/datavejviser-dk/"
+to = "/portal/denmark/"
 status = 301
 
 [[redirects]]
 from = "/portal/thailand_opendata/"
-to = "/portal/data-go-th/"
+to = "/portal/thailand/"
 status = 301
 
 [[redirects]]
@@ -100,42 +95,42 @@ status = 301
 
 [[redirects]]
 from = "/portal/data-go-th---official-thai-government-portal/"
-to = "/portal/data-go-th/"
+to = "/portal/thailand/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data-go-th---official-thai-government-portal.json"
-to = "/api/catalogs/data-go-th.json"
+to = "/api/catalogs/thailand.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data-gov-ph---open-data-philippines/"
-to = "/portal/data-gov-ph/"
+to = "/portal/philippines/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data-gov-ph---open-data-philippines.json"
-to = "/api/catalogs/data-gov-ph.json"
+to = "/api/catalogs/philippines.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data-taina---official-tainan-city-government-portal/"
-to = "/portal/data-taina/"
+to = "/portal/data-tainan/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data-taina---official-tainan-city-government-portal.json"
-to = "/api/catalogs/data-taina.json"
+to = "/api/catalogs/data-tainan.json"
 status = 301
 
 [[redirects]]
 from = "/portal/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala/"
-to = "/portal/datos-transparencia-gob-gt/"
+to = "/portal/guatemala/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala.json"
-to = "/api/catalogs/datos-transparencia-gob-gt.json"
+to = "/api/catalogs/guatemala.json"
 status = 301
 
 [[redirects]]
@@ -327,4 +322,2458 @@ status = 301
 [[redirects]]
 from = "/api/catalogs/bulgaria.json"
 to = "/api/catalogs/%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F.json"
+status = 301
+
+# simplified IDs: hyphens only, ASCII
+
+[[redirects]]
+from = "/portal/a2gov_org/"
+to = "/portal/a2gov-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/a2gov_org.json"
+to = "/api/catalogs/a2gov-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/africa_open_data/"
+to = "/portal/africa-open-data/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/africa_open_data.json"
+to = "/api/catalogs/africa-open-data.json"
+status = 301
+
+[[redirects]]
+from = "/portal/alberta_ca/"
+to = "/portal/alberta-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/alberta_ca.json"
+to = "/api/catalogs/alberta-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/algeria_opendataforafrica/"
+to = "/portal/algeria-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/algeria_opendataforafrica.json"
+to = "/api/catalogs/algeria-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/alkmaar_nl/"
+to = "/portal/alkmaar-nl/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/alkmaar_nl.json"
+to = "/api/catalogs/alkmaar-nl.json"
+status = 301
+
+[[redirects]]
+from = "/portal/amsterdam_geo_data/"
+to = "/portal/amsterdam-geo-data/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/amsterdam_geo_data.json"
+to = "/api/catalogs/amsterdam-geo-data.json"
+status = 301
+
+[[redirects]]
+from = "/portal/amsterdam_open_data/"
+to = "/portal/amsterdam-open-data/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/amsterdam_open_data.json"
+to = "/api/catalogs/amsterdam-open-data.json"
+status = 301
+
+[[redirects]]
+from = "/portal/asturias_es/"
+to = "/portal/asturias-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/asturias_es.json"
+to = "/api/catalogs/asturias-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/badalona_cat/"
+to = "/portal/badalona-cat/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/badalona_cat.json"
+to = "/api/catalogs/badalona-cat.json"
+status = 301
+
+[[redirects]]
+from = "/portal/banffopendata_ca/"
+to = "/portal/banffopendata-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/banffopendata_ca.json"
+to = "/api/catalogs/banffopendata-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/bari_open_data/"
+to = "/portal/bari-open-data/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/bari_open_data.json"
+to = "/api/catalogs/bari-open-data.json"
+status = 301
+
+[[redirects]]
+from = "/portal/bcn_cat/"
+to = "/portal/bcn-cat/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/bcn_cat.json"
+to = "/api/catalogs/bcn-cat.json"
+status = 301
+
+[[redirects]]
+from = "/portal/bermuda_io/"
+to = "/portal/bermuda-io/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/bermuda_io.json"
+to = "/api/catalogs/bermuda-io.json"
+status = 301
+
+[[redirects]]
+from = "/portal/brampton_ca/"
+to = "/portal/brampton-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/brampton_ca.json"
+to = "/api/catalogs/brampton-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/brandon_mb_ca/"
+to = "/portal/brandon-mb-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/brandon_mb_ca.json"
+to = "/api/catalogs/brandon-mb-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/brisbane_datastore/"
+to = "/portal/brisbane-datastore/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/brisbane_datastore.json"
+to = "/api/catalogs/brisbane-datastore.json"
+status = 301
+
+[[redirects]]
+from = "/portal/budget_gov_ru/"
+to = "/portal/budget-gov-ru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/budget_gov_ru.json"
+to = "/api/catalogs/budget-gov-ru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/burlington_ca/"
+to = "/portal/burlington-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/burlington_ca.json"
+to = "/api/catalogs/burlington-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ca_gov/"
+to = "/portal/ca-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ca_gov.json"
+to = "/api/catalogs/ca-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ca_nl/"
+to = "/portal/ca-nl/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ca_nl.json"
+to = "/api/catalogs/ca-nl.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ca_on_kitchener/"
+to = "/portal/ca-on-kitchener/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ca_on_kitchener.json"
+to = "/api/catalogs/ca-on-kitchener.json"
+status = 301
+
+[[redirects]]
+from = "/portal/caib_es/"
+to = "/portal/caib-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/caib_es.json"
+to = "/api/catalogs/caib-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/cameroon_opendataforafrica/"
+to = "/portal/cameroon-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/cameroon_opendataforafrica.json"
+to = "/api/catalogs/cameroon-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/capeverde_opendataforafrica/"
+to = "/portal/capeverde-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/capeverde_opendataforafrica.json"
+to = "/api/catalogs/capeverde-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/chamber_of_deputies_it/"
+to = "/portal/chamber-of-deputies-it/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chamber_of_deputies_it.json"
+to = "/api/catalogs/chamber-of-deputies-it.json"
+status = 301
+
+[[redirects]]
+from = "/portal/chatham_kent_on/"
+to = "/portal/chatham-kent-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chatham_kent_on.json"
+to = "/api/catalogs/chatham-kent-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/chile_library_of_congress/"
+to = "/portal/chile-library-of-congress/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chile_library_of_congress.json"
+to = "/api/catalogs/chile-library-of-congress.json"
+status = 301
+
+[[redirects]]
+from = "/portal/chile_transparency_board/"
+to = "/portal/chile-transparency-board/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chile_transparency_board.json"
+to = "/api/catalogs/chile-transparency-board.json"
+status = 301
+
+[[redirects]]
+from = "/portal/chilliwack_bc/"
+to = "/portal/chilliwack-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chilliwack_bc.json"
+to = "/api/catalogs/chilliwack-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/citywindsor_ca/"
+to = "/portal/citywindsor-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/citywindsor_ca.json"
+to = "/api/catalogs/citywindsor-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/civicapps_org/"
+to = "/portal/civicapps-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/civicapps_org.json"
+to = "/api/catalogs/civicapps-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ckan_ireland/"
+to = "/portal/ckan-ireland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ckan_ireland.json"
+to = "/api/catalogs/ckan-ireland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/codeando_mexico/"
+to = "/portal/codeando-mexico/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/codeando_mexico.json"
+to = "/api/catalogs/codeando-mexico.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_australia_gov_au/"
+to = "/portal/australia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_australia_gov_au.json"
+to = "/api/catalogs/australia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_canada_ca/"
+to = "/portal/canada/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_canada_ca.json"
+to = "/api/catalogs/canada.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_go_kr/"
+to = "/portal/south-korea/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_go_kr.json"
+to = "/api/catalogs/south-korea.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_gov/"
+to = "/portal/united-states/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_gov.json"
+to = "/api/catalogs/united-states.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_gov_il/"
+to = "/portal/israel/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_gov_il.json"
+to = "/api/catalogs/israel.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_gov_sk/"
+to = "/portal/slovakia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_gov_sk.json"
+to = "/api/catalogs/slovakia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_gov_uk/"
+to = "/portal/united-kingdom/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_gov_uk.json"
+to = "/api/catalogs/united-kingdom.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_lexington_gov/"
+to = "/portal/data-lexington-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_lexington_gov.json"
+to = "/api/catalogs/data-lexington-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_mos_ru/"
+to = "/portal/data-mos-ru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_mos_ru.json"
+to = "/api/catalogs/data-mos-ru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_one/"
+to = "/portal/data-one/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_one.json"
+to = "/api/catalogs/data-one.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_openpolice_ru/"
+to = "/portal/data-openpolice-ru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_openpolice_ru.json"
+to = "/api/catalogs/data-openpolice-ru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_qld_gov_au/"
+to = "/portal/data-qld-gov-au/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_qld_gov_au.json"
+to = "/api/catalogs/data-qld-gov-au.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_seattle_gov/"
+to = "/portal/data-seattle-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_seattle_gov.json"
+to = "/api/catalogs/data-seattle-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data_vic_gov_au/"
+to = "/portal/data-vic-gov-au/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data_vic_gov_au.json"
+to = "/api/catalogs/data-vic-gov-au.json"
+status = 301
+
+[[redirects]]
+from = "/portal/portal_der_stadt_zuerich/"
+to = "/portal/portal-der-stadt-zuerich/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/portal_der_stadt_zuerich.json"
+to = "/api/catalogs/portal-der-stadt-zuerich.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-publica_fr/"
+to = "/portal/data-publica-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-publica_fr.json"
+to = "/api/catalogs/data-publica-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-taina/"
+to = "/portal/data-tainan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-taina.json"
+to = "/api/catalogs/data-tainan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datasf_org/"
+to = "/portal/datasf-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datasf_org.json"
+to = "/api/catalogs/datasf-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dati_veneto_it/"
+to = "/portal/dati-veneto-it/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dati_veneto_it.json"
+to = "/api/catalogs/dati-veneto-it.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datiopen_it/"
+to = "/portal/datiopen-it/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datiopen_it.json"
+to = "/api/catalogs/datiopen-it.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos_misiones_gov_ar/"
+to = "/portal/datos-misiones-gov-ar/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos_misiones_gov_ar.json"
+to = "/api/catalogs/datos-misiones-gov-ar.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dc_gov/"
+to = "/portal/dc-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dc_gov.json"
+to = "/api/catalogs/dc-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dnv_org/"
+to = "/portal/dnv-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dnv_org.json"
+to = "/api/catalogs/dnv-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/drcongo_opendataforafrica/"
+to = "/portal/drcongo-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/drcongo_opendataforafrica.json"
+to = "/api/catalogs/drcongo-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/edmonton_ca/"
+to = "/portal/edmonton-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/edmonton_ca.json"
+to = "/api/catalogs/edmonton-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ethiopia_opendataforafrica/"
+to = "/portal/ethiopia-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ethiopia_opendataforafrica.json"
+to = "/api/catalogs/ethiopia-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/european_dataportal/"
+to = "/portal/european-dataportal/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/european_dataportal.json"
+to = "/api/catalogs/european-dataportal.json"
+status = 301
+
+[[redirects]]
+from = "/portal/euskadi_net/"
+to = "/portal/euskadi-net/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/euskadi_net.json"
+to = "/api/catalogs/euskadi-net.json"
+status = 301
+
+[[redirects]]
+from = "/portal/fair-play_sk/"
+to = "/portal/fair-play-sk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/fair-play_sk.json"
+to = "/api/catalogs/fair-play-sk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/fingal_county_ie/"
+to = "/portal/fingal-county-ie/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/fingal_county_ie.json"
+to = "/api/catalogs/fingal-county-ie.json"
+status = 301
+
+[[redirects]]
+from = "/portal/fredericton_ca/"
+to = "/portal/fredericton-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/fredericton_ca.json"
+to = "/api/catalogs/fredericton-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gatineau_qc/"
+to = "/portal/gatineau-qc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gatineau_qc.json"
+to = "/api/catalogs/gatineau-qc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gencat_cat/"
+to = "/portal/gencat-cat/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gencat_cat.json"
+to = "/api/catalogs/gencat-cat.json"
+status = 301
+
+[[redirects]]
+from = "/portal/geo_be/"
+to = "/portal/geo-be/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/geo_be.json"
+to = "/api/catalogs/geo-be.json"
+status = 301
+
+[[redirects]]
+from = "/portal/geodata_gov_gr/"
+to = "/portal/geodata-gov-gr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/geodata_gov_gr.json"
+to = "/api/catalogs/geodata-gov-gr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/georgia_public_information/"
+to = "/portal/georgia-public-information/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/georgia_public_information.json"
+to = "/api/catalogs/georgia-public-information.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ghana_opendataforafrica/"
+to = "/portal/ghana-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ghana_opendataforafrica.json"
+to = "/api/catalogs/ghana-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gijon_es/"
+to = "/portal/gijon-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gijon_es.json"
+to = "/api/catalogs/gijon-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gipuzkoa_irekia_eus/"
+to = "/portal/gipuzkoa-irekia-eus/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gipuzkoa_irekia_eus.json"
+to = "/api/catalogs/gipuzkoa-irekia-eus.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gironde-aquitaine_fr/"
+to = "/portal/gironde-aquitaine-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gironde-aquitaine_fr.json"
+to = "/api/catalogs/gironde-aquitaine-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/gov_bc_ca/"
+to = "/portal/gov-bc-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/gov_bc_ca.json"
+to = "/api/catalogs/gov-bc-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/guelph_ca/"
+to = "/portal/guelph-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/guelph_ca.json"
+to = "/api/catalogs/guelph-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/halifaxopendata_ca/"
+to = "/portal/halifaxopendata-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/halifaxopendata_ca.json"
+to = "/api/catalogs/halifaxopendata-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/hamilton_ca/"
+to = "/portal/hamilton-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/hamilton_ca.json"
+to = "/api/catalogs/hamilton-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/helsinki_finland/"
+to = "/portal/helsinki-finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/helsinki_finland.json"
+to = "/api/catalogs/helsinki-finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/houston_data_portal/"
+to = "/portal/houston-data-portal/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/houston_data_portal.json"
+to = "/api/catalogs/houston-data-portal.json"
+status = 301
+
+[[redirects]]
+from = "/portal/jyvaskyla_finland/"
+to = "/portal/jyvaskyla-finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/jyvaskyla_finland.json"
+to = "/api/catalogs/jyvaskyla-finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/kamloops_bc/"
+to = "/portal/kamloops-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/kamloops_bc.json"
+to = "/api/catalogs/kamloops-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/karnataka_learning_partnership/"
+to = "/portal/karnataka-learning-partnership/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/karnataka_learning_partnership.json"
+to = "/api/catalogs/karnataka-learning-partnership.json"
+status = 301
+
+[[redirects]]
+from = "/portal/kelowna_bc/"
+to = "/portal/kelowna-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/kelowna_bc.json"
+to = "/api/catalogs/kelowna-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/kingston_on/"
+to = "/portal/kingston-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/kingston_on.json"
+to = "/api/catalogs/kingston-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/lichfielddc_gov_uk/"
+to = "/portal/lichfielddc-gov-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/lichfielddc_gov_uk.json"
+to = "/api/catalogs/lichfielddc-gov-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/london_ca/"
+to = "/portal/london-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/london_ca.json"
+to = "/api/catalogs/london-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/london_gov_uk/"
+to = "/portal/london-gov-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/london_gov_uk.json"
+to = "/api/catalogs/london-gov-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/maine_gov/"
+to = "/portal/maine-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/maine_gov.json"
+to = "/api/catalogs/maine-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/malawi_opendataforafrica/"
+to = "/portal/malawi-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/malawi_opendataforafrica.json"
+to = "/api/catalogs/malawi-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/mass_gov/"
+to = "/portal/mass-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/mass_gov.json"
+to = "/api/catalogs/mass-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/medicine_hat_ca/"
+to = "/portal/medicine-hat-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/medicine_hat_ca.json"
+to = "/api/catalogs/medicine-hat-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/michigan_gov/"
+to = "/portal/michigan-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/michigan_gov.json"
+to = "/api/catalogs/michigan-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/milton_on/"
+to = "/portal/milton-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/milton_on.json"
+to = "/api/catalogs/milton-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/mississauga_ca/"
+to = "/portal/mississauga-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/mississauga_ca.json"
+to = "/api/catalogs/mississauga-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/montevideo_gub_uy/"
+to = "/portal/montevideo-gub-uy/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/montevideo_gub_uy.json"
+to = "/api/catalogs/montevideo-gub-uy.json"
+status = 301
+
+[[redirects]]
+from = "/portal/montpellier_fr/"
+to = "/portal/montpellier-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/montpellier_fr.json"
+to = "/api/catalogs/montpellier-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/morocco_opendataforafrica/"
+to = "/portal/morocco-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/morocco_opendataforafrica.json"
+to = "/api/catalogs/morocco-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/mozambique_opendataforafrica/"
+to = "/portal/mozambique-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/mozambique_opendataforafrica.json"
+to = "/api/catalogs/mozambique-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/mxabierto-github-io_ng-ckan/"
+to = "/portal/mexico/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/mxabierto-github-io_ng-ckan.json"
+to = "/api/catalogs/mexico.json"
+status = 301
+
+[[redirects]]
+from = "/portal/namibia_opendataforafrica/"
+to = "/portal/namibia-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/namibia_opendataforafrica.json"
+to = "/api/catalogs/namibia-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nanaimo_ca/"
+to = "/portal/nanaimo-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nanaimo_ca.json"
+to = "/api/catalogs/nanaimo-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nantes_fr/"
+to = "/portal/nantes-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nantes_fr.json"
+to = "/api/catalogs/nantes-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nevada_county-ca-usa/"
+to = "/portal/nevada-county-ca-usa/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nevada_county-ca-usa.json"
+to = "/api/catalogs/nevada-county-ca-usa.json"
+status = 301
+
+[[redirects]]
+from = "/portal/niagara_region_ca/"
+to = "/portal/niagara-region-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/niagara_region_ca.json"
+to = "/api/catalogs/niagara-region-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/niagarafalls_ca/"
+to = "/portal/niagarafalls-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/niagarafalls_ca.json"
+to = "/api/catalogs/niagarafalls-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nigeria_opendataforafrica/"
+to = "/portal/nigeria-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nigeria_opendataforafrica.json"
+to = "/api/catalogs/nigeria-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/north_devon_council/"
+to = "/portal/north-devon-council/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/north_devon_council.json"
+to = "/api/catalogs/north-devon-council.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nosdonnees_fr/"
+to = "/portal/nosdonnees-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nosdonnees_fr.json"
+to = "/api/catalogs/nosdonnees-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nsw_gov_au/"
+to = "/portal/nsw-gov-au/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nsw_gov_au.json"
+to = "/api/catalogs/nsw-gov-au.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ny_state/"
+to = "/portal/ny-state/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ny_state.json"
+to = "/api/catalogs/ny-state.json"
+status = 301
+
+[[redirects]]
+from = "/portal/nyc_gov/"
+to = "/portal/nyc-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/nyc_gov.json"
+to = "/api/catalogs/nyc-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/oakville_on/"
+to = "/portal/oakville-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/oakville_on.json"
+to = "/api/catalogs/oakville-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/odaa_denmark/"
+to = "/portal/odaa-denmark/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/odaa_denmark.json"
+to = "/api/catalogs/odaa-denmark.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ogd_4d833820b50c7/"
+to = "/portal/missouri/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ogd_4d833820b50c7.json"
+to = "/api/catalogs/missouri.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ogd_4d873ebf17e89/"
+to = "/portal/florida/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ogd_4d873ebf17e89.json"
+to = "/api/catalogs/florida.json"
+status = 301
+
+[[redirects]]
+from = "/portal/okanagan_similkameen_ca/"
+to = "/portal/okanagan-similkameen-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/okanagan_similkameen_ca.json"
+to = "/api/catalogs/okanagan-similkameen-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ontario_ca/"
+to = "/portal/ontario-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ontario_ca.json"
+to = "/api/catalogs/ontario-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_data_hub_italia/"
+to = "/portal/open-data-hub-italia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_data_hub_italia.json"
+to = "/api/catalogs/open-data-hub-italia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_data_taiwan/"
+to = "/portal/open-data-taiwan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_data_taiwan.json"
+to = "/api/catalogs/open-data-taiwan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_data_trentino/"
+to = "/portal/open-data-trentino/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_data_trentino.json"
+to = "/api/catalogs/open-data-trentino.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_data_trento/"
+to = "/portal/open-data-trento/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_data_trento.json"
+to = "/api/catalogs/open-data-trento.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_government_data_saudi/"
+to = "/portal/open-government-data-saudi/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_government_data_saudi.json"
+to = "/api/catalogs/open-government-data-saudi.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_government_data_wien/"
+to = "/portal/open-government-data-wien/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_government_data_wien.json"
+to = "/api/catalogs/open-government-data-wien.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_government_tennessee/"
+to = "/portal/open-government-tennessee/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_government_tennessee.json"
+to = "/api/catalogs/open-government-tennessee.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_new_york/"
+to = "/portal/open-new-york/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_new_york.json"
+to = "/api/catalogs/open-new-york.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_org_nz/"
+to = "/portal/open-org-nz/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_org_nz.json"
+to = "/api/catalogs/open-org-nz.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_virginia/"
+to = "/portal/open-virginia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_virginia.json"
+to = "/api/catalogs/open-virginia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/openaid_se/"
+to = "/portal/openaid-se/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/openaid_se.json"
+to = "/api/catalogs/openaid-se.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata_enschede/"
+to = "/portal/opendata-enschede/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata_enschede.json"
+to = "/api/catalogs/opendata-enschede.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata_go_ke/"
+to = "/portal/kenya/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata_go_ke.json"
+to = "/api/catalogs/kenya.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata_hro/"
+to = "/portal/opendata-hro/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata_hro.json"
+to = "/api/catalogs/opendata-hro.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata_terrassa_cat/"
+to = "/portal/opendata-terrassa-cat/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata_terrassa_cat.json"
+to = "/api/catalogs/opendata-terrassa-cat.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendatani_info/"
+to = "/portal/opendatani-info/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendatani_info.json"
+to = "/api/catalogs/opendatani-info.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opengov_es/"
+to = "/portal/opengov-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opengov_es.json"
+to = "/api/catalogs/opengov-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opengov_se/"
+to = "/portal/opengov-se/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opengov_se.json"
+to = "/api/catalogs/opengov-se.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opengovdata_ru/"
+to = "/portal/opengovdata-ru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opengovdata_ru.json"
+to = "/api/catalogs/opengovdata-ru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_nrw/"
+to = "/portal/open-nrw/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_nrw.json"
+to = "/api/catalogs/open-nrw.json"
+status = 301
+
+[[redirects]]
+from = "/portal/oppnadata_se/"
+to = "/portal/oppnadata-se/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/oppnadata_se.json"
+to = "/api/catalogs/oppnadata-se.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ottawa_ca/"
+to = "/portal/ottawa-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ottawa_ca.json"
+to = "/api/catalogs/ottawa-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/oulu_finland/"
+to = "/portal/oulu-finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/oulu_finland.json"
+to = "/api/catalogs/oulu-finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/overheid_nl/"
+to = "/portal/netherlands/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/overheid_nl.json"
+to = "/api/catalogs/netherlands.json"
+status = 301
+
+[[redirects]]
+from = "/portal/paeria_es/"
+to = "/portal/paeria-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/paeria_es.json"
+to = "/api/catalogs/paeria-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/paris_fr/"
+to = "/portal/paris-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/paris_fr.json"
+to = "/api/catalogs/paris-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/picandmix_org_uk/"
+to = "/portal/picandmix-org-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/picandmix_org_uk.json"
+to = "/api/catalogs/picandmix-org-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/piemonte_it/"
+to = "/portal/piemonte-it/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/piemonte_it.json"
+to = "/api/catalogs/piemonte-it.json"
+status = 301
+
+[[redirects]]
+from = "/portal/princegeorge_ca/"
+to = "/portal/princegeorge-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/princegeorge_ca.json"
+to = "/api/catalogs/princegeorge-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/pt_national_portal/"
+to = "/portal/portugal/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/pt_national_portal.json"
+to = "/api/catalogs/portugal.json"
+status = 301
+
+[[redirects]]
+from = "/portal/qualicum_beach_bc/"
+to = "/portal/qualicum-beach-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/qualicum_beach_bc.json"
+to = "/api/catalogs/qualicum-beach-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/quebec_qc_ca/"
+to = "/portal/quebec-qc-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/quebec_qc_ca.json"
+to = "/api/catalogs/quebec-qc-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/rcongo_opendataforafrica/"
+to = "/portal/rcongo-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/rcongo_opendataforafrica.json"
+to = "/api/catalogs/rcongo-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/regina_ca/"
+to = "/portal/regina-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/regina_ca.json"
+to = "/api/catalogs/regina-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/region_of_york_ca/"
+to = "/portal/region-of-york-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/region_of_york_ca.json"
+to = "/api/catalogs/region-of-york-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/rennes_fr/"
+to = "/portal/rennes-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/rennes_fr.json"
+to = "/api/catalogs/rennes-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/research_data_australia/"
+to = "/portal/research-data-australia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/research_data_australia.json"
+to = "/api/catalogs/research-data-australia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ri_gov/"
+to = "/portal/ri-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ri_gov.json"
+to = "/api/catalogs/ri-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/rwanda_opendataforafrica/"
+to = "/portal/rwanda-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/rwanda_opendataforafrica.json"
+to = "/api/catalogs/rwanda-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/saone-et-loire_fr/"
+to = "/portal/saone-et-loire-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/saone-et-loire_fr.json"
+to = "/api/catalogs/saone-et-loire-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/semic_eu/"
+to = "/portal/semic-eu/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/semic_eu.json"
+to = "/api/catalogs/semic-eu.json"
+status = 301
+
+[[redirects]]
+from = "/portal/senato_it/"
+to = "/portal/senato-it/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/senato_it.json"
+to = "/api/catalogs/senato-it.json"
+status = 301
+
+[[redirects]]
+from = "/portal/senegal_opendataforafrica/"
+to = "/portal/senegal-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/senegal_opendataforafrica.json"
+to = "/api/catalogs/senegal-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/sherbrooke_qc/"
+to = "/portal/sherbrooke-qc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/sherbrooke_qc.json"
+to = "/api/catalogs/sherbrooke-qc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/singapore_opendata/"
+to = "/portal/singapore/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/singapore_opendata.json"
+to = "/api/catalogs/singapore.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southafrica_capetown/"
+to = "/portal/southafrica-capetown/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southafrica_capetown.json"
+to = "/api/catalogs/southafrica-capetown.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southafrica_municipal_money/"
+to = "/portal/southafrica-municipal-money/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southafrica_municipal_money.json"
+to = "/api/catalogs/southafrica-municipal-money.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southafrica_municipal_data/"
+to = "/portal/southafrica-municipal-data/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southafrica_municipal_data.json"
+to = "/api/catalogs/southafrica-municipal-data.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southafrica_opendataforafrica/"
+to = "/portal/southafrica-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southafrica_opendataforafrica.json"
+to = "/api/catalogs/southafrica-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southafrica_vulekamali/"
+to = "/portal/southafrica-vulekamali/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southafrica_vulekamali.json"
+to = "/api/catalogs/southafrica-vulekamali.json"
+status = 301
+
+[[redirects]]
+from = "/portal/southsudan_opendataforafrica/"
+to = "/portal/southsudan-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/southsudan_opendataforafrica.json"
+to = "/api/catalogs/southsudan-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/state_of_illinois/"
+to = "/portal/state-of-illinois/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/state_of_illinois.json"
+to = "/api/catalogs/state-of-illinois.json"
+status = 301
+
+[[redirects]]
+from = "/portal/state_of_nebraska/"
+to = "/portal/state-of-nebraska/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/state_of_nebraska.json"
+to = "/api/catalogs/state-of-nebraska.json"
+status = 301
+
+[[redirects]]
+from = "/portal/state_of_washington/"
+to = "/portal/state-of-washington/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/state_of_washington.json"
+to = "/api/catalogs/state-of-washington.json"
+status = 301
+
+[[redirects]]
+from = "/portal/strathcona_ca/"
+to = "/portal/strathcona-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/strathcona_ca.json"
+to = "/api/catalogs/strathcona-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/suomi_fi/"
+to = "/portal/suomi-fi/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/suomi_fi.json"
+to = "/api/catalogs/suomi-fi.json"
+status = 301
+
+[[redirects]]
+from = "/portal/surrey_ca/"
+to = "/portal/surrey-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/surrey_ca.json"
+to = "/api/catalogs/surrey-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/sutton_gov_uk/"
+to = "/portal/sutton-gov-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/sutton_gov_uk.json"
+to = "/api/catalogs/sutton-gov-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/tampere_finland/"
+to = "/portal/tampere-finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/tampere_finland.json"
+to = "/api/catalogs/tampere-finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/tanzania_opendataforafrica/"
+to = "/portal/tanzania-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/tanzania_opendataforafrica.json"
+to = "/api/catalogs/tanzania-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/thunder_bay_on/"
+to = "/portal/thunder-bay-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/thunder_bay_on.json"
+to = "/api/catalogs/thunder-bay-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/tol_ca/"
+to = "/portal/tol-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/tol_ca.json"
+to = "/api/catalogs/tol-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/toronto_ca/"
+to = "/portal/toronto-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/toronto_ca.json"
+to = "/api/catalogs/toronto-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/toulouse_fr/"
+to = "/portal/toulouse-fr/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/toulouse_fr.json"
+to = "/api/catalogs/toulouse-fr.json"
+status = 301
+
+[[redirects]]
+from = "/portal/trafford_gov_uk/"
+to = "/portal/trafford-gov-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/trafford_gov_uk.json"
+to = "/api/catalogs/trafford-gov-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/tunisia_opendataforafrica/"
+to = "/portal/tunisia-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/tunisia_opendataforafrica.json"
+to = "/api/catalogs/tunisia-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/turku_finland/"
+to = "/portal/turku-finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/turku_finland.json"
+to = "/api/catalogs/turku-finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/uae_open_data/"
+to = "/portal/united-arab-emirates/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/uae_open_data.json"
+to = "/api/catalogs/united-arab-emirates.json"
+status = 301
+
+[[redirects]]
+from = "/portal/undata-api_org/"
+to = "/portal/undata-api-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/undata-api_org.json"
+to = "/api/catalogs/undata-api-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/utah_gov/"
+to = "/portal/utah-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/utah_gov.json"
+to = "/api/catalogs/utah-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/vancouver_ca/"
+to = "/portal/vancouver-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/vancouver_ca.json"
+to = "/api/catalogs/vancouver-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/vernon_bc/"
+to = "/portal/vernon-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/vernon_bc.json"
+to = "/api/catalogs/vernon-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/victoria_bc/"
+to = "/portal/victoria-bc/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/victoria_bc.json"
+to = "/api/catalogs/victoria-bc.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ville_montreal_qc_ca/"
+to = "/portal/ville-montreal-qc-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ville_montreal_qc_ca.json"
+to = "/api/catalogs/ville-montreal-qc-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/virgina_datapoint/"
+to = "/portal/virgina-datapoint/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/virgina_datapoint.json"
+to = "/api/catalogs/virgina-datapoint.json"
+status = 301
+
+[[redirects]]
+from = "/portal/warwickshire_gov_uk/"
+to = "/portal/warwickshire-gov-uk/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/warwickshire_gov_uk.json"
+to = "/api/catalogs/warwickshire-gov-uk.json"
+status = 301
+
+[[redirects]]
+from = "/portal/welland_on/"
+to = "/portal/welland-on/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/welland_on.json"
+to = "/api/catalogs/welland-on.json"
+status = 301
+
+[[redirects]]
+from = "/portal/whitehorse_yt/"
+to = "/portal/whitehorse-yt/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/whitehorse_yt.json"
+to = "/api/catalogs/whitehorse-yt.json"
+status = 301
+
+[[redirects]]
+from = "/portal/winnipeg_ca/"
+to = "/portal/winnipeg-ca/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/winnipeg_ca.json"
+to = "/api/catalogs/winnipeg-ca.json"
+status = 301
+
+[[redirects]]
+from = "/portal/worldbank_org/"
+to = "/portal/worldbank-org/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/worldbank_org.json"
+to = "/api/catalogs/worldbank-org.json"
+status = 301
+
+[[redirects]]
+from = "/portal/zambia_opendataforafrica/"
+to = "/portal/zambia-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/zambia_opendataforafrica.json"
+to = "/api/catalogs/zambia-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/zaragoza_es/"
+to = "/portal/zaragoza-es/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/zaragoza_es.json"
+to = "/api/catalogs/zaragoza-es.json"
+status = 301
+
+[[redirects]]
+from = "/portal/zimbabwe_opendataforafrica/"
+to = "/portal/zimbabwe-opendataforafrica/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/zimbabwe_opendataforafrica.json"
+to = "/api/catalogs/zimbabwe-opendataforafrica.json"
+status = 301
+
+[[redirects]]
+from = "/portal/minnesota_geospatial_commons/"
+to = "/portal/minnesota-geospatial-commons/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/minnesota_geospatial_commons.json"
+to = "/api/catalogs/minnesota-geospatial-commons.json"
+status = 301
+
+[[redirects]]
+from = "/portal/hawaii_gov/"
+to = "/portal/hawaii-gov/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/hawaii_gov.json"
+to = "/api/catalogs/hawaii-gov.json"
+status = 301
+
+[[redirects]]
+from = "/portal/transparencia-anapois-dados-abertos/"
+to = "/portal/transparencia-anapolis-dados-abertos/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/transparencia-anapois-dados-abertos.json"
+to = "/api/catalogs/transparencia-anapolis-dados-abertos.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open_data_ps/"
+to = "/portal/palestine/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open_data_ps.json"
+to = "/api/catalogs/palestine.json"
+status = 301
+
+# national portals named for their country
+
+[[redirects]]
+from = "/portal/chile-government/"
+to = "/portal/chile/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chile-government.json"
+to = "/api/catalogs/chile.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-gov-br/"
+to = "/portal/brazil/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-gov-br.json"
+to = "/api/catalogs/brazil.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dane-gov-pl/"
+to = "/portal/poland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dane-gov-pl.json"
+to = "/api/catalogs/poland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-catalogue-austrian-government/"
+to = "/portal/austria/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-catalogue-austrian-government.json"
+to = "/api/catalogs/austria.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-catalogue-suisse-government/"
+to = "/portal/switzerland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-catalogue-suisse-government.json"
+to = "/api/catalogs/switzerland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-go-jp/"
+to = "/portal/japan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-go-jp.json"
+to = "/api/catalogs/japan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-go-th/"
+to = "/portal/thailand/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-go-th.json"
+to = "/api/catalogs/thailand.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gouv-fr/"
+to = "/portal/france/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gouv-fr.json"
+to = "/api/catalogs/france.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-bf/"
+to = "/portal/burkina-faso/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-bf.json"
+to = "/api/catalogs/burkina-faso.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-hk/"
+to = "/portal/hong-kong/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-hk.json"
+to = "/api/catalogs/hong-kong.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-hr/"
+to = "/portal/croatia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-hr.json"
+to = "/api/catalogs/croatia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ie/"
+to = "/portal/ireland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ie.json"
+to = "/api/catalogs/ireland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ph/"
+to = "/portal/philippines/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ph.json"
+to = "/api/catalogs/philippines.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ro/"
+to = "/portal/romania/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ro.json"
+to = "/api/catalogs/romania.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-tw/"
+to = "/portal/taiwan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-tw.json"
+to = "/api/catalogs/taiwan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-norge-no/"
+to = "/portal/norway/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-norge-no.json"
+to = "/api/catalogs/norway.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datagovgreece/"
+to = "/portal/greece/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datagovgreece.json"
+to = "/api/catalogs/greece.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dati-gov-it/"
+to = "/portal/italy/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dati-gov-it.json"
+to = "/api/catalogs/italy.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-gub-uy/"
+to = "/portal/uruguay/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-gub-uy.json"
+to = "/api/catalogs/uruguay.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-transparencia-gob-gt/"
+to = "/portal/guatemala/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-transparencia-gob-gt.json"
+to = "/api/catalogs/guatemala.json"
+status = 301
+
+[[redirects]]
+from = "/portal/govdata-de/"
+to = "/portal/germany/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/govdata-de.json"
+to = "/api/catalogs/germany.json"
+status = 301
+
+[[redirects]]
+from = "/portal/indonesia-data-portal/"
+to = "/portal/indonesia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/indonesia-data-portal.json"
+to = "/api/catalogs/indonesia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/national-open-data-portal-finland/"
+to = "/portal/finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/national-open-data-portal-finland.json"
+to = "/api/catalogs/finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/oman-data-portal/"
+to = "/portal/oman/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/oman-data-portal.json"
+to = "/api/catalogs/oman.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open-data-colombia/"
+to = "/portal/colombia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open-data-colombia.json"
+to = "/api/catalogs/colombia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open-data-sierra-leone/"
+to = "/portal/sierra-leone/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open-data-sierra-leone.json"
+to = "/api/catalogs/sierra-leone.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-jersey/"
+to = "/portal/jersey/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-jersey.json"
+to = "/api/catalogs/jersey.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-tanzania/"
+to = "/portal/tanzania/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-tanzania.json"
+to = "/api/catalogs/tanzania.json"
+status = 301
+
+[[redirects]]
+from = "/portal/publicdata-be/"
+to = "/portal/belgium/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/publicdata-be.json"
+to = "/api/catalogs/belgium.json"
+status = 301
+
+[[redirects]]
+from = "/portal/swedens-data-portal/"
+to = "/portal/sweden/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/swedens-data-portal.json"
+to = "/api/catalogs/sweden.json"
+status = 301
+
+[[redirects]]
+from = "/portal/saudi-opendata-portal/"
+to = "/portal/saudi-arabia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/saudi-opendata-portal.json"
+to = "/api/catalogs/saudi-arabia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ukrainian-official-government-portal/"
+to = "/portal/ukraine/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ukrainian-official-government-portal.json"
+to = "/api/catalogs/ukraine.json"
+status = 301
+
+[[redirects]]
+from = "/portal/macedonia-open-data/"
+to = "/portal/north-macedonia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/macedonia-open-data.json"
+to = "/api/catalogs/north-macedonia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/serbia-government-open-data/"
+to = "/portal/serbia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/serbia-government-open-data.json"
+to = "/api/catalogs/serbia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-uz/"
+to = "/portal/uzbekistan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-uz.json"
+to = "/api/catalogs/uzbekistan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-gob-ar/"
+to = "/portal/argentina/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-gob-ar.json"
+to = "/api/catalogs/argentina.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-az/"
+to = "/portal/azerbaijan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-az.json"
+to = "/api/catalogs/azerbaijan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-public-lu/"
+to = "/portal/luxembourg/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-public-lu.json"
+to = "/api/catalogs/luxembourg.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datavejviser-dk/"
+to = "/portal/denmark/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datavejviser-dk.json"
+to = "/api/catalogs/denmark.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datosabiertos-gob-pe/"
+to = "/portal/peru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datosabiertos-gob-pe.json"
+to = "/api/catalogs/peru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-my/"
+to = "/portal/malaysia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-my.json"
+to = "/api/catalogs/malaysia.json"
 status = 301
