@@ -42,8 +42,11 @@ Common successors:
 
 When several URLs fit, prefer:
 
+- a page on the organization's own domain over a platform's domain like `arcgis.com` or `seu-e.cat`, since it survives platform changes. Look for, in order:
+  - the organization's hostname for its portal, even if it redirects to the platform (`data.fredericton.ca` over `data-fredericton.opendata.arcgis.com`)
+  - the open data page on its main site (`www.kitchener.ca/opendata`)
+  - the platform URL, only when the organization links straight to it and has no page of its own (Milton)
 - the organization's own portal over a shared regional one (Niagara Region's `open.niagararegion.ca` over `niagaraopendata.ca`)
-- the organization's own domain over the platform URL it redirects to (`data.fredericton.ca` over `data-fredericton.opendata.arcgis.com`), since it survives platform changes
 - the portal's front page over a deep link into its catalog
 
 ## 3. Verify the candidate
