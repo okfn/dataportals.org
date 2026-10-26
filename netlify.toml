@@ -37,8 +37,13 @@ to = "/portal/data-go-th/"
 status = 301
 
 [[redirects]]
-from = "/portal/bahrain/"
-to = "/portal/bahrain-open-data/"
+from = "/portal/bahrain-open-data/"
+to = "/portal/bahrain/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/bahrain-open-data.json"
+to = "/api/catalogs/bahrain.json"
 status = 301
 
 # trimmed IDs: no taglines, at most 40 characters
