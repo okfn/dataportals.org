@@ -1,0 +1,41 @@
+name: Update Country List
+
+on:
+  workflow_dispatch:
+  # picks up new or renamed ISO 3166-1 countries from datasets/country-list
+  schedule:
+    # 1st of the month, 06:00 UTC
+    - cron: 0 6 1 * *
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-countries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download the country list
+        run: curl -fsSL --max-time 60 https://raw.githubusercontent.com/datasets/country-list/main/data.csv -o data/countries.csv
+
+      # ISO hasn't assigned Kosovo a code, so the source leaves it out
+      - name: Add Kosovo
+        run: grep -q ',XK$' data/countries.csv || echo 'Kosovo,XK' >> data/countries.csv
+
+      # PRs opened with GITHUB_TOKEN don't trigger other workflows, so validate here
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install frictionless
+        run: pip install "frictionless==5.*"
+      - name: Validate data
+        run: frictionless validate data/datapackage.json
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: update-countries
+          commit-message: Update the country list from datasets/country-list
+          title: Update the country list from datasets/country-list
+          body: Automated monthly refresh of `data/countries.csv` from [datasets/country-list](https://github.com/datasets/country-list), by the Update Country List workflow.
