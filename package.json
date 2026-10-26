@@ -12,8 +12,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
     "csv-parse": "^7.0.2",
-    "markdown-it": "^14.3.2",
-    "undici": "^8.10.2"
+    "markdown-it": "^14.3.3",
+    "undici": "^8.12.2"
   },
   "overrides": {
     "gray-matter": "npm:@11ty/gray-matter"
