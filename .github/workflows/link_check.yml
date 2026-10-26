@@ -2,9 +2,10 @@ name: Check Portal URLs
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   # weekly
-  #   - cron: 0 6 * * 1
+  # catches portals that go offline without anyone editing the data
+  schedule:
+    # Mondays, 06:00 UTC
+    - cron: 0 6 * * 1
   pull_request:
     paths:
       - .github/workflows/link_check.yml
@@ -20,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
 
       - name: Install dependencies
         run: npm install
