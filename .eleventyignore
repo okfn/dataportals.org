@@ -1,3 +1,4 @@
+.claude/
 .venv/
 api/README.md
 public/vendor/recline/**/*.html
