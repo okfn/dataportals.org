@@ -19,3 +19,19 @@ status = 302
 from = "/portal/city-of-chicago-data-portal/"
 to = "/portal/chicago/"
 status = 301
+
+# replaced by a successor that's also listed, merged
+[[redirects]]
+from = "/portal/finland/"
+to = "/portal/national-open-data-portal-finland/"
+status = 301
+
+[[redirects]]
+from = "/portal/digitaliser_dk/"
+to = "/portal/datavejviser-dk/"
+status = 301
+
+[[redirects]]
+from = "/portal/thailand_opendata/"
+to = "/portal/data-go-th---official-thai-government-portal/"
+status = 301
