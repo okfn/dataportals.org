@@ -12,6 +12,15 @@ body:
 
         Otherwise, follow the directions below.
 
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Inclusion criteria
+      description: Submissions that don't meet these will be closed.
+      options:
+        - label: This portal meets the inclusion criteria - https://dataportals.org/contribute/#inclusion-criteria
+          required: true
+
   - type: markdown
     attributes:
       value: "## Key Data Portal Information"
