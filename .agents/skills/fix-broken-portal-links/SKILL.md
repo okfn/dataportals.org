@@ -56,21 +56,24 @@ A candidate must pass all of these checks before it goes in:
 - **It loads.** Use a full GET with redirects followed. Use the final URL if it redirects somewhere stable, but drop session IDs, tracking parameters, and language-selection pages.
 - **It's the right organization.** The page title or heading names the publisher. This matters most for ArcGIS Hub, which returns 200 with the generic title "ArcGIS Hub" for any subdomain, including ones that don't exist. A Hub URL counts only if its `<title>` names the organization.
 - **It's HTTPS.** `data/datapackage.json` rejects `http://` URLs.
-- **It isn't already listed.** Search `data/portals.csv` for the candidate's host. If another row already uses it, mark this row inactive instead of creating a duplicate.
+- **It isn't already listed.** Search `data/portals.csv` for the candidate's host. If another row already uses it, don't create a duplicate. Merge the rows or mark this one inactive instead, as described in section 4.
 
 Some portals only fail from a script (403 to bots, timeouts from the US, incomplete TLS chains). If a browser-style GET or `curl` shows the right page, that's enough. Say in the commit message that `check_urls.js` will warn on it.
 
 ## 4. Edit the data
 
-- **Found a successor:** change only the `url` field.
+- **Found where it moved:** change only the `url` field.
+- **Replaced by a portal that's already listed:** it depends on scope.
+  - **Direct replacement of the same scope** (one national catalog replacing another, a beta becoming the production site): merge the rows. Delete the old row, copy its `tags` and `metadatacreated` into the successor's row where the successor's are empty, and add a 301 from `/portal/<old name>/` to `/portal/<successor name>/` in `netlify.toml`.
+  - **A more specific portal absorbed by a more general one** (a city's portal by the national one, an environmental catalog by the national catalog): mark it `inactive` and add a sentence to the end of its `description` linking to the successor, e.g. "The city now publishes its open data on Peru's [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/)."
+- **Replaced by a portal that isn't listed:** mark it `inactive` and note the successor in its `description` the same way.
 - **Positive evidence the portal is gone:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker. Be conservative here. A dead domain shows the old URL is offline, not that the portal is gone: in the first pass of this cleanup, 18 of 74 portals marked inactive had in fact moved. Only mark a portal inactive after working through every step in section 2, and only with one of these:
   - an official shutdown or replacement notice (e.g. data.ox.ac.uk's end-of-life page)
-  - a successor that already has its own row (e.g. the Finnish beta catalog, now avoindata.fi)
   - a standalone project whose own domain has lapsed, confirmed by checking the registered domain itself, not just the portal's hostname (e.g. `opendatabc.ca`)
   - a deployment labeled as a test
 - **Neither:** leave the row unchanged, including when only a subdomain of an organization that still exists is dead (`data.openpolice.ru`), or when a likely successor can't be verified. The checker will keep reporting it, and the summary should list it for a maintainer to decide.
 - Edit rows in place with a targeted text replacement rather than rewriting the file through a CSV writer, which would requote every row and bury the change in the diff. Afterward, parse the old and new files and confirm that only the intended fields changed.
-- Don't edit titles or descriptions to match a new name unless the user asks.
+- Apart from the successor notes above, don't edit titles or descriptions to match a new name unless the user asks.
 
 Then validate:
 
