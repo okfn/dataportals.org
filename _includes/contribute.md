@@ -58,13 +58,9 @@ _Coming soon..._
 
 ### Report an issue
 
-You can [report an issue with the website on GitHub](https://github.com/okfn/dataportals.org/issues).
+You can [report an issue or make a suggestion on GitHub](https://github.com/okfn/dataportals.org/issues).
 
 _Coming soon..._
-
-### Make a suggestion
-
-[Join the conversation](https://discuss.okfn.org/c/open-knowledge-labs/dataportals) about DataPortals.org on the [Open Knowledge Forum](https://discuss.okfn.org/). Report an issue, make a suggestion and discover like-minded people working on [Open Knowledge projects](https://okfn.org/).
 
 <h2 id="become-an-editor">5. Become an Editor</h2>
 
