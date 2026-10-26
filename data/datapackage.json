@@ -25,10 +25,10 @@
             "title": "name",
             "type": "string",
             "constraints": {
-              "pattern": "^[a-zа-я0-9\\-_]+$",
+              "pattern": "^[a-zа-я0-9-]+$",
               "maxLength": 40
             },
-            "description": "a lower case hyphenated/underscored name of the portal"
+            "description": "a lower case hyphenated name of the portal, used in its page URL"
           },
           {
             "name": "title",
