@@ -1,4 +1,5 @@
 {
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
   "name": "dataportals",
   "title": "Open Data Portals Database",
   "homepage": "https://dataportals.org/",
@@ -11,21 +12,20 @@
   ],
   "resources": [
     {
-      "profile": "tabular-data-resource",
       "name": "portals",
+      "type": "table",
       "path": "portals.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
         "fields": [
           {
             "name": "name",
             "title": "name",
             "type": "string",
             "constraints": {
-              "pattern": "^[a-zа-я0-9\\-_]+$",
-              "unique": true,
-              "required": true
+              "pattern": "^[a-zа-я0-9\\-_]+$"
             },
             "description": "a lower case hyphenated/underscored name of the portal"
           },
@@ -81,8 +81,9 @@
           {
             "name": "tags",
             "title": "tags",
-            "type": "string",
-            "description": "List of tags that will aid users in searching for this portal"
+            "type": "list",
+            "description": "List of tags that will aid users in searching for this portal",
+            "delimiter": " "
           },
           {
             "name": "license_id",
@@ -168,7 +169,8 @@
             "format": "uri",
             "description": "The URL for downloading the portal metadata"
           }
-        ]
+        ],
+        "primaryKey": ["name"]
       }
     }
   ]
