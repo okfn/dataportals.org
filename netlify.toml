@@ -22,18 +22,13 @@ status = 301
 
 # replaced by a successor that's also listed, merged
 [[redirects]]
-from = "/portal/finland/"
-to = "/portal/national-open-data-portal-finland/"
-status = 301
-
-[[redirects]]
 from = "/portal/digitaliser_dk/"
-to = "/portal/datavejviser-dk/"
+to = "/portal/denmark/"
 status = 301
 
 [[redirects]]
 from = "/portal/thailand_opendata/"
-to = "/portal/data-go-th/"
+to = "/portal/thailand/"
 status = 301
 
 [[redirects]]
@@ -100,22 +95,22 @@ status = 301
 
 [[redirects]]
 from = "/portal/data-go-th---official-thai-government-portal/"
-to = "/portal/data-go-th/"
+to = "/portal/thailand/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data-go-th---official-thai-government-portal.json"
-to = "/api/catalogs/data-go-th.json"
+to = "/api/catalogs/thailand.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data-gov-ph---open-data-philippines/"
-to = "/portal/data-gov-ph/"
+to = "/portal/philippines/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data-gov-ph---open-data-philippines.json"
-to = "/api/catalogs/data-gov-ph.json"
+to = "/api/catalogs/philippines.json"
 status = 301
 
 [[redirects]]
@@ -130,12 +125,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala/"
-to = "/portal/datos-transparencia-gob-gt/"
+to = "/portal/guatemala/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/datos-transparencia-gob-gt---portal-de-datos-abiertos-en-guatemala.json"
-to = "/api/catalogs/datos-transparencia-gob-gt.json"
+to = "/api/catalogs/guatemala.json"
 status = 301
 
 [[redirects]]
@@ -663,72 +658,72 @@ status = 301
 
 [[redirects]]
 from = "/portal/data_australia_gov_au/"
-to = "/portal/data-australia-gov-au/"
+to = "/portal/australia/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_australia_gov_au.json"
-to = "/api/catalogs/data-australia-gov-au.json"
+to = "/api/catalogs/australia.json"
 status = 301
 
 [[redirects]]
 from = "/portal/open_canada_ca/"
-to = "/portal/open-canada-ca/"
+to = "/portal/canada/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/open_canada_ca.json"
-to = "/api/catalogs/open-canada-ca.json"
+to = "/api/catalogs/canada.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data_go_kr/"
-to = "/portal/data-go-kr/"
+to = "/portal/south-korea/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_go_kr.json"
-to = "/api/catalogs/data-go-kr.json"
+to = "/api/catalogs/south-korea.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data_gov/"
-to = "/portal/data-gov/"
+to = "/portal/united-states/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_gov.json"
-to = "/api/catalogs/data-gov.json"
+to = "/api/catalogs/united-states.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data_gov_il/"
-to = "/portal/data-gov-il/"
+to = "/portal/israel/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_gov_il.json"
-to = "/api/catalogs/data-gov-il.json"
+to = "/api/catalogs/israel.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data_gov_sk/"
-to = "/portal/data-gov-sk/"
+to = "/portal/slovakia/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_gov_sk.json"
-to = "/api/catalogs/data-gov-sk.json"
+to = "/api/catalogs/slovakia.json"
 status = 301
 
 [[redirects]]
 from = "/portal/data_gov_uk/"
-to = "/portal/data-gov-uk/"
+to = "/portal/united-kingdom/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/data_gov_uk.json"
-to = "/api/catalogs/data-gov-uk.json"
+to = "/api/catalogs/united-kingdom.json"
 status = 301
 
 [[redirects]]
@@ -1313,12 +1308,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/mxabierto-github-io_ng-ckan/"
-to = "/portal/mxabierto-github-io-ng-ckan/"
+to = "/portal/mexico/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/mxabierto-github-io_ng-ckan.json"
-to = "/api/catalogs/mxabierto-github-io-ng-ckan.json"
+to = "/api/catalogs/mexico.json"
 status = 301
 
 [[redirects]]
@@ -1623,12 +1618,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/opendata_go_ke/"
-to = "/portal/opendata-go-ke/"
+to = "/portal/kenya/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/opendata_go_ke.json"
-to = "/api/catalogs/opendata-go-ke.json"
+to = "/api/catalogs/kenya.json"
 status = 301
 
 [[redirects]]
@@ -1733,12 +1728,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/overheid_nl/"
-to = "/portal/overheid-nl/"
+to = "/portal/netherlands/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/overheid_nl.json"
-to = "/api/catalogs/overheid-nl.json"
+to = "/api/catalogs/netherlands.json"
 status = 301
 
 [[redirects]]
@@ -1793,12 +1788,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/pt_national_portal/"
-to = "/portal/pt-national-portal/"
+to = "/portal/portugal/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/pt_national_portal.json"
-to = "/api/catalogs/pt-national-portal.json"
+to = "/api/catalogs/portugal.json"
 status = 301
 
 [[redirects]]
@@ -1943,12 +1938,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/singapore_opendata/"
-to = "/portal/singapore-opendata/"
+to = "/portal/singapore/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/singapore_opendata.json"
-to = "/api/catalogs/singapore-opendata.json"
+to = "/api/catalogs/singapore.json"
 status = 301
 
 [[redirects]]
@@ -2173,12 +2168,12 @@ status = 301
 
 [[redirects]]
 from = "/portal/uae_open_data/"
-to = "/portal/uae-open-data/"
+to = "/portal/united-arab-emirates/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/uae_open_data.json"
-to = "/api/catalogs/uae-open-data.json"
+to = "/api/catalogs/united-arab-emirates.json"
 status = 301
 
 [[redirects]]
@@ -2363,10 +2358,422 @@ status = 301
 
 [[redirects]]
 from = "/portal/open_data_ps/"
-to = "/portal/open-data-ps/"
+to = "/portal/palestine/"
 status = 301
 
 [[redirects]]
 from = "/api/catalogs/open_data_ps.json"
-to = "/api/catalogs/open-data-ps.json"
+to = "/api/catalogs/palestine.json"
+status = 301
+
+# national portals named for their country
+
+[[redirects]]
+from = "/portal/chile-government/"
+to = "/portal/chile/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/chile-government.json"
+to = "/api/catalogs/chile.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dados-gov-br/"
+to = "/portal/brazil/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dados-gov-br.json"
+to = "/api/catalogs/brazil.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dane-gov-pl/"
+to = "/portal/poland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dane-gov-pl.json"
+to = "/api/catalogs/poland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-catalogue-austrian-government/"
+to = "/portal/austria/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-catalogue-austrian-government.json"
+to = "/api/catalogs/austria.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-catalogue-suisse-government/"
+to = "/portal/switzerland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-catalogue-suisse-government.json"
+to = "/api/catalogs/switzerland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-go-jp/"
+to = "/portal/japan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-go-jp.json"
+to = "/api/catalogs/japan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-go-th/"
+to = "/portal/thailand/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-go-th.json"
+to = "/api/catalogs/thailand.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gouv-fr/"
+to = "/portal/france/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gouv-fr.json"
+to = "/api/catalogs/france.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-bf/"
+to = "/portal/burkina-faso/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-bf.json"
+to = "/api/catalogs/burkina-faso.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-hk/"
+to = "/portal/hong-kong/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-hk.json"
+to = "/api/catalogs/hong-kong.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-hr/"
+to = "/portal/croatia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-hr.json"
+to = "/api/catalogs/croatia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ie/"
+to = "/portal/ireland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ie.json"
+to = "/api/catalogs/ireland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ph/"
+to = "/portal/philippines/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ph.json"
+to = "/api/catalogs/philippines.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-ro/"
+to = "/portal/romania/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-ro.json"
+to = "/api/catalogs/romania.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-tw/"
+to = "/portal/taiwan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-tw.json"
+to = "/api/catalogs/taiwan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-norge-no/"
+to = "/portal/norway/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-norge-no.json"
+to = "/api/catalogs/norway.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datagovgreece/"
+to = "/portal/greece/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datagovgreece.json"
+to = "/api/catalogs/greece.json"
+status = 301
+
+[[redirects]]
+from = "/portal/dati-gov-it/"
+to = "/portal/italy/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/dati-gov-it.json"
+to = "/api/catalogs/italy.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-gub-uy/"
+to = "/portal/uruguay/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-gub-uy.json"
+to = "/api/catalogs/uruguay.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-transparencia-gob-gt/"
+to = "/portal/guatemala/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-transparencia-gob-gt.json"
+to = "/api/catalogs/guatemala.json"
+status = 301
+
+[[redirects]]
+from = "/portal/govdata-de/"
+to = "/portal/germany/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/govdata-de.json"
+to = "/api/catalogs/germany.json"
+status = 301
+
+[[redirects]]
+from = "/portal/indonesia-data-portal/"
+to = "/portal/indonesia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/indonesia-data-portal.json"
+to = "/api/catalogs/indonesia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/national-open-data-portal-finland/"
+to = "/portal/finland/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/national-open-data-portal-finland.json"
+to = "/api/catalogs/finland.json"
+status = 301
+
+[[redirects]]
+from = "/portal/oman-data-portal/"
+to = "/portal/oman/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/oman-data-portal.json"
+to = "/api/catalogs/oman.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open-data-colombia/"
+to = "/portal/colombia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open-data-colombia.json"
+to = "/api/catalogs/colombia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/open-data-sierra-leone/"
+to = "/portal/sierra-leone/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/open-data-sierra-leone.json"
+to = "/api/catalogs/sierra-leone.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-jersey/"
+to = "/portal/jersey/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-jersey.json"
+to = "/api/catalogs/jersey.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-tanzania/"
+to = "/portal/tanzania/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-tanzania.json"
+to = "/api/catalogs/tanzania.json"
+status = 301
+
+[[redirects]]
+from = "/portal/publicdata-be/"
+to = "/portal/belgium/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/publicdata-be.json"
+to = "/api/catalogs/belgium.json"
+status = 301
+
+[[redirects]]
+from = "/portal/swedens-data-portal/"
+to = "/portal/sweden/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/swedens-data-portal.json"
+to = "/api/catalogs/sweden.json"
+status = 301
+
+[[redirects]]
+from = "/portal/saudi-opendata-portal/"
+to = "/portal/saudi-arabia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/saudi-opendata-portal.json"
+to = "/api/catalogs/saudi-arabia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/ukrainian-official-government-portal/"
+to = "/portal/ukraine/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/ukrainian-official-government-portal.json"
+to = "/api/catalogs/ukraine.json"
+status = 301
+
+[[redirects]]
+from = "/portal/macedonia-open-data/"
+to = "/portal/north-macedonia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/macedonia-open-data.json"
+to = "/api/catalogs/north-macedonia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/serbia-government-open-data/"
+to = "/portal/serbia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/serbia-government-open-data.json"
+to = "/api/catalogs/serbia.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-uz/"
+to = "/portal/uzbekistan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-uz.json"
+to = "/api/catalogs/uzbekistan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datos-gob-ar/"
+to = "/portal/argentina/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datos-gob-ar.json"
+to = "/api/catalogs/argentina.json"
+status = 301
+
+[[redirects]]
+from = "/portal/opendata-az/"
+to = "/portal/azerbaijan/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/opendata-az.json"
+to = "/api/catalogs/azerbaijan.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-public-lu/"
+to = "/portal/luxembourg/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-public-lu.json"
+to = "/api/catalogs/luxembourg.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datavejviser-dk/"
+to = "/portal/denmark/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datavejviser-dk.json"
+to = "/api/catalogs/denmark.json"
+status = 301
+
+[[redirects]]
+from = "/portal/datosabiertos-gob-pe/"
+to = "/portal/peru/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/datosabiertos-gob-pe.json"
+to = "/api/catalogs/peru.json"
+status = 301
+
+[[redirects]]
+from = "/portal/data-gov-my/"
+to = "/portal/malaysia/"
+status = 301
+
+[[redirects]]
+from = "/api/catalogs/data-gov-my.json"
+to = "/api/catalogs/malaysia.json"
 status = 301
