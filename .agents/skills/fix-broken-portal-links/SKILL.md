@@ -66,14 +66,14 @@ Some portals only fail from a script (403 to bots, timeouts from the US, incompl
 - **Replaced by a portal that's already listed:** it depends on scope.
   - **Direct replacement of the same scope** (one national catalog replacing another, a beta becoming the production site): merge the rows. Delete the old row, copy its `tags` and `metadatacreated` into the successor's row where the successor's are empty, and add a 301 from `/portal/<old name>/` to `/portal/<successor name>/` in `netlify.toml`.
   - **A more specific portal absorbed by a more general one** (a city's portal by the national one, an environmental catalog by the national catalog): mark it `inactive` and add a sentence to the end of its `description` linking to the successor, e.g. "The city now publishes its open data on Peru's [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/)."
-- **Replaced by a portal that isn't listed:** mark it `inactive` and note the successor in its `description` the same way.
+- **Directly replaced by a portal that isn't listed:** update the row to describe the replacement: its `url`, `title`, `description`, and any `tags` that no longer apply (like `ckan`). Keep the row's `name`, so its page URL doesn't change, and set `status` back to `active`. Make sure the replacement plays the same role. The IATI Registry's catalog role went to the IATI Dashboard, not to IATI Account, which only handles publisher accounts.
 - **Positive evidence the portal is gone:** change only `status` to `inactive`. Inactive portals stay in the catalog and are skipped by the checker. Be conservative here. A dead domain shows the old URL is offline, not that the portal is gone: in the first pass of this cleanup, 18 of 74 portals marked inactive had in fact moved. Only mark a portal inactive after working through every step in section 2, and only with one of these:
   - an official shutdown or replacement notice (e.g. data.ox.ac.uk's end-of-life page)
   - a standalone project whose own domain has lapsed, confirmed by checking the registered domain itself, not just the portal's hostname (e.g. `opendatabc.ca`)
   - a deployment labeled as a test
 - **Neither:** leave the row unchanged, including when only a subdomain of an organization that still exists is dead (`data.openpolice.ru`), or when a likely successor can't be verified. The checker will keep reporting it, and the summary should list it for a maintainer to decide.
 - Edit rows in place with a targeted text replacement rather than rewriting the file through a CSV writer, which would requote every row and bury the change in the diff. Afterward, parse the old and new files and confirm that only the intended fields changed.
-- Apart from the successor notes above, don't edit titles or descriptions to match a new name unless the user asks.
+- Apart from replacements and successor notes, don't edit titles or descriptions to match a new name unless the user asks.
 
 Then validate:
 
