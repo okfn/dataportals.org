@@ -36,6 +36,11 @@ from = "/portal/thailand_opendata/"
 to = "/portal/data-go-th/"
 status = 301
 
+[[redirects]]
+from = "/portal/bahrain/"
+to = "/portal/bahrain-open-data/"
+status = 301
+
 # trimmed IDs: no taglines, at most 40 characters
 
 [[redirects]]
