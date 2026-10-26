@@ -22,6 +22,22 @@
       <div id="overview-map"></div>
     </div>
   </div>
+  <div class="row mt-4">
+    <div class="col-12">
+      <h3 class="heading">Not on the map</h3>
+      <p class="text-muted">Portals that aren't tied to a specific geography, or whose location we don't have yet.</p>
+      {# matches includePortalOnMap() in public/js/app.js #}
+      <ul class="unmapped-portals">
+        {% for catalog in catalogs | rejectattr("location") %}
+          {% if catalog.status == "active" %}
+            <li>
+              <a href="/portal/{{ catalog.name }}/">{{ catalog.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 {% endblock %}
 {% block scripts %}
   <script src="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.js"></script>

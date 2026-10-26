@@ -163,6 +163,18 @@ a.inverted {
   height: 500px;
 }
 
+.unmapped-portals {
+  columns: 3 16rem;
+  column-gap: 2rem;
+}
+
+.unmapped-portals li {
+  break-inside: avoid;
+  /* keep the bullets within the content edge, since `ul` has no padding */
+  margin-left: 1.25rem;
+  padding: 0.25rem 0;
+}
+
 /********************************************************************
   * Media Queries
   *******************************************************************/
