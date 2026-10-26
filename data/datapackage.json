@@ -124,10 +124,7 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "constraints": {
-              "pattern": "([A-Z]{2}( [A-Z]{2})*|Global|Europe|EU|International)?"
-            },
-            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, a space-separated list of codes for several countries, or a region (Global, Europe, EU, or International)"
+            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, or a region such as Global or Europe. Must be a code in countries.csv."
           },
           {
             "name": "language",
@@ -183,7 +180,46 @@
             "description": "The URL for downloading the portal metadata"
           }
         ],
-        "primaryKey": ["name"]
+        "primaryKey": ["name"],
+        "foreignKeys": [
+          {
+            "fields": ["country"],
+            "reference": { "resource": "countries", "fields": ["code"] }
+          }
+        ]
+      }
+    },
+    {
+      "name": "countries",
+      "title": "Countries and regions",
+      "description": "The allowed values for portals' country: ISO 3166-1 alpha-2 codes with their official English names, plus Kosovo (XK, which ISO hasn't assigned) and the regions used for multi-country portals.",
+      "type": "table",
+      "path": "countries.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "sources": [
+        {
+          "title": "datasets/country-codes",
+          "path": "https://github.com/datasets/country-codes"
+        }
+      ],
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "code",
+            "type": "string",
+            "constraints": { "required": true },
+            "description": "ISO 3166-1 alpha-2 code, or a region name"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "constraints": { "required": true },
+            "description": "Official English name (official_name_en in the source)"
+          }
+        ],
+        "primaryKey": ["code"]
       }
     }
   ]
