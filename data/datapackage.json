@@ -124,7 +124,10 @@
             "name": "country",
             "title": "country",
             "type": "string",
-            "description": "The country name of the author/publisher's geographic location"
+            "constraints": {
+              "pattern": "([A-Z]{2}( [A-Z]{2})*|Global|Europe|EU|International)?"
+            },
+            "description": "The ISO 3166-1 alpha-2 code of the country the portal covers, a space-separated list of codes for several countries, or a region (Global, Europe, EU, or International)"
           },
           {
             "name": "language",
