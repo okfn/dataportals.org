@@ -58,3 +58,7 @@ Then point your browser at http://localhost:8080/.
 #### Deployment
 
 We deploy to [Netlify](https://netlify.com/) on each push to `main`. See the preview site at https://dataportals.netlify.app/.
+
+#### Broken links
+
+The [Check Portal URLs](.github/workflows/link_check.yml) workflow runs [`lib/check_urls.js`](lib/check_urls.js) weekly and on pull requests that touch the data. It fails only when a portal's domain no longer resolves or its page returns 404/410. Other errors (like 403s from bot protection) are printed as warnings. To fix the broken ones, ask a coding agent to use the [fix-broken-portal-links skill](.claude/skills/fix-broken-portal-links/SKILL.md), which finds each portal's current URL or marks it inactive.
