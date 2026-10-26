@@ -62,7 +62,7 @@ Some portals only fail from a script (403 to bots, timeouts from the US, incompl
 
 ## 4. Edit the data
 
-- **Found where it moved:** change only the `url` field.
+- **Found where it moved:** change the `url` field. If the portal was renamed or rebranded along the way (NC OpenBook to NC OpenBudget), also update `title` to the new page's own name, and `description` if it describes the old portal (a beta phase, an old platform). Keep the `name`, so the page URL doesn't change.
 - **Replaced by a portal that's already listed:** it depends on scope.
   - **Direct replacement of the same scope** (one national catalog replacing another, a beta becoming the production site): merge the rows. Delete the old row, copy its `tags` and `metadatacreated` into the successor's row where the successor's are empty, and add a 301 from `/portal/<old name>/` to `/portal/<successor name>/` in `netlify.toml`.
   - **A more specific portal absorbed by a more general one** (a city's portal by the national one, an environmental catalog by the national catalog): mark it `inactive` and add a sentence to the end of its `description` linking to the successor, e.g. "The city now publishes its open data on Peru's [Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/)."
@@ -73,7 +73,7 @@ Some portals only fail from a script (403 to bots, timeouts from the US, incompl
   - a deployment labeled as a test
 - **Neither:** leave the row unchanged, including when only a subdomain of an organization that still exists is dead (`data.openpolice.ru`), or when a likely successor can't be verified. The checker will keep reporting it, and the summary should list it for a maintainer to decide.
 - Edit rows in place with a targeted text replacement rather than rewriting the file through a CSV writer, which would requote every row and bury the change in the diff. Afterward, parse the old and new files and confirm that only the intended fields changed.
-- Apart from replacements and successor notes, don't edit titles or descriptions to match a new name unless the user asks.
+- Only write descriptions from what the new page or a source actually says. Leave a title alone when the new name can't be confirmed, like a page that blocks scripts.
 
 Then validate:
 
