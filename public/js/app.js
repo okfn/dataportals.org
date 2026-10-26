@@ -31,15 +31,14 @@ const includePortalOnMap = (portal) =>
   portal.status === "active" && !!portal.location;
 
 const portalToGeoJSON = (portal) => {
-  const coordinates = portal.location.split(",");
-  const lat = parseFloat(coordinates[0]);
-  const lng = parseFloat(coordinates[1]);
+  // geopoint's default format is "lon,lat", which matches GeoJSON's order
+  const coordinates = portal.location.split(",").map(parseFloat);
 
   return {
     type: "Feature",
     geometry: {
       type: "Point",
-      coordinates: [lng, lat],
+      coordinates,
     },
     properties: portal,
   };

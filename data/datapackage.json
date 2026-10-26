@@ -118,8 +118,8 @@
           {
             "name": "location",
             "title": "geolocation",
-            "type": "string",
-            "description": "The latitude,longitude in decimal degrees of the author/publisher's geographic location"
+            "type": "geopoint",
+            "description": "The longitude,latitude in decimal degrees of the author/publisher's geographic location"
           },
           {
             "name": "country",
