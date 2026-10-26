@@ -415,7 +415,7 @@ the web-site was created by the Institute for Development of Freedom of Informat
 For more information please see www.idfi.ge",government spending,,,,Georgia,"32.3293809,-83.1137366",KA,English/Georgian,active,2011-06-27T18:13:37.407Z,,,,
 geospatial-one-stop,Geospatial One-Stop,https://www.geodata.gov,US Geological Survey,US Geological Survey,,,"Federal catalog of geospatial resources available by US government (federal, state, local), academia, NGO, commercial, and other sources.
 
-Succeeded by [GeoPlatform](https://www.geoplatform.gov/).",arcgis arcims fgdc geo gos kml shapefile wms,notspecified,,,USA,"39.7837304,-100.4458825",USA,en,inactive,2011-07-06T04:49:45.54Z,,,,
+Retired in 2011, when its catalog moved to Geo.Data.gov, part of [Data.gov](https://catalog.data.gov/).",arcgis arcims fgdc geo gos kml shapefile wms,notspecified,,,USA,"39.7837304,-100.4458825",USA,en,inactive,2011-07-06T04:49:45.54Z,,,,
 ghana_opendataforafrica,Open Data for Ghana,https://ghana.opendataforafrica.org/,African Development Bank Group,African Development Bank Group,,,Open data portal for Ghana,africa,other-at,,,Ghana,"8.0300284,-1.0800271",gha,en,active,2013-08-29T08:02:39.701Z,,,,
 ghdx,GHDx - Global Health Data Exchange,https://ghdx.org,Institute for Health Metrics and Evaluation,Institute for Health Metrics and Evaluation,,,"Catalog of the world's health and demographic data, maintained by the Institute for Health Metrics and Evaluation (IHME) at the University of Washington.",health,,,,Global,"47.655407,-122.303616",Global,en,active,2012-11-09T09:36:42.107Z,,,,
 gijon_es,Gijón Public Data Catalogue,https://datos.gijon.es,,,,,City of Gijón Public Data Catalogue,ctic level.local eu-official spain,,,,Gijón,"43.5450394,-5.6626443",ES,es,active,2011-06-27T18:13:39.357Z,,,,
@@ -459,13 +459,9 @@ Powered by CKAN & Wordpress
 Launched March 2011",ckan ctic level.regional eu-official finland,,,,Helsinki,"60.1666277,24.9435079",FI,fi,active,2011-06-27T18:13:41.308Z,,,,
 houston_data_portal,Houston Data Portal,https://data.codeforhouston.com/,"City of Houston, US","City of Houston, US",,,"Data portal for the city of Houston, United States",houston ckan unitedstates,,,,"City of Houston, Texas (United States)","29.79880155,-95.56813383",US,en,active,2013-06-21T08:05:47.175Z,,,,
 portal-oficial-ayuntamiento-de-rivas-vaciamadrid,Portal oficial Ayuntamiento de Rivas Vaciamadrid,https://datosabiertos.rivasciudad.es/,JESUS GARCIA RODRIGUEZ,Ayuntamiento de Rivas Vaciamadrid,2014-04-25,Government,Portal de datos abiertos del Ayuntamiento de Rivas Vaciamadrid.,,Open Data Commons - Attribution Share-alike (Open Database License),,,Rivas Vaciamadrid,"40.3492366,-3.568964",ES,es,active,,,,,
-iati-registry,IATI Registry,https://iatiregistry.org/,IATI,IATI,,,"International Aid Transparency Initiative (IATI).
+iati-registry,IATI Dashboard,https://dashboard.iatistandard.org/,IATI,IATI,,,"International Aid Transparency Initiative (IATI).
 
-Open data for international aid.
-
-Launched Dec 2010
-
-Replaced by [IATI Account](https://account.iatistandard.org/) in December 2025.",aid spending ckan,,,,International,"0,0",,en,inactive,2011-10-14T14:35:53.489Z,,,,
+Open data for international aid. Lists IATI publishers and their data files, which the IATI Registry did from December 2010 until it was replaced in December 2025.",aid spending,,,,International,"0,0",,en,active,2011-10-14T14:35:53.489Z,,,,
 idaho-tax,Idaho State Tax Commission Taxing District Portal,https://gisdata-istc.opendata.arcgis.com/,Idaho State Tax Commission GIS Department,,2020-08-15,Government,Dashboard of Taxing Districts in Idaho,taxes idaho unitedstates,Open Data Commons Open Database License (ODbL),https://opendatacommons.org/licenses/odbl/index.html,,Idaho,"43.615833, -116.201667",US,en,active,2020-08-31T10:28:48Z,,,,
 igeo,"iGEO - Informação Geográfica | Open Data, Open Code, Open Minds...",https://www.igeo.pt/,José Martins,DGT - Direção-Geral do Território - Portugal,2014-05-01,Government,"Initiative of the Ministry of Environment, Spatial Planning and Energy, which aims to provide Public Administration data to society and research and education institutions, providing greater transparency to the work of public administration.
 
