@@ -63,8 +63,8 @@ body:
     id: geo_location
     attributes:
       label: Geo location
-      description: If you would like the portal to show on the map, please provide latitude and longitude geographical coordinates, which can be related to the portal.
-      placeholder: e.g., 51.5074, -0.1278
+      description: If you would like the portal to show on the map, please provide longitude and latitude geographical coordinates, in that order,, which can be related to the portal.
+      placeholder: e.g., -0.1278, 51.5074
 
   - type: input
     id: country
