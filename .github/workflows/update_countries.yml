@@ -15,7 +15,7 @@ jobs:
   update-countries:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Download the country list
         run: curl -fsSL --max-time 60 https://raw.githubusercontent.com/datasets/country-list/main/data.csv -o data/countries.csv
@@ -25,7 +25,7 @@ jobs:
         run: grep -q ',XK$' data/countries.csv || echo 'Kosovo,XK' >> data/countries.csv
 
       # PRs opened with GITHUB_TOKEN don't trigger other workflows, so validate here
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
       - name: Install frictionless
@@ -33,7 +33,7 @@ jobs:
       - name: Validate data
         run: frictionless validate data/datapackage.json
 
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           branch: update-countries
           commit-message: Update the country list from datasets/country-list
