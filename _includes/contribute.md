@@ -6,7 +6,29 @@ You can help build a comprehensive list of [Open Data](https://opendefinition.or
 4. [Reporting an issue or making a suggestion](#report-an-issue)
 5. [Becoming an editor](#become-an-editor)
 
+Before adding a portal, check that it meets the [inclusion criteria](#inclusion-criteria).
+
+<h2 id="inclusion-criteria">Inclusion criteria</h2>
+
+A site is listed if it meets all of the following:
+
+1. **Open:** most of its data meets the [Open Definition](https://opendefinition.org/od/): free, openly licensed or in the public domain, and downloadable in machine-readable formats.
+1. **Primary publisher:** it's run by, or on behalf of, the organization that produces or holds the data.
+   - Official catalogs that collect data from other official publishers count, such as a national portal that harvests regional ones.
+   - General-purpose research repositories (such as Dryad or Zenodo) count.
+   - Sites that republish someone else's data generally don't count.
+   - Exception: sites that link records across multiple official sources, or that make data machine-readable when the source only publishes it in another form, such as PDFs or web pages.
+1. **Datasets, not apps:** it offers at least one dataset with a description and a download.
+   - Dashboards and calculators without downloads don't count.
+   - If the data is also available through a broader portal, such as a government's main open data portal, list that portal instead.
+1. **Working:** the site loads and its datasets can be downloaded.
+   - Portals that stop working are marked inactive rather than removed.
+
+These are guidelines, which may evolve. Final call on any given submission lies with the maintainers.
+
 <h2 id="add-an-individual-portal">1. Add an Individual Portal</h2>
+
+You're welcome to submit a portal you run; please say so. Leave referral parameters out of URLs.
 
 You can add a portal by:
 
